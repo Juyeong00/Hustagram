@@ -1,5 +1,6 @@
 const btn = document.getElementById('message-icon1');
 const btn2 = document.getElementById('transmit');
+const base = document.querySelector('.box');
 const popUp = document.getElementById('pop-up');
 const closeBtn = document.getElementById('close');
 
@@ -16,7 +17,7 @@ closeBtn.onclick = function(){
 }
 
 window.onclick = function(pop){
-    if(pop.target == popUp){
+    if(pop.target == base){
         popUp.style.display = 'none';
     }
 }
