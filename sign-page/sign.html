@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    <link href="./img/insta_icon7.png" rel="shortcut icon" type="image/x-icon">
+    <style>
+        .container {
+            width: 350px;
+            height: 600px;
+            border: 1px solid lightgray;
+            margin: 0 auto;
+        }
+
+        .main_log {
+            width: 200px;
+            margin-left: 80px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        span {
+            margin-left: 60px;
+            color: gray;
+            font-weight: 700; 
+        }
+
+        .fclogin_btn {
+            width: 260px;
+            height: 35px;
+            border: 1px solid #0095F8;
+            margin-left: 48px;
+            margin-top: 20px;
+            background-color: #0095F8;
+            border-radius: 3px;
+        }
+
+        .fclogo {
+            width: 22px;
+            margin-top: 3px;
+            margin-left: -150px;
+            border-radius: 7px;
+        }
+
+        p {
+            margin-top: -22px;
+            margin-left: 15px;
+            font-size: 13px;
+            font-weight: 700;
+            color: white;
+        }
+
+        .all_line {
+            margin-left: 160px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        .line1 {
+            width: 95px;
+            height: 1px;
+            background-color: lightgray;
+            top: 0.55em;
+            margin-left: -110px;
+            position: relative;
+        }
+
+        .line2 {
+            width: 95px;
+            height: 1px;
+            background-color: lightgray;
+            top: -0.55em;
+            margin-left: 50px;
+            position: relative;
+        }
+
+        .line_txt {
+            font-size: small;
+            font-weight: 600;
+            color: gray;
+            margin-left: 5px;
+            position: relative;
+        }
+
+        input {
+            width: 260px;
+            height: 30px;
+            margin-top: 10px;
+            margin-left: 40px;
+            border: 1px solid lightgray;
+            margin-bottom: 10px;
+        }
+
+        .alarm {
+            font-size: 12px;
+            display: block;
+            margin-left: 20px;
+        }
+
+        .signup {
+            width: 260px;
+            height: 35px;
+            border: 1px solid #4CB5F9;
+            background-color: #4CB5F9;
+            margin-left: 43px;
+            margin-top: 20px;
+            border-radius: 8px;
+        }
+
+        h4 {
+            color: white;  
+            margin-left: 110px;
+            margin-top:8px
+        }
+
+        .sign_box {
+            width: 350px;
+            height: 70px;
+            border: 1px solid lightgray;
+            margin-top: 50px;
+            font-size: 15px;
+        }
+
+        .sign_text {
+            margin-top: 25px;
+        }
+
+        .sign_1 {
+            font-size: 14px;
+            font-weight: 500;
+            margin-left: 80px;
+            
+            color: black;
+        }
+        .sign_text2 {
+            color: #00a2f8;
+        }
+
+        .download {
+            width: 350px;
+            height: 100px;
+            border: 1px solid white;
+            margin-top: 30px;
+        }
+
+        .down_text {
+            margin-left: 100px;
+        }
+
+        .googleplay_logo {
+            width: 120px;
+            height: 40px;
+            margin-left: 50px;
+            margin-top: 20px;
+        }
+
+        .micro_logo {
+            width: 120px;
+            height: 40px;
+        }
+
+        .inst_footer {
+            width: 1000px;
+            font-size: 13px;
+            margin-top: 150px;
+            
+            margin-left:-300px;
+            
+            
+        }
+
+        a {
+            color: gray;   
+        }
+
+        .foot_btn {
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 25px;
+            
+        }
+
+        .language_btn{
+            background-color: white;
+            border: 1px solid white;
+            color: gray;
+            font-size: 12px;
+            width: 60px;
+            outline-color: white;
+            
+        }
+
+        p4 {
+            font-size: 12px;
+            color: gray;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img class="main_log" src="./img/instagram-logo.png">
+        <div class="text_talk">
+        <span>친구들의 사진과 동영상을 보려면<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;가입하세요.</span>
+    </div>
+    <button class="fclogin_btn">
+        <a href="https://www.facebook.com/login/"></a>
+        <img class="fclogo" src="./img/face-logo.png" >
+        <a href="https://www.facebook.com/login/" style="text-decoration: none"><p>Facebook으로 로그인</p></a>
+    </button>
+    <div class="all_line">
+        <div class="line1"></div><div class="line_txt">또는</div><div class="line2"></div>
+    </div>
+    <form action="" name="login" method="post">
+        <input class="id" type="text" placeholder="휴대폰 번호 또는 이메일 주소" value name="email or phoneNumber">
+        <input class="name" type="text" placeholder="성명" value name="username">
+        <input class="name" type="text" placeholder="사용자 이름" value name="username">
+        <input class="pw" type="text" placeholder="비밀번호" value name="password">
+        <span class="alarm">저희 서비스를 이용하는 사람이 회원님의 연락처 정보를 lnstagram에 업로드했을 수도 있습니다.
+        <a href="https://www.facebook.com/help/instagram" style="text-decoration: none">더 알아보기</a></span>
+    </form>
+    <div class="signup">
+        <h4>가입</h4>
+    </div>
+    <div class="sign_box">
+        <div class="sign_text">
+        <span class="sign_1">계정이 있으신가요? </span><a class="sign_text2" href="https://www.instagram.com/accounts/login/" style="text-decoration: none;"><b>로그인</b></a>
+    </div>
+    <div class="download">
+        <div class="down_text">앱을 다운로드하세요.</div>
+        <a class="down_box1" href="https://play.google.com/store/apps/details?id=com.instagram.android&referrer=ig_mid%3D4CA8F4E0-67CA-4369-9A39-3CA332DED59A%26utm_campaign%3DloginPage%26utm_content%3Dlo%26utm_source%3Dinstagramweb%26utm_medium%3Dbadge%26original_referrer%3Dhttps%3A%2F%2Fwww.bing.com%2F"><img class="googleplay_logo" src="./img/googlePlay.png"></a>
+        <a class="down_box2" href="https://www.microsoft.com/store/productId/9NBLGGH5L9XT?ocid=pdpshare"><img class="micro_logo" src="./img/microsoft.png"></a>
+    </div>
+    </div>
+    <footer class="inst_footer">
+        <a href="https://about.meta.com" style="text-decoration: none">Meta</a>&emsp;
+        <a href="https://about.instagram.com" style="text-decoration: none">소개</a>&emsp;
+        <a href="https://about.instagram.com/blog" style="text-decoration: none">블로그</a>&emsp;
+        <a href="https://about.instagram.com/about-us/careers" style="text-decoration: none">채용정보</a>&emsp;
+        <a href="https://help.instagram.com/" style="text-decoration: none">도움말</a>&emsp;
+        <a href="https://developers.facebook.com/docs/instagram" style="text-decoration: none">API</a>&emsp;
+        <a href="https://privacycenter.instagram.com/policy/?entry_point=ig_help_center_data_policy_redirect" style="text-decoration: none">개인정보처리방침</a>&emsp;
+        <a href="https://help.instagram.com/581066165581870/" style="text-decoration: none">약관  </a>&emsp;
+        <a href="https://www.instagram.com/explore/locations/?hl=ko" style="text-decoration: none">위치</a>&emsp;
+        <a href="https://www.instagram.com/web/lite/?hl=ko" style="text-decoration: none">lnstagram Lite</a>&emsp;
+        <a href="https://www.threads.net/login" style="text-decoration: none">Threads</a>&emsp;
+        <a href="https://www.facebook.com/help/instagram/261704639352628?hl=ko" style="text-decoration: none">연락처 업로드 & 비사용자</a>&emsp;
+        <a href="https://about.meta.com/technologies/meta-verified/" style="text-decoration: none">Meta Verified</a>
+    </footer>
+    <div class="foot_btn">
+        <select class="language_btn" name="language" size="1">
+            <option value="한국어" selected>한국어</option>
+            <option value="Africaans">Africaans</option>
+            <option value="čeština">čeština</option>
+            <option value="Dansk">Dansk</option>
+            <option value="Deutsch">Deutsch</option>
+            <option value="Englisch">Englisch</option>
+            <option value="中国人">中国人(간체)</option>
+            <option value="中國人">中國人(번체)</option>
+            <option value="हिंदी">हिंदी</option>
+            <option value="Español">Español</option>
+            <option value="Français">Français</option>
+            <option value="عربي">عربي</option>
+            <option value="Русский">Русский</option>
+            <option value="Português">Português</option>
+            <option value="پاکستانی">پاکستانی</option>
+            <option value="bahasa Indonesia">bahasa Indonesia</option>
+            <option value="日本語">日本語</option>
+            <option value="मराठी">मराठी</option>
+            <option value="Tiếng Việt">Tiếng Việt</option>
+            <option value="Tagalog">Tagalog</option>
+            <option value="Türkçe">Türkçe</option>
+        </select><p4>© 2023 Instagram from Meta</p4>
+        </div>
+    </div>
+</body>
+</html>
