@@ -105,7 +105,7 @@
             margin-top: 30px;
         }
 
-        .story1, .story2, .story3{
+        .story1, .story2, .story3, .story4, .story5, .story6{
             border-radius: 100%;
             border: 0.5px solid lightgrey;
             width: 100px;
@@ -114,14 +114,12 @@
             cursor: pointer;
         }
 
-        .story1name, .story2name, .story3name{
+        .story1name, .story2name, .story3name, .story4name, .story5name, .story6name{
             display: flex;
             flex-direction: column;
-            
-            
         }
 
-        .str1name, .str2name, .str3name{
+        .str1name, .str2name, .str3name, .str4name, .str5name, .str6name{
             text-align: center;
         }
         
@@ -133,15 +131,15 @@
             width: 910px;
         }
 
+        .menu-changelineblack{
+            border-top: 2px solid black;
+        }
+
         .menu-changeline1{
             position: absolute;
             width: 100px;
             top: 0;
             margin-left: 200px;
-        }
-
-        .menu-changelineblack{
-            border-top: 2px solid black;
         }
 
         .menu-changeline2{
@@ -150,8 +148,6 @@
             top: 0;
             margin-left: 340px;
         }
-
-        
 
         .menu-changeline3{
             position: absolute;
@@ -330,15 +326,27 @@
         <div class="storys">
             <div class="story1name">
                 <div class="story1"></div>
-                <div class="str1name">빵빵아</div>
+                <div class="str1name">대장 박진호</div>
             </div>
             <div class="story2name">
                 <div class="story2"></div>
-                <div class="str2name">옥지얌</div>
+                <div class="str2name">부대장 김민지</div>
             </div>
             <div class="story3name">
                 <div class="story3"></div>
-                <div class="str3name">신규</div>
+                <div class="str3name">간부 하주영</div>
+            </div>
+            <div class="story4name">
+                <div class="story4"></div>
+                <div class="str4name">오른팔 이여진</div>
+            </div>
+            <div class="story5name">
+                <div class="story5"></div>
+                <div class="str5name">대장 김태현</div>
+            </div>
+            <div class="story6name">
+                <div class="story6"></div>
+                <div class="str6name">신규</div>
             </div>
         </div>    
         
@@ -376,11 +384,59 @@
         
     <script>
 
-        let menuContent = document.querySelector('.menu-content');
-        let menuReels = document.querySelector('.menu-reels');
-        let menuUserTag = document.querySelector('.menu-user-tag');
-        let menuBookMark = document.querySelector('.menu-bookmark');
+        let menucontent = document.querySelector('.menu-content');
+        let menureels = document.querySelector('.menu-reels');
+        let menubookmark = document.querySelector('.menu-bookmark');
+        let menuusertag = document.querySelector('.menu-user-tag');
 
+
+        menucontent.addEventListener('click',()=>{
+            menucontent.classList.add('menu-nameChange')
+            document.querySelector('.menu-changeline1').classList.add('menu-changelineblack')
+
+            menureels.classList.remove('menu-nameChange')
+            document.querySelector('.menu-changeline2').classList.remove('menu-changelineblack')
+            menubookmark.classList.remove('menu-nameChange')
+            document.querySelector('.menu-changeline3').classList.remove('menu-changelineblack')
+            menuusertag.classList.remove('menu-nameChange')
+            document.querySelector('.menu-changeline4').classList.remove('menu-changelineblack')
+        })
+
+        menureels.addEventListener('click',()=>{
+            menureels.classList.add('menu-nameChange')
+            document.querySelector('.menu-changeline2').classList.add('menu-changelineblack')
+
+            menucontent.classList.remove('menu-nameChange')
+            document.querySelector('.menu-changeline1').classList.remove('menu-changelineblack')
+            menubookmark.classList.remove('menu-nameChange')
+            document.querySelector('.menu-changeline3').classList.remove('menu-changelineblack')
+            menuusertag.classList.remove('menu-nameChange')
+            document.querySelector('.menu-changeline4').classList.remove('menu-changelineblack')
+        })
+
+        menubookmark.addEventListener('click',()=>{
+            menubookmark.classList.add('menu-nameChange')
+            document.querySelector('.menu-changeline3').classList.add('menu-changelineblack')
+
+            menureels.classList.remove('menu-nameChange')
+            document.querySelector('.menu-changeline2').classList.remove('menu-changelineblack')
+            menucontent.classList.remove('menu-nameChange')
+            document.querySelector('.menu-changeline1').classList.remove('menu-changelineblack')
+            menuusertag.classList.remove('menu-nameChange')
+            document.querySelector('.menu-changeline4').classList.remove('menu-changelineblack')
+        })
+
+        menuusertag.addEventListener('click',()=>{
+            menuusertag.classList.add('menu-nameChange')
+            document.querySelector('.menu-changeline4').classList.add('menu-changelineblack')
+
+            menureels.classList.remove('menu-nameChange')
+            document.querySelector('.menu-changeline2').classList.remove('menu-changelineblack')
+            menubookmark.classList.remove('menu-nameChange')
+            document.querySelector('.menu-changeline3').classList.remove('menu-changelineblack')
+            menucontent.classList.remove('menu-nameChange')
+            document.querySelector('.menu-changeline1').classList.remove('menu-changelineblack')
+        })
         
 
     </script>
