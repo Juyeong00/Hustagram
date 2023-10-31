@@ -14,14 +14,33 @@
 
         .container{
             box-sizing: border-box;
-            margin-top: 50px;
+            display: flex;
+            margin: 0 auto;
+            text-align: center;
+            
+        }
+
+        .sidebar{
+            display: flex;
+            
+        }
+
+        .leftbar{
+            width: 250px;
+            background-color: gray;
+        }
+
+        .profilebar{
             display: flex;
             flex-direction: column;
+            margin-top: 50px;
+            margin-left: 50px;
         }
 
         .profile{
             display: flex;
             margin-left: 50px;
+            text-align: left;
         }
         .profile-head{
             display: flex;
@@ -108,10 +127,15 @@
         .story1, .story2, .story3, .story4, .story5, .story6{
             border-radius: 100%;
             border: 0.5px solid lightgrey;
-            width: 100px;
-            height: 100px;
+            width: 87px;
+            height: 87px;
             margin: 20px;
             cursor: pointer;
+        }
+
+        .story6{
+            background-image: url(../../day01/images/인스타\ 스토리\ 플ㄹㅓ스\ 표시.png);
+            background-size: 100%
         }
 
         .story1name, .story2name, .story3name, .story4name, .story5name, .story6name{
@@ -197,6 +221,7 @@
             display: flex;
             width: 918px;
             flex-wrap: wrap;
+            
         }
 
         .content1{
@@ -280,6 +305,34 @@
             cursor: pointer;
         }
 
+        .bottom{
+            display: flex;
+            flex-direction: column;
+            
+        }
+
+        .bottom1{
+            display: flex;
+            margin: 3px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            justify-content: center;
+            
+        }
+
+        .bottom2{
+            display: flex;
+            justify-content: center;
+            
+
+        }
+
+        .bottompont{
+            font-size: 13px;
+            color: rgb(88, 87, 87);
+            margin: 5px;
+            
+        }
 
 
 
@@ -290,6 +343,11 @@
 </head>
 <body>
     <div class="container">
+        <!-- 임시로 넣은 사이드바 -->
+        <div class="sidebar">
+            <div class="leftbar"></div>
+        </div>
+        <div class="profilebar">
         <div class="profile">
             <div class="profile-picture">
                 <div class="picture-inline"></div>
@@ -323,9 +381,9 @@
                 </i><a href="https://www.youtube.com/@b2ang/featured">https://www.youtube.com/@b2ang/featured</a>
                 </div>
             </div>
-        
         </div>
-    </div>
+        </div>
+        
         <div class="storys">
             <div class="story1name">
                 <div class="story1"></div>
@@ -382,6 +440,29 @@
             <div class="content7"></div>
             <div class="content8"></div>
             <div class="content9"></div>
+        </div>
+
+        <div class="bottom">
+            <div class="bottom1">
+                <div class="bottompont">Meta</div>
+                <div class="bottompont">소개</div>
+                <div class="bottompont">블로그</div>
+                <div class="bottompont">채용 정보</div>
+                <div class="bottompont">도움말</div>
+                <div class="bottompont">API</div>
+                <div class="bottompont">개인정보처리방침</div>
+                <div class="bottompont">약관</div>
+                <div class="bottompont">위치</div>
+                <div class="bottompont">Instagram Life</div>
+                <div class="bottompont">Thread</div>
+                <div class="bottompont">연락처 업로드&비사용자</div>
+                <div class="bottompont">Meta Verified</div>
+            </div>
+            <div class="bottom2">
+                <div class="bottompont">한국어∨ </div>
+                <div class="bottompont">  ⓒ 2023 Instagram from Meta</div>
+            </div>
+        </div>
         </div>
     </div>
         
