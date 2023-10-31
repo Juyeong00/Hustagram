@@ -46,7 +46,7 @@
         .picture-inline{
             border-radius: 100%;
             border: 0.5px solid lightgray;
-            background-image: url(../day01/images/인스타\ 프사.jfif);
+            background-image: url(../../day01/images/인스타\ 프사.jfif);
             width: 200px;
             height: 200px;
             background-size: 100%;
@@ -131,11 +131,37 @@
             width: 910px;
         }
 
-        .menu-changeline{
+        .menu-changeline1{
             position: absolute;
             width: 100px;
             top: 0;
+            margin-left: 200px;
+        }
+
+        .menu-changelineblack{
             border-top: 2px solid black;
+        }
+
+        .menu-changeline2{
+            position: absolute;
+            width: 100px;
+            top: 0;
+            margin-left: 340px;
+        }
+
+        
+
+        .menu-changeline3{
+            position: absolute;
+            width: 100px;
+            top: 0;
+            margin-left: 480px;
+        }
+
+        .menu-changeline4{
+            position: absolute;
+            width: 100px;
+            top: 0;
             margin-left: 620px;
         }
 
@@ -148,6 +174,11 @@
         .menu-name{
             font-weight: 100;
             cursor: pointer;
+        }
+
+        .menu-nameChange{
+            color: black;
+            font-weight: bolder
         }
 
         .menubox{
@@ -168,12 +199,17 @@
             
         }
 
+        .content{
+            background-color: black;
+            opacity: 0.2;
+        }
+
         .content1{
             margin: 2px;
             background-size: 100%;
             width: 300px;
             height: 300px;
-            background-image: url(../day01/images/인스타\ 프사.jfif);
+            background-image: url(../../day01/images/인스타\ 프사.jfif);
         }
 
         .content2{
@@ -181,7 +217,7 @@
             background-size: 100%;
             width: 300px;
             height: 300px;
-            background-image: url(../day01/images/인스타\ 프사.jfif);
+            background-image: url(../../day01/images/인스타\ 프사.jfif);
         }
 
         .content3{
@@ -189,7 +225,7 @@
             background-size: 100%;
             width: 300px;
             height: 300px;
-            background-image: url(../day01/images/인스타\ 프사.jfif);
+            background-image: url(../../day01/images/인스타\ 프사.jfif);
         }
 
         .content4{
@@ -197,7 +233,7 @@
             background-size: 100%;
             width: 300px;
             height: 300px;
-            background-image: url(../day01/images/인스타\ 프사.jfif);
+            background-image: url(../../day01/images/인스타\ 프사.jfif);
         }
 
         .content5{
@@ -205,7 +241,7 @@
             background-size: 100%;
             width: 300px;
             height: 300px;
-            background-image: url(../day01/images/인스타\ 프사.jfif);
+            background-image: url(../../day01/images/인스타\ 프사.jfif);
         }
 
         .content6{
@@ -213,7 +249,7 @@
             background-size: 100%;
             width: 300px;
             height: 300px;
-            background-image: url(../day01/images/인스타\ 프사.jfif);
+            background-image: url(../../day01/images/인스타\ 프사.jfif);
         }
 
         .content7{
@@ -221,7 +257,7 @@
             background-size: 100%;
             width: 300px;
             height: 300px;
-            background-image: url(../day01/images/인스타\ 프사.jfif);
+            background-image: url(../../day01/images/인스타\ 프사.jfif);
         }
 
         .content8{
@@ -229,7 +265,7 @@
             background-size: 100%;
             width: 300px;
             height: 300px;
-            background-image: url(../day01/images/인스타\ 프사.jfif);
+            background-image: url(../../day01/images/인스타\ 프사.jfif);
         }
 
         .content9{
@@ -237,7 +273,7 @@
             background-size: 100%;
             width: 300px;
             height: 300px;
-            background-image: url(../day01/images/인스타\ 프사.jfif);
+            background-image: url(../../day01/images/인스타\ 프사.jfif);
         }
 
         
@@ -300,7 +336,10 @@
         
         <div class="menu">
         <div class="menu-line">
-            <div class="menu-changeline"></div>
+            <div class="menu-changeline1"></div>
+            <div class="menu-changeline2"></div>
+            <div class="menu-changeline3"></div>
+            <div class="menu-changeline4"></div>
             <div class="menubox">
                 <div class="menu-content"><i class="fa-solid fa-table-cells">
                     <span class="menu-name"> 게시물</span></i></div>
@@ -328,16 +367,77 @@
     </div>
         
     <script>
-        let menuClick1 = document.getElementsByClassName('menu-name')[0];
-        let menuClick2 = document.getElementsByClassName('menu-name')[1];
-        let menuClick3 = document.getElementsByClassName('menu-name')[2];
-        let menuClick4 = document.getElementsByClassName('menu-name')[3];
-        let menuChangeBox = document.getElementsByClassName('menubox')[0];
-        
-        
-        
+        document.querySelector('.content1').addEventListener('mouseover',()=>{
+            document.querySelector('.content1').classList.add('content')
+        })
 
-        
+        document.querySelector('.content1').addEventListener('mouseout',()=>{
+            document.querySelector('.content1').classList.remove('content')
+        })
+
+        document.querySelector('.content2').addEventListener('mouseover',()=>{
+            document.querySelector('.content2').classList.add('content')
+        })
+
+        document.querySelector('.content2').addEventListener('mouseout',()=>{
+            document.querySelector('.content2').classList.remove('content')
+        })
+
+        document.querySelector('.content3').addEventListener('mouseover',()=>{
+            document.querySelector('.content3').classList.add('content')
+        })
+
+        document.querySelector('.content3').addEventListener('mouseout',()=>{
+            document.querySelector('.content3').classList.remove('content')
+        })
+
+        document.querySelector('.content4').addEventListener('mouseover',()=>{
+            document.querySelector('.content4').classList.add('content')
+        })
+
+        document.querySelector('.content4').addEventListener('mouseout',()=>{
+            document.querySelector('.content4').classList.remove('content')
+        })
+
+        document.querySelector('.content5').addEventListener('mouseover',()=>{
+            document.querySelector('.content5').classList.add('content')
+        })
+
+        document.querySelector('.content5').addEventListener('mouseout',()=>{
+            document.querySelector('.content5').classList.remove('content')
+        })
+
+        document.querySelector('.content6').addEventListener('mouseover',()=>{
+            document.querySelector('.content6').classList.add('content')
+        })
+
+        document.querySelector('.content6').addEventListener('mouseout',()=>{
+            document.querySelector('.content6').classList.remove('content')
+        })
+
+        document.querySelector('.content7').addEventListener('mouseover',()=>{
+            document.querySelector('.content7').classList.add('content')
+        })
+
+        document.querySelector('.content7').addEventListener('mouseout',()=>{
+            document.querySelector('.content7').classList.remove('content')
+        })
+
+        document.querySelector('.content8').addEventListener('mouseover',()=>{
+            document.querySelector('.content8').classList.add('content')
+        })
+
+        document.querySelector('.content8').addEventListener('mouseout',()=>{
+            document.querySelector('.content8').classList.remove('content')
+        })
+
+        document.querySelector('.content9').addEventListener('mouseover',()=>{
+            document.querySelector('.content9').classList.add('content')
+        })
+
+        document.querySelector('.content9').addEventListener('mouseout',()=>{
+            document.querySelector('.content9').classList.remove('content')
+        })
     </script>
 </body>
 </html>
