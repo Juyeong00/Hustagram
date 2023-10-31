@@ -111,11 +111,13 @@
             width: 100px;
             height: 100px;
             margin: 20px;
+            cursor: pointer;
         }
 
         .story1name, .story2name, .story3name{
             display: flex;
             flex-direction: column;
+            
             
         }
 
@@ -196,7 +198,6 @@
             display: flex;
             width: 918px;
             flex-wrap: wrap;
-            
         }
 
         .content1{
@@ -205,8 +206,7 @@
             width: 300px;
             height: 300px;
             background-image: url(../../day01/images/인스타\ 프사.jfif);
-            transition-property: all;
-            transition-duration: 0.1;
+            cursor: pointer;
         }
 
         .content2{
@@ -215,6 +215,7 @@
             width: 300px;
             height: 300px;
             background-image: url(../../day01/images/인스타\ 프사.jfif);
+            cursor: pointer;
         }
 
         .content3{
@@ -223,6 +224,7 @@
             width: 300px;
             height: 300px;
             background-image: url(../../day01/images/인스타\ 프사.jfif);
+            cursor: pointer;
         }
 
         .content4{
@@ -231,6 +233,7 @@
             width: 300px;
             height: 300px;
             background-image: url(../../day01/images/인스타\ 프사.jfif);
+            cursor: pointer;
         }
 
         .content5{
@@ -239,6 +242,7 @@
             width: 300px;
             height: 300px;
             background-image: url(../../day01/images/인스타\ 프사.jfif);
+            cursor: pointer;
         }
 
         .content6{
@@ -247,6 +251,7 @@
             width: 300px;
             height: 300px;
             background-image: url(../../day01/images/인스타\ 프사.jfif);
+            cursor: pointer;
         }
 
         .content7{
@@ -255,6 +260,7 @@
             width: 300px;
             height: 300px;
             background-image: url(../../day01/images/인스타\ 프사.jfif);
+            cursor: pointer;
         }
 
         .content8{
@@ -263,6 +269,7 @@
             width: 300px;
             height: 300px;
             background-image: url(../../day01/images/인스타\ 프사.jfif);
+            cursor: pointer;
         }
 
         .content9{
@@ -271,53 +278,10 @@
             width: 300px;
             height: 300px;
             background-image: url(../../day01/images/인스타\ 프사.jfif);
-        }
-
-        .content1:hover{
-            background-color: black;
-            opacity: 0.2;
-        }
-
-        .content2:hover{
-            background-color: black;
-            opacity: 0.2;
-        }
-
-        .content3:hover{
-            background-color: black;
-            opacity: 0.2;
+            cursor: pointer;
         }
 
 
-        .content4:hover{
-            background-color: black;
-            opacity: 0.2;
-        }
-
-        .content5:hover{
-            background-color: black;
-            opacity: 0.2;
-        }
-
-        .content6:hover{
-            background-color: black;
-            opacity: 0.2;
-        }
-
-        .content7:hover{
-            background-color: black;
-            opacity: 0.2;
-        }
-
-        .content8:hover{
-            background-color: black;
-            opacity: 0.2;
-        }
-
-        .content9:hover{
-            background-color: black;
-            opacity: 0.2;
-        }
 
 
 
@@ -412,136 +376,12 @@
         
     <script>
 
-        let menuClick1 = document.querySelector('.menu-content');
-        let menuClick2 = document.querySelector('.menu-reels');
-        let menuClick3 = document.querySelector('.menu-bookmark');
-        let menuClick4 = document.querySelector('.menu-user-tag');
+        let menuContent = document.querySelector('.menu-content');
+        let menuReels = document.querySelector('.menu-reels');
+        let menuUserTag = document.querySelector('.menu-user-tag');
+        let menuBookMark = document.querySelector('.menu-bookmark');
 
-        let menuchangeline1 = document.querySelector('.menu-changeline1');
-        let menuchangeline2 = document.querySelector('.menu-changeline2');
-        let menuchangeline3 = document.querySelector('.menu-changeline3');
-        let menuchangeline4 = document.querySelector('.menu-changeline4');
-
-        let isClick = false;
-
-        menuClick1.addEventListener('click',()=>{
-            menuClick1.classList.add('menu-nameChange');
-            menuchangeline1.classList.add('menu-changelineblack')
-            isClick = true;
-            if(isclick){
-                menuClick2.classList.remove('menu-nameChange');
-                menuchangeline2.classList.remove('menu-changelineblack')
-
-                menuClick3.classList.remove('menu-nameChange');
-                menuchangeline3.classList.remove('menu-changelineblack')
-
-                menuClick3.classList.remove('menu-nameChange');
-                menuchangeline3.classList.remove('menu-changelineblack')
-            }
-        })
-
-        menuClick2.addEventListener('click',()=>{
-            menuClick2.classList.add('menu-nameChange');
-            menuchangeline2.classList.add('menu-changelineblack')
-
-            if(isclick){
-                menuClick1.classList.remove('menu-nameChange');
-                menuchangeline1.classList.remove('menu-changelineblack')
-
-                menuClick3.classList.remove('menu-nameChange');
-                menuchangeline3.classList.remove('menu-changelineblack')
-
-                menuClick4.classList.remove('menu-nameChange');
-                menuchangeline4.classList.remove('menu-changelineblack')
-            }
-        })
-
-        menuClick3.addEventListener('click',()=>{
-            menuClick3.classList.toggle('menu-nameChange');
-            menuchangeline3.classList.toggle('menu-changelineblack')
-        })
-
-        menuClick4.addEventListener('click',()=>{
-            menuClick4.classList.toggle('menu-nameChange');
-            menuchangeline4.classList.toggle('menu-changelineblack')
-        })
-
-
-
-
-
-        // document.querySelector('.content1').addEventListener('mouseover',()=>{
-        //     document.querySelector('.content1').classList.add('content')
-        // })
-
-        // document.querySelector('.content1').addEventListener('mouseout',()=>{
-        //     document.querySelector('.content1').classList.remove('content')
-        // })
-
-        // document.querySelector('.content2').addEventListener('mouseover',()=>{
-        //     document.querySelector('.content2').classList.add('content')
-        // })
-
-        // document.querySelector('.content2').addEventListener('mouseout',()=>{
-        //     document.querySelector('.content2').classList.remove('content')
-        // })
-
-        // document.querySelector('.content3').addEventListener('mouseover',()=>{
-        //     document.querySelector('.content3').classList.add('content')
-        // })
-
-        // document.querySelector('.content3').addEventListener('mouseout',()=>{
-        //     document.querySelector('.content3').classList.remove('content')
-        // })
-
-        // document.querySelector('.content4').addEventListener('mouseover',()=>{
-        //     document.querySelector('.content4').classList.add('content')
-        // })
-
-        // document.querySelector('.content4').addEventListener('mouseout',()=>{
-        //     document.querySelector('.content4').classList.remove('content')
-        // })
-
-        // document.querySelector('.content5').addEventListener('mouseover',()=>{
-        //     document.querySelector('.content5').classList.add('content')
-        // })
-
-        // document.querySelector('.content5').addEventListener('mouseout',()=>{
-        //     document.querySelector('.content5').classList.remove('content')
-        // })
-
-        // document.querySelector('.content6').addEventListener('mouseover',()=>{
-        //     document.querySelector('.content6').classList.add('content')
-        // })
-
-        // document.querySelector('.content6').addEventListener('mouseout',()=>{
-        //     document.querySelector('.content6').classList.remove('content')
-        // })
-
-        // document.querySelector('.content7').addEventListener('mouseover',()=>{
-        //     document.querySelector('.content7').classList.add('content')
-        // })
-
-        // document.querySelector('.content7').addEventListener('mouseout',()=>{
-        //     document.querySelector('.content7').classList.remove('content')
-        // })
-
-        // document.querySelector('.content8').addEventListener('mouseover',()=>{
-        //     document.querySelector('.content8').classList.add('content')
-        // })
-
-        // document.querySelector('.content8').addEventListener('mouseout',()=>{
-        //     document.querySelector('.content8').classList.remove('content')
-        // })
-
-        // document.querySelector('.content9').addEventListener('mouseover',()=>{
-        //     document.querySelector('.content9').classList.add('content')
-        // })
-
-        // document.querySelector('.content9').addEventListener('mouseout',()=>{
-        //     document.querySelector('.content9').classList.remove('content')
-        // })
-
+        
 
     </script>
 </body>
