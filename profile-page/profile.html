@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        .container{
+            box-sizing: border-box;
+            margin-top: 50px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .profile{
+            display: flex;
+            margin-left: 50px;
+        }
+        .profile-head{
+            display: flex;
+            flex-direction: column;
+            margin-left: 50px;
+        }
+
+        .profile-name{
+            display: flex;
+        }
+
+        .profile-btn{
+            display: flex;
+        }
+        .profile-picture{
+            box-sizing: border-box;       
+            width: 200px;
+            height: 200px; 
+            display: flex;
+        }
+        
+        .picture-inline{
+            border-radius: 100%;
+            border: 0.5px solid lightgray;
+            background-image: url(../day01/images/인스타\ 프사.jfif);
+            width: 200px;
+            height: 200px;
+            background-size: 100%;
+        }
+
+        
+        .profile-id{
+            font-size: 27px;
+        }
+        
+        .profile-id, .profile-btn{
+            margin: 5px;
+            
+        }
+        
+        .profile-setting{
+            font-size: 25px;
+            margin: 5px;
+        }
+
+        .profile-editing-btn, .profile-story-btn, .profile-advertising-btn{
+            margin: 5px;
+            font-weight: bolder;
+
+        }
+
+        .profile-num{
+            font-size: 16px;
+            display: flex;
+        }
+
+        .bulletin, .follower, .following{
+            display: flex;
+            margin:10px;
+        }
+
+        span{
+            font-weight: bolder;
+            margin-left: 10px;
+        }
+
+
+        .go-to-thread{
+            margin: 25px;
+            margin-top: 10px;
+        }
+
+        .go-to-url{
+            margin-top : -20px;
+            margin-left : 25px;
+        }
+
+        .storys{
+            display: flex;
+            background-size: 100%;
+            margin-top: 30px;
+        }
+
+        .story1, .story2, .story3{
+            border-radius: 100%;
+            border: 0.5px solid lightgrey;
+            width: 100px;
+            height: 100px;
+            margin: 20px;
+        }
+
+        .story1name, .story2name, .story3name{
+            display: flex;
+            flex-direction: column;
+            
+        }
+
+        .str1name, .str2name, .str3name{
+            text-align: center;
+        }
+        
+
+        .menu-line{
+            position: relative;
+            border-top: 2px solid lightgrey;
+            margin-top: 50px;
+            width: 910px;
+        }
+
+        .menu-changeline{
+            position: absolute;
+            width: 100px;
+            top: 0;
+            border-top: 2px solid black;
+            margin-left: 620px;
+        }
+
+        .menu{
+            margin-top: 20px;
+            display: flex;
+            color: rgb(97, 94, 100);
+        }
+
+        .menu-name{
+            font-weight: 100;
+            cursor: pointer;
+        }
+
+        .menubox{
+            display: flex;
+            justify-content: center;
+        }
+
+        .menu-content, .menu-reels, .menu-user-tag, .menu-bookmark{
+            width: 100px;
+            margin: 20px;
+            text-align: center;
+        }
+
+        .content-boxs{
+            display: flex;
+            width: 918px;
+            flex-wrap: wrap;
+            
+        }
+
+        .content1{
+            margin: 2px;
+            background-size: 100%;
+            width: 300px;
+            height: 300px;
+            background-image: url(../day01/images/인스타\ 프사.jfif);
+        }
+
+        .content2{
+            margin: 2px;
+            background-size: 100%;
+            width: 300px;
+            height: 300px;
+            background-image: url(../day01/images/인스타\ 프사.jfif);
+        }
+
+        .content3{
+            margin: 2px;
+            background-size: 100%;
+            width: 300px;
+            height: 300px;
+            background-image: url(../day01/images/인스타\ 프사.jfif);
+        }
+
+        .content4{
+            margin: 2px;
+            background-size: 100%;
+            width: 300px;
+            height: 300px;
+            background-image: url(../day01/images/인스타\ 프사.jfif);
+        }
+
+        .content5{
+            margin: 2px;
+            background-size: 100%;
+            width: 300px;
+            height: 300px;
+            background-image: url(../day01/images/인스타\ 프사.jfif);
+        }
+
+        .content6{
+            margin: 2px;
+            background-size: 100%;
+            width: 300px;
+            height: 300px;
+            background-image: url(../day01/images/인스타\ 프사.jfif);
+        }
+
+        .content7{
+            margin: 2px;
+            background-size: 100%;
+            width: 300px;
+            height: 300px;
+            background-image: url(../day01/images/인스타\ 프사.jfif);
+        }
+
+        .content8{
+            margin: 2px;
+            background-size: 100%;
+            width: 300px;
+            height: 300px;
+            background-image: url(../day01/images/인스타\ 프사.jfif);
+        }
+
+        .content9{
+            margin: 2px;
+            background-size: 100%;
+            width: 300px;
+            height: 300px;
+            background-image: url(../day01/images/인스타\ 프사.jfif);
+        }
+
+        
+
+    </style>
+    
+</head>
+<body>
+    <div class="container">
+        <div class="profile">
+            <div class="profile-picture">
+                <div class="picture-inline"></div>
+            </div>
+
+        <div class="profile-head">
+            <div class="profile-information">
+                <div class="profile-name">
+                    <div class="profile-id">park_hi_kim2</div>
+                    <div class="profile-btn">
+
+                            <button class="profile-editing-btn">프로필 편집</button>
+                            <button class="profile-story-btn">보관된 스토리 보기</button>
+                            <button class="profile-advertising-btn">광고 도구</button>
+                            <div class="profile-setting"><i class="fa-solid fa-gear"></i></div>
+                    </div>
+                </div>
+            </div>    
+        
+            <div class="profile-num">
+                <div class="bulletin">게시물 <span> 14</span></div>
+                <div class="follower">팔로워 <span> 900만</span></div>
+                <div class="following">팔로우 <span> 0</span></div>
+            </div>
+            <div class="nicnam_link">
+                <div class="nickname"><span>박하이김투</span></div>
+                <div class="go-to-thread"><button><i class="fa-solid fa-paperclip" style="color: #000000;">
+                </i>park_hi_kim2</button></div>
+
+                <div class="go-to-url">><i class="fa-solid fa-paperclip" style="color: #000000;">
+                </i><a href="https://www.youtube.com/@b2ang/featured">https://www.youtube.com/@b2ang/featured</a>
+                </div>
+            </div>
+        
+        </div>
+    </div>
+        <div class="storys">
+            <div class="story1name">
+                <div class="story1"></div>
+                <div class="str1name">빵빵아</div>
+            </div>
+            <div class="story2name">
+                <div class="story2"></div>
+                <div class="str2name">옥지얌</div>
+            </div>
+            <div class="story3name">
+                <div class="story3"></div>
+                <div class="str3name">신규</div>
+            </div>
+        </div>    
+        
+        <div class="menu">
+        <div class="menu-line">
+            <div class="menu-changeline"></div>
+            <div class="menubox">
+                <div class="menu-content"><i class="fa-solid fa-table-cells">
+                    <span class="menu-name"> 게시물</span></i></div>
+                <div class="menu-reels"><i class="fa-solid fa-clapperboard">
+                    <span class="menu-name"> 릴스</span></i></div>
+                <div class="menu-bookmark"><i class="fa-regular fa-bookmark">
+                    <span class="menu-name"> 저장됨</span></i></div>
+                <div class="menu-user-tag"><i class="fa-solid fa-clipboard-user">
+                    <span class="menu-name"> 태그됨</span></i></div>
+            </div>
+        </div>
+        </div>
+
+        <div class="content-boxs">
+            <div class="content1"></div>
+            <div class="content2"></div>
+            <div class="content3"></div>
+            <div class="content4"></div>
+            <div class="content5"></div>
+            <div class="content6"></div>
+            <div class="content7"></div>
+            <div class="content8"></div>
+            <div class="content9"></div>
+        </div>
+    </div>
+        
+    <script>
+        let menuClick1 = document.getElementsByClassName('menu-name')[0];
+        let menuClick2 = document.getElementsByClassName('menu-name')[1];
+        let menuClick3 = document.getElementsByClassName('menu-name')[2];
+        let menuClick4 = document.getElementsByClassName('menu-name')[3];
+        let menuChangeBox = document.getElementsByClassName('menubox')[0];
+        
+        
+        
+
+        
+    </script>
+</body>
+</html>
