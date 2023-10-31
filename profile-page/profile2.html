@@ -165,7 +165,6 @@
             width: 100px;
             top: 0;
             margin-left: 200px;
-            
         }
 
         .menu-changeline2{
@@ -196,11 +195,10 @@
         }
 
         .menu-name{
+            font-size: 12px;
             font-weight: 100;
             cursor: pointer;
         }
-
-
 
         .menu-nameChange{
             color: black;
@@ -218,93 +216,98 @@
             text-align: center;
         }
 
-        .content-boxs{
+        .reels-boxs{
             display: flex;
-            width: 918px;
+            width: 910px;
             flex-wrap: wrap;
             
         }
 
-        .content1{
+        .reels1{
             margin: 2px;
             background-size: 100%;
-            width: 300px;
-            height: 300px;
+            width: 222px;
+            height: 345.56px;
             background-image: url(../../day01/images/인스타\ 프사.jfif);
             cursor: pointer;
         }
 
-        .content2{
+        .reels2{
             margin: 2px;
             background-size: 100%;
-            width: 300px;
-            height: 300px;
+            width: 222px;
+            height: 345.56px;
             background-image: url(../../day01/images/인스타\ 프사.jfif);
             cursor: pointer;
         }
 
-        .content3{
+        .reels3{
             margin: 2px;
             background-size: 100%;
-            width: 300px;
-            height: 300px;
+            width: 222px;
+            height: 345.56px;
             background-image: url(../../day01/images/인스타\ 프사.jfif);
             cursor: pointer;
         }
 
-        .content4{
+        .reels4{
             margin: 2px;
             background-size: 100%;
-            width: 300px;
-            height: 300px;
+            width: 222px;
+            height: 345.56px;
             background-image: url(../../day01/images/인스타\ 프사.jfif);
             cursor: pointer;
         }
 
-        .content5{
+        .reels5{
             margin: 2px;
             background-size: 100%;
-            width: 300px;
-            height: 300px;
+            width: 222px;
+            height: 345.56px;
             background-image: url(../../day01/images/인스타\ 프사.jfif);
             cursor: pointer;
         }
 
-        .content6{
+        .reels6{
             margin: 2px;
             background-size: 100%;
-            width: 300px;
-            height: 300px;
+            width: 222px;
+            height: 345.56px;
             background-image: url(../../day01/images/인스타\ 프사.jfif);
             cursor: pointer;
         }
 
-        .content7{
-            margin: 2px;
-            background-size: 100%;
-            width: 300px;
-            height: 300px;
-            background-image: url(../../day01/images/인스타\ 프사.jfif);
-            cursor: pointer;
+        .reels1:hover{
+            background-color: black;
+            opacity: 0.7;
         }
 
-        .content8{
-            margin: 2px;
-            background-size: 100%;
-            width: 300px;
-            height: 300px;
-            background-image: url(../../day01/images/인스타\ 프사.jfif);
-            cursor: pointer;
+        .reels2:hover{
+            background-color: black;
+            opacity: 0.7;
         }
 
-        .content9{
-            margin: 2px;
-            background-size: 100%;
-            width: 300px;
-            height: 300px;
-            background-image: url(../../day01/images/인스타\ 프사.jfif);
-            cursor: pointer;
+        .reels3:hover{
+            background-color: black;
+            opacity: 0.7;
         }
+
+        .reels4:hover{
+            background-color: black;
+            opacity: 0.7;
+        }
+
+        .reels5:hover{
+            background-color: black;
+            opacity: 0.7;
+        }
+
+        .reels6:hover{
+            background-color: black;
+            opacity: 0.7;
+        }
+
+
 
         .bottom{
             display: flex;
@@ -332,11 +335,7 @@
             font-size: 13px;
             color: rgb(88, 87, 87);
             margin: 5px;
-            
         }
-
-
-
 
 
     </style>
@@ -419,9 +418,9 @@
             <div class="menu-changeline3"></div>
             <div class="menu-changeline4"></div>
             <div class="menubox">
-                <div class="menu-content"><i class="fa-solid fa-table-cells">
+                <div class="menu-content"><i class="fa-solid fa-table-cells menu-name">
                     <span class="menu-name"> 게시물</span></i></div>
-                <div class="menu-reels menu-nameChange"><i class="fa-solid fa-clapperboard">
+                <div class="menu-reels menu-nameChange"><i class="fa-solid fa-clapperboard menu-name">
                     <span class="menu-name"> 릴스</span></i></div>
                 <div class="menu-bookmark"><i class="fa-regular fa-bookmark">
                     <span class="menu-name"> 저장됨</span></i></div>
@@ -431,16 +430,16 @@
         </div>
         </div>
 
-        <div class="content-boxs">
-            <div class="content1"></div>
-            <div class="content2"></div>
-            <div class="content3"></div>
-            <div class="content4"></div>
-            <div class="content5"></div>
-            <div class="content6"></div>
-            <div class="content7"></div>
-            <div class="content8"></div>
-            <div class="content9"></div>
+        <div class="reels-boxs">
+            <div class="reels1"></div>
+            <div class="reels2"></div>
+            <div class="reels3"></div>
+            <div class="reels4"></div>
+            <div class="reels5"></div>
+            <div class="reels6"></div>
+            <div class="reels7"></div>
+            <div class="reels8"></div>
+            <div class="reels9"></div>
         </div>
 
         <div class="bottom">
@@ -479,7 +478,7 @@
             menucontent.classList.add('menu-nameChange')
             document.querySelector('.menu-changeline1').classList.add('menu-changelineblack')
 
-            location.href = "http://127.0.0.1:5500/team_project1/profile-page/profile.html"
+            location.href = "http://127.0.0.1:5500/profile-page/profile.html"
 
             menureels.classList.remove('menu-nameChange')
             document.querySelector('.menu-changeline2').classList.remove('menu-changelineblack')
