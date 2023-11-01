@@ -8,7 +8,7 @@
     integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
     crossorigin="anonymous" referrerpolicy="no-referrer"/>
 
-    <link href="../search-page/search-side.css" rel="stylesheet">
+    <link href="../profile-page/profile-side.css" rel="stylesheet">
     <style>
         *{
             box-sizing: border-box;
@@ -363,7 +363,7 @@
                     <p class="font-size-box">만들기</p>
                 </div>
                 <div class="instagram-profile"><i class="fa-regular fa-circle-user" style="color: #090909;"></i>
-                    <p class="font-size-box">프로필</p>
+                    <p class="font-size-box profile-font-size-box">프로필</p>
                 </div><br><br><br><br><br><br><br><br><br><br>
             </div>
             <div class="menu-box2">
@@ -507,6 +507,8 @@
             menucontent.classList.add('menu-nameChange')
             document.querySelector('.menu-changeline1').classList.add('menu-changelineblack')
 
+            location.href = "http://127.0.0.1:5500/team_project1/profile-page/profile.html"
+
             menureels.classList.remove('menu-nameChange')
             document.querySelector('.menu-changeline2').classList.remove('menu-changelineblack')
             menubookmark.classList.remove('menu-nameChange')
@@ -534,6 +536,8 @@
         menubookmark.addEventListener('click',()=>{
             menubookmark.classList.add('menu-nameChange')
             document.querySelector('.menu-changeline3').classList.add('menu-changelineblack')
+
+            location.href = "http://127.0.0.1:5500/team_project1/profile-page/profile3.html"
 
             menureels.classList.remove('menu-nameChange')
             document.querySelector('.menu-changeline2').classList.remove('menu-changelineblack')
