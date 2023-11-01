@@ -22,3 +22,4 @@ window.onclick = function(pop){
         popUp.style.display = 'none';
     }
 }
+

@@ -6,6 +6,9 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./message.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
     <div class="container">
@@ -61,70 +64,73 @@
         </div>
 
         <!-- 메시지 선택 창 -->
-        <div class="message-select">
-            <div class="head">
-                <div id="id">
-                    <span>park_hi_kim2</span>
-                    <div class="drop">
-                        <img width="15" height="15" src="https://img.icons8.com/ios/50/expand-arrow--v1.png" alt="expand-arrow--v1"/>
+        <div class="message">
+            <div class="message-select">
+                <div class="head">
+                    <div id="id">
+                        <span>park_hi_kim2</span>
+                        <div class="drop">
+                            <img width="15" height="15" src="https://img.icons8.com/ios/50/expand-arrow--v1.png" alt="expand-arrow--v1"/>
+                        </div>
+                    </div>
+
+                    <div id="message-icon1">
+                        <i class="fa-regular fa-pen-to-square fa-xl"></i>
                     </div>
                 </div>
 
-                <div id="message-icon1">
-                    <i class="fa-regular fa-pen-to-square fa-xl"></i>
+                <div class="head2">
+                    <div id="message">메시지</div>
+                    <div id="request">요청</div>
                 </div>
+
+                <!-- 받은 메시지 리스트 구역 -->
+                <div class="message-list">
+
+                    <div class="dm">
+                        <div class="user-profile">
+                            <div class="user-img user1"></div>
+                        </div>
+
+                        <div class="user-message">
+                            <div class="user-name">마동석</div>
+                            <div class="blank"></div> <!-- 여백 -->
+                            <div class="user-text">저쩌고</div>
+                        </div>
+                        <div class="tail">
+                            <div class="light"></div>
+                        </div>
+                    </div>
+
+                    <div class="dm">
+                        <div class="user-profile">
+                            <div class="user-img user2"></div>
+                        </div>
+
+                        <div class="user-message">
+                            <div class="user-name">정만식</div>
+                            <div class="blank"></div> <!-- 여백 -->
+                            <div class="user-text">어쩌고</div>
+                        </div>
+                        <div class="tail">
+                            <div class="light"></div>
+                        </div>
+                    </div>
+
             </div>
-
-            <div class="head2">
-                <div id="message">메시지</div>
-                <div id="request">요청</div>
-            </div>
-
-            <!-- 받은 메시지 리스트 구역 -->
-            <div class="message-list">
-
-                <div class="dm">
-                    <div class="user-profile">
-                        <div class="user-img user1"></div>
-                    </div>
-
-                    <div class="user-message">
-                        <div class="user-name">마동석</div>
-                        <div class="blank"></div> <!-- 여백 -->
-                        <div class="user-text">저쩌고</div>
-                    </div>
-                    <div class="tail">
-                        <div class="light"></div>
-                    </div>
-                </div>
-
-                <div class="dm">
-                    <div class="user-profile">
-                        <div class="user-img user2"></div>
-                    </div>
-
-                    <div class="user-message">
-                        <div class="user-name">정만식</div>
-                        <div class="blank"></div> <!-- 여백 -->
-                        <div class="user-text">어쩌고</div>
-                    </div>
-                    <div class="tail">
-                        <div class="light"></div>
-                    </div>
-                </div>
 
         </div>
+            <!-- 받은 메시지 클릭시 대화내역 출력 될 부분 -->
+            <div class="message-view">
+                <div id="message-icon2" class="animate__animated animate__bounceIn">
+                    <img width="50" height="50" src="https://img.icons8.com/ios/50/facebook-messenger--v1.png" alt="facebook-messenger--v1"/>
+                </div>
+                <div class="text1"><span>내 메시지</span></div>
+                <div class="text2"><span>친구나 그룹에 비공개 사진과 메시지를 보내보세요</span></div>
+                <div id="transmit"><input type="button" value="메시지 보내기" class="button transmit-button"></div>
+            </div>
 
     </div>
-        <!-- 받은 메시지 클릭시 대화내역 출력 될 부분 -->
-        <div class="message-view">
-            <div id="message-icon2">
-                <img width="50" height="50" src="https://img.icons8.com/ios/50/facebook-messenger--v1.png" alt="facebook-messenger--v1"/>
-            </div>
-            <div class="text1"><span>내 메시지</span></div>
-            <div class="text2"><span>친구나 그룹에 비공개 사진과 메시지를 보내보세요</span></div>
-            <div id="transmit"><input type="button" value="메시지 보내기" class="button transmit-button"></div>
-        </div>
 
         <!-- 메시지 보내기 클릭시 팝업창 -->
         <div id="pop-up">
