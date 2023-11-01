@@ -23,11 +23,13 @@
         .sidebar{
             display: flex;
             
+            
         }
 
         .leftbar{
             width: 250px;
             background-color: gray;
+            
         }
 
         .profilebar{
@@ -223,58 +225,21 @@
             
         }
 
-        .reels1{
+        .reels1, .reels2, .reels3, .reels4, .reels5, .reels6{
             margin: 2px;
             background-size: 100%;
             width: 222px;
             height: 345.56px;
             background-image: url(../../day01/images/인스타\ 프사.jfif);
             cursor: pointer;
+            display: flex;
+            color: white;
+
         }
 
-        .reels2{
-            margin: 2px;
-            background-size: 100%;
-            width: 222px;
-            height: 345.56px;
-            background-image: url(../../day01/images/인스타\ 프사.jfif);
-            cursor: pointer;
-        }
-
-        .reels3{
-            margin: 2px;
-            background-size: 100%;
-            width: 222px;
-            height: 345.56px;
-            background-image: url(../../day01/images/인스타\ 프사.jfif);
-            cursor: pointer;
-        }
-
-        .reels4{
-            margin: 2px;
-            background-size: 100%;
-            width: 222px;
-            height: 345.56px;
-            background-image: url(../../day01/images/인스타\ 프사.jfif);
-            cursor: pointer;
-        }
-
-        .reels5{
-            margin: 2px;
-            background-size: 100%;
-            width: 222px;
-            height: 345.56px;
-            background-image: url(../../day01/images/인스타\ 프사.jfif);
-            cursor: pointer;
-        }
-
-        .reels6{
-            margin: 2px;
-            background-size: 100%;
-            width: 222px;
-            height: 345.56px;
-            background-image: url(../../day01/images/인스타\ 프사.jfif);
-            cursor: pointer;
+        .reels1box, .reels2box, .reels3box, .reels4box, .reels5box, .reels6box{
+            margin-left: 20px;
+            margin-top: 140%
         }
 
         .reels1:hover{
@@ -431,15 +396,42 @@
         </div>
 
         <div class="reels-boxs">
-            <div class="reels1"></div>
-            <div class="reels2"></div>
-            <div class="reels3"></div>
-            <div class="reels4"></div>
-            <div class="reels5"></div>
-            <div class="reels6"></div>
-            <div class="reels7"></div>
-            <div class="reels8"></div>
-            <div class="reels9"></div>
+            <div class="reels1">
+                <div class="reels1box">
+                    <i class="fa-solid fa-play"></i>
+                    <span>32.3만</span>
+                </div>
+            </div>
+            <div class="reels2">
+                <div class="reels2box">
+                    <i class="fa-solid fa-play"></i>
+                    <span>5만</span>
+                </div>
+            </div>
+            <div class="reels3">
+                <div class="reels3box">
+                    <i class="fa-solid fa-play"></i>
+                    <span>17만</span>
+                </div>
+            </div>
+            <div class="reels4">
+                <div class="reels4box">
+                    <i class="fa-solid fa-play"></i>
+                    <span>24만</span>
+                </div>
+            </div>
+            <div class="reels5">
+                <div class="reels5box">
+                    <i class="fa-solid fa-play"></i>
+                    <span>1098만</span>
+                </div>
+            </div>
+            <div class="reels6">
+                <div class="reels6box">
+                    <i class="fa-solid fa-play"></i>
+                    <span>1만</span>
+                </div>
+            </div>
         </div>
 
         <div class="bottom">
@@ -526,6 +518,17 @@
             document.querySelector('.menu-changeline1').classList.remove('menu-changelineblack')
         })
         
+
+        let reels1 = document.querySelector('.reels1');
+        let reels2 = document.querySelector('.reels2');
+        let reels3 = document.querySelector('.reels3');
+        let reels4 = document.querySelector('.reels4');
+        let reels5 = document.querySelector('.reels5');
+        let reels6 = document.querySelector('.reels6');
+
+        reels1.addEventListener('mouseover',()=>{
+
+        })
 
     </script>
 </body>
