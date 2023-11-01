@@ -254,6 +254,10 @@
             border-radius: 5px;
             background-image: url(../../day01/images/인스타\ 프사.jfif);
             cursor: pointer;
+            color: white;
+            display: flex; 
+            flex-direction: column;
+            justify-content: flex-end;       
         }
 
         .bookmark-box2{
@@ -265,6 +269,10 @@
             border-radius: 5px;
             background-image: url(../../day01/images/인스타\ 프사.jfif);
             cursor: pointer;
+            color: white;
+            display: flex; 
+            flex-direction: column;
+            justify-content: flex-end; 
         }
 
         .bookmark-box3{
@@ -276,8 +284,19 @@
             border-radius: 5px;
             background-image: url(../../day01/images/인스타\ 프사.jfif);
             cursor: pointer;
+            display: flex; 
+            flex-direction: column;
+            justify-content: flex-end; 
         }
 
+        .bookmarkboxcollec-text{
+            margin : 15px;
+            color: white;
+            font-size: 20px;
+            font-weight:400
+        }
+
+    
 
         .bookmark-box1:hover{
             background-color: black;
@@ -458,9 +477,15 @@
                 <div class="bm-text2"><span class="bmtext bmtext2-color">+ 새 컬렉션</span></div>
             </div>
             <div class="bookmarkbox-collection">
-                <div class="bookmark-box1"></div>
-                <div class="bookmark-box2"></div>
-                <div class="bookmark-box3"></div>
+                <div class="bookmark-box1">
+                        <span class="bookmarkboxcollec-text">모든게시물</span>
+                </div>
+                <div class="bookmark-box2">
+                        <span class="bookmarkboxcollec-text">오디오</span>
+                </div>
+                <div class="bookmark-box3">
+                        <span class="bookmarkboxcollec-text">박진호와 아이들</span>
+                </div>
             </div>
         </div>
 
