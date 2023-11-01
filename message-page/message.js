@@ -1,3 +1,4 @@
+// 팝업창 코드
 const btn = document.getElementById('message-icon1');
 const btn2 = document.getElementById('transmit');
 const base = document.querySelector('.box');
@@ -21,3 +22,4 @@ window.onclick = function(pop){
         popUp.style.display = 'none';
     }
 }
+
