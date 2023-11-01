@@ -1,4 +1,5 @@
         /* 사이드 바 뺀 프로필화면 */
+
         .profilebar{
             display: flex;
             flex-direction: column;
