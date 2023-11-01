@@ -81,10 +81,18 @@
             margin-top: 10px;
         }
 
+        .threadstyle{
+            font-weight: 100;
+            font-size: 16px;
+            margin-left: 10px;
+        }
 
         .go-to-thread{
             margin: 10px;
-            
+            border: 0px;
+            border-radius: 20px;
+            background-color: rgb(235, 230, 230);
+            width: 130px;
         }
 
         .go-to-url{
