@@ -87,12 +87,17 @@
             margin-left: 10px;
         }
 
+        .threadid{
+            margin-left: 2px;
+        }
+
         .go-to-thread{
             margin: 10px;
             border: 0px;
             border-radius: 20px;
             background-color: rgb(235, 230, 230);
             width: 130px;
+            height: 25px;
         }
 
         .go-to-url{
