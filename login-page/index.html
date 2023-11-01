@@ -10,7 +10,7 @@
             width: 1000px;
             height: 700px;
             margin: 0 auto;
-            
+
         }
 
         .background_img {
@@ -200,8 +200,8 @@
         <div class="log_box">
             <img class="main_logo" src="./img/instagram-logo.png">
             <form action="" name="login" method="post">
-                <input class="id" type="text" placeholder="전화번호,사용자 이름 또는 이메일" value name="username">
-                <input class="pw" type="password" placeholder="비밀번호" value name="password">
+                <input class="id" type="text" id="input_id" placeholder="전화번호,사용자 이름 또는 이메일" value name="username">
+                <input class="pw" type="password" id="input_pw" placeholder="비밀번호" value name="password">
                 <button class="login_btn">로그인</button>
             </form>
             <div class="all_line">
@@ -210,11 +210,11 @@
             <div class="fclink">
                 <a href="http://www.facebook.com" style="text-decoration: none"><img class="fcbook_logo2" src="./img/fcbook_logo2.avif" ><p>Facebook으로 로그인</p></a>
                 </div>
-                <a class="pwlink" href="https://www.instagram.com/accounts/password/reset/" style="text-decoration: none;">비밀번호를 잊으셨나요?</a>
+                <a class="pwlink" href="../password-page/password.html" style="text-decoration: none;">비밀번호를 잊으셨나요?</a>
         </div>
         <div class="sign_box">
             <div class="sign_text">
-            <span>계정이 없으신가요? </span><a class="signup" href="https://www.instagram.com/accounts/emailsignup/" style="text-decoration: none;"><b>가입하기</b></a>
+            <span>계정이 없으신가요? </span><a class="signup" href="../sign-page/sign.html" style="text-decoration: none;"><b>가입하기</b></a>
         </div>
         </div>
         <div class="download">
@@ -223,12 +223,12 @@
         <a class="down_box2" href="https://www.microsoft.com/store/productId/9NBLGGH5L9XT?ocid=pdpshare"><img class="micro_logo" src="./img/microsoft.png"></a>
         </div>
     
-    <div class slide1>
+    
         <img class="slide1" src="./img/screenshot1.png" >
         <img class="slide1" src="./img/screenshot2.png">
         <img class="slide1" src="./img/screenshot3.png">
         <img class="slide1" src="./img/screenshot4.png">
-    </div>
+    
 </div>
 
 <footer class="inst_footer">
@@ -273,6 +273,8 @@
     </div>
 
     <script>
+        
+
         var index = 0;
         window.onload = function(){
             slideShow();
@@ -289,7 +291,7 @@
             index = 1; 
         }   
         x[index-1].style.display = "block";
-        setTimeout(slideShow, 4000);   
+        setTimeout(slideShow, 2000);   
     
     }
     </script>
