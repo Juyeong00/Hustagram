@@ -92,6 +92,7 @@
 
         .storys{
             display: flex;
+            
             background-size: 100%;
             margin-top: 30px;
         }
@@ -99,10 +100,32 @@
         .story1, .story2, .story3, .story4, .story5, .story6{
             border-radius: 100%;
             border: 0.5px solid lightgrey;
+            border-collapse: collapse;
             width: 87px;
             height: 87px;
             margin: 20px;
             cursor: pointer;
+            background-size: 100%;
+        }
+
+        .story1{
+            background-image: url(../profile-page/img/KakaoTalk_20231101_160106321_02.png);
+        }
+
+        .story2{
+            background-image: url(../profile-page/img/KakaoTalk_20231101_160106321_04.png);
+        }
+
+        .story3{
+            background-image: url(../profile-page/img/KakaoTalk_20231101_160106321_05.png);
+        }
+
+        .story4{
+            background-image: url(../profile-page/img/KakaoTalk_20231101_160106321_03.png);
+        }
+
+        .story5{
+            background-image: url(../profile-page/img/KakaoTalk_20231101_160106321_07.png);
         }
 
         .story6{
