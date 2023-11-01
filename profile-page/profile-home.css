@@ -34,7 +34,8 @@
         
         .picture-inline{
             border-radius: 100%;
-            border: 0.5px solid lightgray;
+            border-style: double;
+            border-color: lightgray;
             background-image: url(../profile-page/img/KakaoTalk_20231101_160106321.png);
             width: 200px;
             height: 200px;
@@ -113,8 +114,7 @@
 
         .story1, .story2, .story3, .story4, .story5, .story6{
             border-radius: 100%;
-            border: 0.5px solid lightgrey;
-            border-collapse: collapse;
+            border:1px solid lightgray;
             width: 87px;
             height: 87px;
             margin: 20px;
