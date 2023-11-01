@@ -91,6 +91,7 @@ html, body{
 }
 
 .icon{
+    border-radius: 10px;
     width: 48px;
     height: 48px;
     font-size: 24px;
@@ -100,11 +101,25 @@ html, body{
     padding: 12px;
     margin-top: 4px;
     margin-bottom: 4px;
+    cursor: pointer;
+    transition-duration: 0.2s;
 }
+
+/* 마우스오버시 사이드바 메뉴 아이콘 색상 및 사이즈 변경 */
+.icon:hover{
+    background-color: rgb(238, 238, 238);
+    font-size: 25px;
+}
+
 
 .instar{
     font-size: 30px;
 }
+
+.instar:hover{
+    font-size: 31px;
+}
+
 
 
 .bottom{
@@ -136,6 +151,7 @@ a{
     height: 72px;
     padding: 8px 24px 8px 24px;
     display: flex;
+    cursor: pointer;
 }
 
 .user-profile{
@@ -143,7 +159,8 @@ a{
     height: 100%;
 }
 
-.user-info{
+
+.user-message{
     width: 70%;
     height: 100%;
     display: flex;
@@ -158,19 +175,28 @@ a{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow-y: scroll;
 }
 
 .user-img{
     width: 56px;
     height: 56px;
-    border: 1px solid black;
     background-color: black;
     border-radius: 50px;
 }
 
+.user1{
+    background-image: url(./img/마동석.png);
+    background-size : 100%
+}
+
 .user-name{
-    font-size: 14px;
+    font-size: 15px;
     font-weight: bold;
+}
+
+.blank{
+    height: 5px;
 }
 
 .user-text{
@@ -224,19 +250,41 @@ a{
     padding: 15px 16px 0px;
 }
 
-button{
-    cursor: pointer;
+/* 마우스오버시 메시지 보내기 버튼 색상 변경 */
+.transmit-button:hover{
+    background-color: #1b74e4;
+}
+/* 클릭시 버튼 투명도 변경 */
+.transmit-button:active{
+    opacity: 0.5;
 }
 
-button{
+
+.transmit-button{
     width: 120px;
     height: 32px;
     font-size: 14px;
+    cursor: pointer;
+}
+
+.button{
     color: white;
     font-weight: bolder;
-    border-radius: 10px;
+    border-radius: 7px;
     border: 0px;
     background-color: #0095f6;
+}
+
+.prof{
+    width: 24px;
+    height: 24px;
+    border: 1px solid gray;
+    border-radius: 50px;
+}
+
+/* 마우스오버시 메시지 리스트 색상 변경 */
+.dm:hover{
+    background-color: rgb(238, 238, 238);
 }
 
 
@@ -265,15 +313,177 @@ button{
 #pop-up-body {
     width: 550px;
     height: 65%;
-    padding: 16px;
     background-color: white;
     border-radius: 10px;
-    /* margin: 0 auto;
-    margin-top: 130px; */
+    display: flex;
+    flex-direction: column;
 }
 
 #close{
     cursor: pointer;
+    text-align: center;
+    vertical-align: auto;
+    width: 10%;
+    height: 100%;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
 }
 
-/*  */
+#pop-up-head {
+    width: 100%;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+}
+
+#blank-space{
+    width: 10%;
+}
+
+h1{
+    width: 80%;
+    text-align: center;
+}
+
+#recipient{
+    height: 38px;
+    padding: 0px 16px 0px 16px;
+    display: flex;
+    border: 1px solid lightgrey;
+    border-width: 1px 0px;
+}
+
+.recipient{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+}
+
+.search{
+    padding: 4px 12px 4px 20px;
+    width: 80%;
+    border: none;
+    font-size: 14px;
+}
+
+#pop-up-midle{
+    height: 70%;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+}
+
+.not-find{
+    height: 35px;
+    margin-top: 12px;
+}
+
+.not-find-text{
+    padding: 12px 24px;
+    color: grey;
+    font-size: 14px;
+}
+
+#chat{
+    margin: 16px;
+}
+
+#chat > input{
+    width: 100%;
+    height: 44px;
+}
+
+/* 버튼 기본 스타일 삭제 */
+input:focus,
+input:active,
+button:focus,
+button:active {
+    outline: none;
+    box-shadow: none;
+}
+
+.chat-button{
+    color: white;
+    font-weight: bolder;
+    border-radius: 7px;
+    border: 0px;
+    background-color: #0095f6;
+    opacity: 0.5;
+}
+
+.message{
+    width: 100%;
+    display: flex;
+}
+
+
+
+/* 페이지 가로 축소 시 화면 변환 */
+@media only screen and (max-width: 850px){
+
+    .message-select{
+        width: 120px;
+    }
+
+    #id,
+    .head2,
+    .user-message,
+    .tail,
+    .bottom{
+        display: none;
+    }
+
+
+    #message-icon1{
+        width: 150px;
+        text-align:center;
+    }
+
+
+}
+
+@media only screen and (max-width: 760px){
+
+    .message{
+        height: 95%;
+        display: flex;
+    }
+
+    .container{
+        flex-direction: column-reverse;
+    }
+
+    .side-bar{
+        width: 100%;
+        height: 8%;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        border-top: 1px solid lightgray;
+        padding: 0px;
+        overflow-x: hidden;
+    }
+
+
+    .menu{
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        
+    }
+
+    .header{
+        display: none;
+    }
+
+    
+}
+
+
+/* 페이지 세로 축소 시 화면 변환 */
+
+
