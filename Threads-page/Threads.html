@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Threads</title>
     <link href="./img/threads_logo1.svg" rel="shortcut icon" type="image/x-icon">
+    
     <style>
         body {
             background-image: url(./img/background-img.png);
@@ -164,24 +165,26 @@
         .qr_text {
             font-size: small;
             color: gray;
-            margin-left: 1020px
-            
-            
+            margin-top: -50px;
+            margin-left: 1020px;
         }
 
         .qr_code {
             margin-left: 1010px;
-            margin-top: 10px;
+            margin-top: 20px;
             transition-property: all;
-            transition-duration: 70s;
+            transition-duration: 1s;
+            
             
         }
 
         .qr_code:hover {
             width: 200px;
             height: 200px;
-            transition-duration: 70s;
+            transform:scale(1.1, 1.1);
         }
+
+        
     </style>
 </head>
 <body>
@@ -189,10 +192,13 @@
         <div class="log_box">
             <h4>Instagram 계정으로 로그인하세요</h4>
             <label class="id_box">
-                <input class="id" type="text" placeholder="&emsp;사용자 이름, 전화번호 또는 이메일 주소" name="input_id">
+                <input class="id" type="text" placeholder="&emsp;사용자 이름, 전화번호 또는 이메일 주소" name="input_id" maxlength="10">
             </label>
             <label class="pw_box">
-                <input class="pw" type="text" placeholder="&emsp;비밀번호" name="input_pw">
+                <input class="pw" type="password" placeholder="&emsp;비밀번호" name="input_pw">
+                <div class="eyes">
+                    <i class="fas fa-eye"></i>
+                </div>
             </label>
             <div class="log_btn">로그인</div>
             <div class="not_pw">
