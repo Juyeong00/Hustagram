@@ -6,6 +6,7 @@
     flex-direction: column;   
     width: 20%;
     height:100%;
+    background-color: white;
 }
 .home-icon{
     margin-left: 20px;
