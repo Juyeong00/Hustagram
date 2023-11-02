@@ -9,105 +9,8 @@
     crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link href="../profile-page/profile-side.css" rel="stylesheet">
     <link href="../profile-page/profile-home.css" rel="stylesheet">
-    <style>
-        *{
-            box-sizing: border-box;
-        }
+    <link href="../profile-page/profile-reels.css" rel="stylesheet">
 
-        .container{
-            box-sizing: border-box;
-            display: flex;
-            margin: 0 auto;
-            text-align: center;
-            
-        }
-
-        .reels-boxs{
-            display: flex;
-            width: 910px;
-            flex-wrap: wrap;
-            
-        }
-
-        .reels1, .reels2, .reels3, .reels4, .reels5, .reels6{
-            margin: 2px;
-            background-size: 100%;
-            width: 222px;
-            height: 345.56px;
-            background-image: url(../../day01/images/인스타\ 프사.jfif);
-            cursor: pointer;
-            display: flex;
-            color: white;
-
-        }
-
-        .reels1box, .reels2box, .reels3box, .reels4box, .reels5box, .reels6box{
-            margin-left: 20px;
-            margin-top: 140%
-        }
-
-        .reels1:hover{
-            background-color: black;
-            opacity: 0.7;
-        }
-
-        .reels2:hover{
-            background-color: black;
-            opacity: 0.7;
-        }
-
-        .reels3:hover{
-            background-color: black;
-            opacity: 0.7;
-        }
-
-        .reels4:hover{
-            background-color: black;
-            opacity: 0.7;
-        }
-
-        .reels5:hover{
-            background-color: black;
-            opacity: 0.7;
-        }
-
-        .reels6:hover{
-            background-color: black;
-            opacity: 0.7;
-        }
-
-
-
-        .bottom{
-            display: flex;
-            flex-direction: column;
-            
-        }
-
-        .bottom1{
-            display: flex;
-            margin: 3px;
-            margin-top: 30px;
-            margin-bottom: 30px;
-            justify-content: center;
-            
-        }
-
-        .bottom2{
-            display: flex;
-            justify-content: center;
-            
-
-        }
-
-        .bottompont{
-            font-size: 13px;
-            color: rgb(88, 87, 87);
-            margin: 5px;
-        }
-
-
-    </style>
     
 </head>
 <body>
@@ -235,40 +138,69 @@
 
         <div class="reels-boxs">
             <div class="reels1">
-                <div class="reels1box">
-                    <i class="fa-solid fa-play"></i>
-                    <span>32.3만</span>
+                <div class="text-hover">
+                    <i class="fa-solid fa-heart"></i> 100 &nbsp;&nbsp;
+                    <i class="fa-solid fa-comment fa-flip-horizontal"></i> 100
+                </div>
+                <div class="text-top">
+                <i class="fa-solid fa-play reels-text"></i>
+                <span class="reels-text">32만</span>  
                 </div>
             </div>
             <div class="reels2">
-                <div class="reels2box">
-                    <i class="fa-solid fa-play"></i>
-                    <span>5만</span>
+                <div class="text-hover">
+                    <i class="fa-solid fa-heart"></i> 100 &nbsp;&nbsp;
+                    <i class="fa-solid fa-comment fa-flip-horizontal"></i> 100
                 </div>
+                <div class="text-top">
+                    <i class="fa-solid fa-play reels-text"></i>
+                    <span class="reels-text">32만</span>  
+                </div>
+                
             </div>
             <div class="reels3">
-                <div class="reels3box">
-                    <i class="fa-solid fa-play"></i>
-                    <span>17만</span>
+                <div class="text-hover">
+                    <i class="fa-solid fa-heart"></i> 100 &nbsp;&nbsp;
+                    <i class="fa-solid fa-comment fa-flip-horizontal"></i> 100
                 </div>
+                <div class="text-top">
+                    <i class="fa-solid fa-play reels-text"></i>
+                    <span class="reels-text">32만</span>  
+                </div>
+                
             </div>
             <div class="reels4">
-                <div class="reels4box">
-                    <i class="fa-solid fa-play"></i>
-                    <span>24만</span>
+                <div class="text-hover">
+                    <i class="fa-solid fa-heart"></i> 100 &nbsp;&nbsp;
+                    <i class="fa-solid fa-comment fa-flip-horizontal"></i> 100
                 </div>
+                <div class="text-top">
+                    <i class="fa-solid fa-play reels-text"></i>
+                    <span class="reels-text">32만</span>  
+                </div>
+                
             </div>
             <div class="reels5">
-                <div class="reels5box">
-                    <i class="fa-solid fa-play"></i>
-                    <span>1098만</span>
+                <div class="text-hover">
+                    <i class="fa-solid fa-heart"></i> 100 &nbsp;&nbsp;
+                    <i class="fa-solid fa-comment fa-flip-horizontal"></i> 100
                 </div>
+                <div class="text-top">
+                    <i class="fa-solid fa-play reels-text"></i>
+                    <span class="reels-text">32만</span>  
+                </div>
+                
             </div>
             <div class="reels6">
-                <div class="reels6box">
-                    <i class="fa-solid fa-play"></i>
-                    <span>1만</span>
+                <div class="text-hover">
+                    <i class="fa-solid fa-heart"></i> 100 &nbsp;&nbsp;
+                    <i class="fa-solid fa-comment fa-flip-horizontal"></i> 100
                 </div>
+                <div class="text-top">
+                    <i class="fa-solid fa-play reels-text"></i>
+                    <span class="reels-text">32만</span>  
+                </div>
+                
             </div>
         </div>
 
@@ -360,17 +292,6 @@
             document.querySelector('.menu-changeline1').classList.remove('menu-changelineblack')
         })
         
-
-        let reels1 = document.querySelector('.reels1');
-        let reels2 = document.querySelector('.reels2');
-        let reels3 = document.querySelector('.reels3');
-        let reels4 = document.querySelector('.reels4');
-        let reels5 = document.querySelector('.reels5');
-        let reels6 = document.querySelector('.reels6');
-
-        reels1.addEventListener('mouseover',()=>{
-
-        })
 
     </script>
 </body>
