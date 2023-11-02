@@ -1,18 +1,8 @@
-*{
-    box-sizing: border-box;
-}
 
-.container{
-    box-sizing: border-box;
-    display: flex;
-    margin: 0 auto;
-    text-align: center;
-    
-}
 
 .reels-boxs{
     display: flex;
-    width: 910px;
+    width: 900px;
     flex-wrap: wrap;
 }
 
@@ -31,7 +21,7 @@
 .reels1, .reels2, .reels3, .reels4, .reels5, .reels6{
     margin: 2px;
     background-size: 100%;
-    width: 222px;
+    width: 220px;
     height: 345.56px;
     background-image: url(../profile-page/img/KakaoTalk_20231101_160106321.png);
     cursor: pointer;

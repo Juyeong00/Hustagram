@@ -7,13 +7,14 @@
         .container{
             box-sizing: border-box;
             display: flex;
-            flex-direction: column;
+            margin: 0 auto;
+            text-align: center;
         }
         
         .profilebar{
             display: flex;
             flex-direction: column;
-            width: 70%;
+            justify-content: center;
             margin-top: 50px;
             margin-left: 25%;
             height: auto;
@@ -21,8 +22,7 @@
 
         .profile{
             display: flex;
-            margin-left: 50px;
-            text-align: left;
+            justify-content: center;
         }
         .profile-head{
             display: flex;
@@ -95,6 +95,12 @@
             margin-top: 10px;
         }
 
+        .nicnam_link{
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+        }
+
         .threadstyle{
             font-weight: 100;
             font-size: 16px;
@@ -120,9 +126,10 @@
 
         .storys{
             display: flex;
-            
+            justify-content: center;
             background-size: 100%;
             margin-top: 30px;
+            margin-right: 100px;
         }
 
         .story1, .story2, .story3, .story4, .story5, .story6{
@@ -174,7 +181,7 @@
             position: relative;
             border-top: 2px solid lightgrey;
             margin-top: 50px;
-            width: 910px;
+            width: 900px;
         }
 
         .menu-changelineblack{
@@ -213,6 +220,7 @@
         .menu{
             margin-top: 20px;
             display: flex;
+            justify-content: center;
             color: rgb(97, 94, 100);
         }
 
