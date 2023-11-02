@@ -1,0 +1,104 @@
+.iconbox{
+    position:fixed;
+    box-sizing: border-box;
+    border: 1px solid lightgray;
+    display: flex;
+    flex-direction: column;   
+    width: 20%;
+    height:100%;
+}
+.home-icon{
+    margin: 10%;
+    margin-bottom: 30px;
+    font-size: 22px;
+    display: flex;
+    align-items:center;
+    
+}
+.search-icon{
+    margin: 10%;
+    margin-bottom: 30px;
+    font-size: 22px;
+    display: flex;
+    align-items:center
+}
+.font-size-box{
+    margin-left: 12.5%;     
+    font-size: 14px;
+}
+h1{
+    
+    margin-left: 10%;                    
+    font-size: 15px;
+    
+}
+
+.compass-icon{
+    margin: 10%;
+    margin-bottom: 30px;
+    font-size: 26px;
+    display: flex;
+    align-items:center
+}
+.video-icon{
+    margin: 10%;
+    margin-bottom: 30px;
+    font-size: 26px;
+    display: flex;
+    align-items:center
+}
+
+.message-icon{
+    margin: 10%;
+    margin-bottom: 30px;
+    font-size: 26px;
+    display: flex;
+    align-items:center
+}
+
+.heart-icon{
+    margin: 10%;
+    margin-bottom: 30px;
+    font-size: 26px;
+    display: flex;
+    align-items:center
+}
+
+.making-icon{
+    margin: 10%;
+    margin-bottom: 30px;
+    font-size: 26px;
+    display: flex;
+    align-items:center
+}
+
+.instagram-profile{
+    margin-bottom: 30px;
+    margin: 10%;
+    font-size: 26px;
+    display: flex;
+    align-items:center
+}
+
+.threads-icon{
+    margin-bottom: 1%;
+    margin-left: 10%;
+    font-size: 32px;
+    display: flex;
+    align-items:center
+}
+
+.setting-icon{
+    margin-bottom: 3%;
+    margin: 10%;
+    font-size: 32px;
+    display: flex;
+    align-items:center
+}
+.instagram-fontbox{
+
+    display: flex;
+    margin: 0 auto;
+    margin:30px;
+    margin-left: 15px;
+}
