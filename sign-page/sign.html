@@ -91,6 +91,7 @@
             border: 1px solid lightgray;
             margin-bottom: 10px;
             outline-color: lightgray;
+            border-radius: 6px;
         }
 
         .alarm {
@@ -219,14 +220,14 @@
     <div class="all_line">
         <div class="line1"></div><div class="line_txt">또는</div><div class="line2"></div>
     </div>
-    <form action="" name="login" method="post">
+    <div class="input_box">
         <input class="id" type="text" placeholder="휴대폰 번호 또는 이메일 주소" name="email or phoneNumber">
         <input class="name" type="text" placeholder="성명" name="name">
         <input class="username" type="text" placeholder="사용자 이름" name="username">
         <input class="pw" type="password" placeholder="비밀번호" name="password">
         <span class="alarm">저희 서비스를 이용하는 사람이 회원님의 연락처 정보를 lnstagram에 업로드했을 수도 있습니다.
         <a class="newoption" href="https://www.facebook.com/help/instagram" style="text-decoration: none">더 알아보기</a></span>
-    </form>
+    </div>
     <div class="signup">
         <button class="sign_btn" type="submit" onclick="javascript:btn('sign_btn')" disabled>가입</button>
     </div>
