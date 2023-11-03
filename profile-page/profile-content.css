@@ -226,6 +226,7 @@
             border: 1px solid lightslategray;
             box-sizing: border-box;
             margin-top: 20px;
+            margin-right: 10px;
         }
 
         .setting{

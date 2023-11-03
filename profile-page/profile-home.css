@@ -9,7 +9,10 @@
             display: flex;
             margin: 0 auto;
             text-align: center;
+            
         }
+
+        
         
         .profilebar{
             display: flex;
@@ -181,7 +184,7 @@
             border-top: 2px solid lightgrey;
             margin-top: 50px;
             width: 900px;
-        }
+                    }
 
         .menu-changelineblack{
             border-top: 2px solid black;
