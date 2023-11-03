@@ -31,10 +31,10 @@ function open() {
 let count = 3;
 
 window.addEventListener("scroll", (e) => {
-    const isScrollEnd = window.innerHeight + window.scrollY + 500 > document.body.offsetHeight;
+    const isScrollEnd = window.innerHeight + window.scrollY + 200 > document.body.offsetHeight;
 
     if (isScrollEnd && count < 5) {
-        for (let i = 0; i < 3; i++) {
+        for (let i = 0; i < 2; i++) {
 
             const $img1 = document.createElement("div");
             const $img2 = document.createElement("div");
@@ -432,4 +432,12 @@ window.addEventListener("scroll", (e) => {
 
         }
     }
+    wait(0.5);
 });
+
+function wait(sec) {
+    let start = Date.now(), now = start;
+    while (now - start < sec * 1000) {
+        now = Date.now();
+    }
+}
