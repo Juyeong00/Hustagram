@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,6 +14,7 @@
     <link href="./search-main.css" rel="stylesheet">
     <link href="./search-side.css" rel="stylesheet">
     <link href="./search-modal.css" rel="stylesheet">
+    <link href="./푸터.css" rel="stylesheet">
 </head>
 
 <!-- 이미지 출처: https://pixabay.com/ko/photos/ -->
@@ -211,168 +213,15 @@
         </div>
 
         <!-- 여기는 메인화면을 띄우는 코드입니다. -->
-        <div class="main">
-            <div class="search"> <!--검색 텍스트 박스-->
-                <form>
-                    <input class="fa-search" type="text" placeholder=" &#xf002  검색">
-                </form>
-            </div>
-
-            <div class="content"> <!-- 컨텐츠 모음 -->
-                <div class="item3">
-                    <div class="box">
-                        <div class="text">
-                            <i class="fa-solid fa-heart"></i> 100 &nbsp;&nbsp;
-                            <i class="fa-solid fa-comment fa-flip-horizontal"></i> 100
-                        </div>
-                        <div class="image img1">
-                            <span class="material-symbols-outlined mulpic">
-                                filter_none
-                            </span>
-                        </div>
-
-                    </div>
-
-                    <div class="box">
-                        <div class="text">
-                            <i class="fa-solid fa-heart"></i> 100 &nbsp;&nbsp;
-                            <i class="fa-solid fa-comment fa-flip-horizontal"></i> 100
-                        </div>
-                        <div class="image img2"></div>
-                    </div>
-
-                    <div class="box">
-                        <div class="text">
-                            <i class="fa-solid fa-heart"></i> 100 &nbsp;&nbsp;
-                            <i class="fa-solid fa-comment fa-flip-horizontal"></i> 100
-                        </div>
-                        <div class="image img3">
-                            <span class="material-symbols-outlined mulpic">
-                                filter_none
-                            </span>
-                        </div>
-                    </div>
+        <div class="main-footer">
+            <div class="main">
+                <div class="search"> <!--검색 텍스트 박스-->
+                    <form>
+                        <input class="fa-search" type="text" placeholder=" &#xf002  검색">
+                    </form>
                 </div>
-
-                <div class="item3">
-                    <div class="box">
-                        <div class="text">
-                            <i class="fa-solid fa-heart"></i> 100 &nbsp;&nbsp;
-                            <i class="fa-solid fa-comment fa-flip-horizontal"></i> 100
-                        </div>
-                        <div class="image img4">
-                            <span class="material-symbols-outlined vidi">
-                                videocam
-                            </span>
-                        </div>
-                    </div>
-
-                    <div class="box">
-                        <div class="text">
-                            <i class="fa-solid fa-heart"></i> 100 &nbsp;&nbsp;
-                            <i class="fa-solid fa-comment fa-flip-horizontal"></i> 100
-                        </div>
-                        <div class="image img5">
-                            <span class="material-symbols-outlined mulpic">
-                                filter_none
-                            </span>
-                        </div>
-                    </div>
-
-                    <div class="box">
-                        <div class="text">
-                            <i class="fa-solid fa-heart"></i> 100 &nbsp;&nbsp;
-                            <i class="fa-solid fa-comment fa-flip-horizontal"></i> 100
-                        </div>
-                        <div class="image img6">
-                            <span class="material-symbols-outlined mulpic">
-                                filter_none
-                            </span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- 5칸 배치 박스1 -->
-                <div class="item5">
-                    <div class="item2">
-                        <div class="box">
-                            <div class="text">
-                                <i class="fa-solid fa-heart"></i> 100 &nbsp;&nbsp;
-                                <i class="fa-solid fa-comment fa-flip-horizontal"></i> 100
-                            </div>
-                            <div class="image img1">
-                                <span class="material-symbols-outlined vidi">
-                                    videocam
-                                </span>
-                            </div>
-                        </div>
-
-                        <div class="box">
-                            <div class="text">
-                                <i class="fa-solid fa-heart"></i> 100 &nbsp;&nbsp;
-                                <i class="fa-solid fa-comment fa-flip-horizontal"></i> 100
-                            </div>
-                            <div class="image img2">
-                                <span class="material-symbols-outlined mulpic">
-                                    filter_none
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="item2-2">
-                        <div class="box">
-                            <div class="text">
-                                <i class="fa-solid fa-heart"></i> 100 &nbsp;&nbsp;
-                                <i class="fa-solid fa-comment fa-flip-horizontal"></i> 100
-                            </div>
-                            <div class="image img3"></div>
-                        </div>
-                        <div class="box">
-                            <div class="text">
-                                <i class="fa-solid fa-heart"></i> 100 &nbsp;&nbsp;
-                                <i class="fa-solid fa-comment fa-flip-horizontal"></i> 100
-                            </div>
-                            <div class="image img4">
-                                <span class="material-symbols-outlined mulpic">
-                                    filter_none
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="item1">
-                        <div class="box">
-                            <div class="text2">
-                                <i class="fa-solid fa-heart"></i> 100 &nbsp;&nbsp;
-                                <i class="fa-solid fa-comment fa-flip-horizontal"></i> 100
-                            </div>
-                            <div class="images img5">
-                                <span class="material-symbols-outlined vidi2">
-                                    videocam
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- 5칸 배치 박스2 -->
-                <div class="item5-2">
-                    <div class="item1">
-                        <div class="box">
-                            <div class="text2">
-                                <i class="fa-solid fa-heart"></i> 100 &nbsp;&nbsp;
-                                <i class="fa-solid fa-comment fa-flip-horizontal"></i> 100
-                            </div>
-                            <div class="images img5">
-                                <span class="material-symbols-outlined vidi2">
-                                    videocam
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="item2">
+                <div class="content"> <!-- 컨텐츠 모음 -->
+                    <div class="item3">
                         <div class="box">
                             <div class="text">
                                 <i class="fa-solid fa-heart"></i> 100 &nbsp;&nbsp;
@@ -384,27 +233,32 @@
                                 </span>
                             </div>
                         </div>
-
                         <div class="box">
                             <div class="text">
                                 <i class="fa-solid fa-heart"></i> 100 &nbsp;&nbsp;
                                 <i class="fa-solid fa-comment fa-flip-horizontal"></i> 100
                             </div>
-                            <div class="image img2">
-                                <span class="material-symbols-outlined mulpic">
-                                    filter_none
-                                </span>
-                            </div>
+                            <div class="image img2"></div>
                         </div>
-                    </div>
-
-                    <div class="item2-2">
                         <div class="box">
                             <div class="text">
                                 <i class="fa-solid fa-heart"></i> 100 &nbsp;&nbsp;
                                 <i class="fa-solid fa-comment fa-flip-horizontal"></i> 100
                             </div>
                             <div class="image img3">
+                                <span class="material-symbols-outlined mulpic">
+                                    filter_none
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item3">
+                        <div class="box">
+                            <div class="text">
+                                <i class="fa-solid fa-heart"></i> 100 &nbsp;&nbsp;
+                                <i class="fa-solid fa-comment fa-flip-horizontal"></i> 100
+                            </div>
+                            <div class="image img4">
                                 <span class="material-symbols-outlined vidi">
                                     videocam
                                 </span>
@@ -415,14 +269,212 @@
                                 <i class="fa-solid fa-heart"></i> 100 &nbsp;&nbsp;
                                 <i class="fa-solid fa-comment fa-flip-horizontal"></i> 100
                             </div>
-                            <div class="image img4"></div>
+                            <div class="image img5">
+                                <span class="material-symbols-outlined mulpic">
+                                    filter_none
+                                </span>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="text">
+                                <i class="fa-solid fa-heart"></i> 100 &nbsp;&nbsp;
+                                <i class="fa-solid fa-comment fa-flip-horizontal"></i> 100
+                            </div>
+                            <div class="image img6">
+                                <span class="material-symbols-outlined mulpic">
+                                    filter_none
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 5칸 배치 박스1 -->
+                    <div class="item5">
+                        <div class="item2">
+                            <div class="box">
+                                <div class="text">
+                                    <i class="fa-solid fa-heart"></i> 100 &nbsp;&nbsp;
+                                    <i class="fa-solid fa-comment fa-flip-horizontal"></i> 100
+                                </div>
+                                <div class="image img1">
+                                    <span class="material-symbols-outlined vidi">
+                                        videocam
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="text">
+                                    <i class="fa-solid fa-heart"></i> 100 &nbsp;&nbsp;
+                                    <i class="fa-solid fa-comment fa-flip-horizontal"></i> 100
+                                </div>
+                                <div class="image img2">
+                                    <span class="material-symbols-outlined mulpic">
+                                        filter_none
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item2-2">
+                            <div class="box">
+                                <div class="text">
+                                    <i class="fa-solid fa-heart"></i> 100 &nbsp;&nbsp;
+                                    <i class="fa-solid fa-comment fa-flip-horizontal"></i> 100
+                                </div>
+                                <div class="image img3"></div>
+                            </div>
+                            <div class="box">
+                                <div class="text">
+                                    <i class="fa-solid fa-heart"></i> 100 &nbsp;&nbsp;
+                                    <i class="fa-solid fa-comment fa-flip-horizontal"></i> 100
+                                </div>
+                                <div class="image img4">
+                                    <span class="material-symbols-outlined mulpic">
+                                        filter_none
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item1">
+                            <div class="box">
+                                <div class="text2">
+                                    <i class="fa-solid fa-heart"></i> 100 &nbsp;&nbsp;
+                                    <i class="fa-solid fa-comment fa-flip-horizontal"></i> 100
+                                </div>
+                                <div class="images img5">
+                                    <span class="material-symbols-outlined vidi2">
+                                        videocam
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 5칸 배치 박스2 -->
+                    <div class="item5-2">
+                        <div class="item1">
+                            <div class="box">
+                                <div class="text2">
+                                    <i class="fa-solid fa-heart"></i> 100 &nbsp;&nbsp;
+                                    <i class="fa-solid fa-comment fa-flip-horizontal"></i> 100
+                                </div>
+                                <div class="images img5">
+                                    <span class="material-symbols-outlined vidi2">
+                                        videocam
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item2">
+                            <div class="box">
+                                <div class="text">
+                                    <i class="fa-solid fa-heart"></i> 100 &nbsp;&nbsp;
+                                    <i class="fa-solid fa-comment fa-flip-horizontal"></i> 100
+                                </div>
+                                <div class="image img1">
+                                    <span class="material-symbols-outlined mulpic">
+                                        filter_none
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="text">
+                                    <i class="fa-solid fa-heart"></i> 100 &nbsp;&nbsp;
+                                    <i class="fa-solid fa-comment fa-flip-horizontal"></i> 100
+                                </div>
+                                <div class="image img2">
+                                    <span class="material-symbols-outlined mulpic">
+                                        filter_none
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item2-2">
+                            <div class="box">
+                                <div class="text">
+                                    <i class="fa-solid fa-heart"></i> 100 &nbsp;&nbsp;
+                                    <i class="fa-solid fa-comment fa-flip-horizontal"></i> 100
+                                </div>
+                                <div class="image img3">
+                                    <span class="material-symbols-outlined vidi">
+                                        videocam
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="text">
+                                    <i class="fa-solid fa-heart"></i> 100 &nbsp;&nbsp;
+                                    <i class="fa-solid fa-comment fa-flip-horizontal"></i> 100
+                                </div>
+                                <div class="image img4"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
+            </div>
+
+            
+
+
+            <!-- 푸터 -->
+            <div class="footer1">
+
+                <div class="loading-img">
+                    <!-- <span class="material-symbols-outlined load-spin">
+                        autorenew
+                        </span> -->
+                        <i class="fa-solid fa-spinner load-spin"></i>
+                </div>
+
+                <footer class="inst_footer">
+                    <a href="https://about.meta.com" style="text-decoration: none">Meta</a>&emsp;
+                    <a href="https://about.instagram.com" style="text-decoration: none">소개</a>&emsp;
+                    <a href="https://about.instagram.com/blog" style="text-decoration: none">블로그</a>&emsp;
+                    <a href="https://about.instagram.com/about-us/careers" style="text-decoration: none">채용정보</a>&emsp;
+                    <a href="https://help.instagram.com/" style="text-decoration: none">도움말</a>&emsp;
+                    <a href="https://developers.facebook.com/docs/instagram" style="text-decoration: none">API</a>&emsp;
+                    <a href="https://privacycenter.instagram.com/policy/?entry_point=ig_help_center_data_policy_redirect"
+                        style="text-decoration: none">개인정보처리방침</a>&emsp;
+                    <a href="https://help.instagram.com/581066165581870/" style="text-decoration: none">약관 </a>&emsp;
+                    <a href="https://www.instagram.com/explore/locations/?hl=ko"
+                        style="text-decoration: none">위치</a>&emsp;
+                    <a href="https://www.instagram.com/web/lite/?hl=ko" style="text-decoration: none">lnstagram
+                        Lite</a>&emsp;
+                    <a href="../Threads-page/Threads.html" style="text-decoration: none">Threads</a>&emsp;
+                    <a href="https://www.facebook.com/help/instagram/261704639352628?hl=ko"
+                        style="text-decoration: none">연락처 업로드 & 비사용자</a>&emsp;
+                    <a href="https://about.meta.com/technologies/meta-verified/" style="text-decoration: none">Meta
+                        Verified</a>
+                </footer>
+                <div class="foot_btn">
+                    <select class="language_btn" name="language" size="1">
+                        <option value="한국어" selected>한국어</option>
+                        <option value="Africaans">Africaans</option>
+                        <option value="čeština">čeština</option>
+                        <option value="Dansk">Dansk</option>
+                        <option value="Deutsch">Deutsch</option>
+                        <option value="Englisch">Englisch</option>
+                        <option value="中国人">中国人(간체)</option>
+                        <option value="中國人">中國人(번체)</option>
+                        <option value="हिंदी">हिंदी</option>
+                        <option value="Español">Español</option>
+                        <option value="Français">Français</option>
+                        <option value="عربي">عربي</option>
+                        <option value="Русский">Русский</option>
+                        <option value="Português">Português</option>
+                        <option value="پاکستانی">پاکستانی</option>
+                        <option value="bahasa Indonesia">bahasa Indonesia</option>
+                        <option value="日本語">日本語</option>
+                        <option value="मराठी">मराठी</option>
+                        <option value="Tiếng Việt">Tiếng Việt</option>
+                        <option value="Tagalog">Tagalog</option>
+                        <option value="Türkçe">Türkçe</option>
+                    </select>
+                    <p4>© 2023 Instagram from Meta</p4>
+                </div>
+
             </div>
         </div>
     </div>
 
     <script src="./search.js"></script>
 </body>
+
 </html>

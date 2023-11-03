@@ -14,11 +14,11 @@
 }
 .main{
     margin:0 auto;
-    margin-left:300px;
-    margin-right:45px;
+    margin-left:25%;
+    margin-right:90px;
     display:flex;
     flex-direction:column;
-    width: 80%;
+    width: 73%;
     height:auto;
     position:relative;
 }
@@ -232,4 +232,71 @@ form{
 }
 .text2:hover + .images{
     filter:brightness(0.7);
+}
+
+.main-footer{
+    display:flex;
+    flex-direction: column;
+}
+.footer1{
+    display:flex;
+    flex-direction:column;
+    margin-left:300px;
+    margin-right:45px;
+
+}
+.inst_footer {
+    font-size: 13px;
+    margin-left: 15px;
+    margin-top: 70px;
+    
+}
+
+a {
+    color: gray;
+    font-size: 12px;
+}
+
+.foot_btn {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+    margin-bottom:50px;
+}
+
+.language_btn{
+    background-color: white;
+    border: 1px solid white;
+    color: gray;
+    font-size: 12px;
+    width: 60px;
+    outline-color: white;
+}
+
+p4 {
+    font-size: 12px;
+    color: gray;
+}
+
+.loading-img{
+    display:flex;
+    justify-content: center;
+}
+
+.load-spin{
+    margin-top: 50px;
+    font-size:35px;
+    color:#696969;
+    user-select:none;
+    position:relative;
+    animation-name:spin;
+    animation-duration:2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes spin{
+    100% {
+        transform: rotate(360deg);
+    }
 }
