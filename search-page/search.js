@@ -68,8 +68,8 @@ window.addEventListener("scroll", (e) => {
             const $mulpic3_ = document.createElement("span");
             const $mulpic4_ = document.createElement("span");
 
-            const $video = document.createElement("span");
-            const $video_ = document.createElement("span");
+            const $video = document.createElement("i");
+            const $video_ = document.createElement("i");
 
             const pictext1 = document.createTextNode("filter_none");
             const pictext2 = document.createTextNode("filter_none");
@@ -79,9 +79,6 @@ window.addEventListener("scroll", (e) => {
             const pictext2_ = document.createTextNode("filter_none");
             const pictext3_ = document.createTextNode("filter_none");
             const pictext4_ = document.createTextNode("filter_none");
-
-            const viditext = document.createTextNode("videocam");
-            const viditext_ = document.createTextNode("videocam");
 
             const $text1 = document.createElement("div");
             const $text2 = document.createElement("div");
@@ -233,8 +230,8 @@ window.addEventListener("scroll", (e) => {
             $mulpic3_.className = "material-symbols-outlined mulpic"
             $mulpic4_.className = "material-symbols-outlined mulpic"
 
-            $video.className = "material-symbols-outlined vidi2"
-            $video_.className = "material-symbols-outlined vidi2"
+            $video.className = "fa-solid fa-clapperboard vidi2"
+            $video_.className = "fa-solid fa-clapperboard vidi2"
 
             $text1.className = "text";
             $text2.className = "text";
@@ -348,7 +345,6 @@ window.addEventListener("scroll", (e) => {
             $text5.appendChild($icomment5);
             $text5.appendChild(comment5);
             $box5.appendChild($text5);
-            $video.appendChild(viditext);
             $img5.appendChild($video);
             $box5.appendChild($img5);
             $item1.appendChild($box5);
@@ -364,7 +360,6 @@ window.addEventListener("scroll", (e) => {
             $text5_.appendChild($icomment5_);
             $text5_.appendChild(comment5_);
             $box5_.appendChild($text5_);
-            $video_.appendChild(viditext_);
             $img5_.appendChild($video_);
             $box5_.appendChild($img5_);
             $item1_.appendChild($box5_);
