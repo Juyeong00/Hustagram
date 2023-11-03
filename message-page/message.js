@@ -23,7 +23,42 @@ window.onclick = function(pop){
     }
 }
 
+const message1 = document.getElementById('dm1');
+const message2 = document.getElementById('dm2');
+const dm = document.querySelectorAll('.dm');
+const light = document.querySelector('.tail');
+const messageView = document.querySelector('.message-view');
+const messageView1 = document.querySelector('.message-view1');
+const messageView2 = document.querySelector('.message-view2');
+const userName = document.querySelector('.user-name');
+const userText = document.querySelector('.user-text');
 
+
+message1.onclick = function(){
+    light.style.display = 'none';
+    messageView.style.display = 'none';
+    messageView2.style.display = 'none';
+    messageView1.style.display = 'flex';
+    userName.classList.add('read');
+    userText.classList.add('read');
+    userText.style.color = 'grey';
+}
+
+
+message2.onclick = function(){
+    messageView.style.display = 'none';
+    messageView1.style.display = 'none';
+    messageView2.style.display = 'flex';
+}
+
+dm.forEach(item => {
+
+    item.addEventListener('click',()=>{
+        dm.forEach(item => item.classList.remove('select-color'));
+        item.classList.add('select-color');
+    });
+
+});
 
 
 
