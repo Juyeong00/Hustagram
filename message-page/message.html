@@ -36,7 +36,7 @@
                     <i class="fa-solid fa-clapperboard"></i>
                 </div>
                 <div class="icon direct">
-                    <i class="fa-regular fa-paper-plane"></i>
+                    <i class="fa-brands fa-facebook-messenger"></i>
                 </div>
                 <div class="icon noti">
                     <i class="fa-regular fa-heart"></i>
@@ -53,7 +53,7 @@
             <div class="bottom">
                 <div class="icon threads">
                     <a href="https://www.threads.net/login" target="_blank">
-                        <i class="fa-solid fa-at"></i>
+                        <i class="fa-brands fa-threads"></i>
                     </a>
                 </div>
 
@@ -87,7 +87,7 @@
                 <!-- 받은 메시지 리스트 구역 -->
                 <div class="message-list">
 
-                    <div class="dm">
+                    <div class="dm" id="dm1">
                         <div class="user-profile">
                             <div class="user-img user1"></div>
                         </div>
@@ -102,33 +102,53 @@
                         </div>
                     </div>
 
-                    <div class="dm">
+                    <div class="dm" id="dm2">
                         <div class="user-profile">
                             <div class="user-img user2"></div>
                         </div>
 
                         <div class="user-message">
-                            <div class="user-name">정만식</div>
+                            <div class="user-name" style="font-weight: 100;">정만식</div>
                             <div class="blank"></div> <!-- 여백 -->
-                            <div class="user-text">어쩌고</div>
+                            <div class="user-text" style="font-weight: 100; color: gray;">2시간 전에 활동</div>
                         </div>
                         <div class="tail">
-                            <div class="light"></div>
+                            <div class="light-none"></div>
                         </div>
                     </div>
 
             </div>
 
         </div>
+
+
+        
             <!-- 받은 메시지 클릭시 대화내역 출력 될 부분 -->
-            <div class="message-view">
-                <div id="message-icon2" class="animate__animated animate__bounceIn">
-                    <img width="50" height="50" src="https://img.icons8.com/ios/50/facebook-messenger--v1.png" alt="facebook-messenger--v1"/>
+            <div id="message-box">
+
+                <div class="message-view">
+                    <div>
+                        <div id="message-icon2" class="animate__animated animate__bounceIn">
+                            <img width="50" height="50" src="https://img.icons8.com/ios/50/facebook-messenger--v1.png" alt="facebook-messenger--v1"/>
+                        </div>
+                    </div>
+
+                    <div class="text1"><span>내 메시지</span></div>
+                    <div class="text2"><span>친구나 그룹에 비공개 사진과 메시지를 보내보세요</span></div>
+                    <div id="transmit"><input type="button" value="메시지 보내기" class="button transmit-button"></div>
                 </div>
-                <div class="text1"><span>내 메시지</span></div>
-                <div class="text2"><span>친구나 그룹에 비공개 사진과 메시지를 보내보세요</span></div>
-                <div id="transmit"><input type="button" value="메시지 보내기" class="button transmit-button"></div>
+
+                
+
+                <div class="message-view1">
+                    
+                </div>
+
+
             </div>
+
+            
+
 
     </div>
 
@@ -139,7 +159,7 @@
 
                     <div id="pop-up-head">
                         <div id="blank-space"></div> <!-- 여백용 -->
-                        <h1><span style="font-size: 16px;">새로운 메시지</span></h1>
+                        <h1 class="h1-1"><span style="font-size: 16px;">새로운 메시지</span></h1>
                         <div id="close"><i class="fa-solid fa-xmark"></i></div>
                     </div>
 
