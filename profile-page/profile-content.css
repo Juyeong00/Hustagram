@@ -32,7 +32,7 @@
             background-size: 100%;
             width: 290px;
             height: 290px;
-            background-image: url(../../day01/images/인스타\ 프사.jfif);
+            background-image: url(../profile-page/img/img3.jpg);
             cursor: pointer;
             display: flex;
             justify-content: right;
@@ -44,7 +44,7 @@
             background-size: 100%;
             width: 290px;
             height: 290px;
-            background-image: url(../../day01/images/인스타\ 프사.jfif);
+            background-image: url(../profile-page/img/img3.jpg);
             cursor: pointer;
             display: flex;
             justify-content: right;
@@ -56,7 +56,7 @@
             background-size: 100%;
             width: 290px;
             height: 290px;
-            background-image: url(../../day01/images/인스타\ 프사.jfif);
+            background-image: url(../profile-page/img/img3.jpg);
             cursor: pointer;
             display: flex;
             justify-content: right;
@@ -68,7 +68,7 @@
             background-size: 100%;
             width: 290px;
             height: 290px;
-            background-image: url(../../day01/images/인스타\ 프사.jfif);
+            background-image: url(../profile-page/img/img3.jpg);
             cursor: pointer;
             display: flex;
             justify-content: right;
@@ -80,7 +80,7 @@
             background-size: 100%;
             width: 290px;
             height: 290px;
-            background-image: url(../../day01/images/인스타\ 프사.jfif);
+            background-image: url(../profile-page/img/img3.jpg);
             cursor: pointer;
             display: flex;
             justify-content: right;
@@ -92,7 +92,7 @@
             background-size: 100%;
             width: 290px;
             height: 290px;
-            background-image: url(../../day01/images/인스타\ 프사.jfif);
+            background-image: url(../profile-page/img/img3.jpg);
             cursor: pointer;
             display: flex;
             justify-content: right;
@@ -104,7 +104,7 @@
             background-size: 100%;
             width: 290px;
             height: 290px;
-            background-image: url(../../day01/images/인스타\ 프사.jfif);
+            background-image: url(../profile-page/img/img3.jpg);
             cursor: pointer;
             display: flex;
             justify-content: right;
@@ -116,7 +116,7 @@
             background-size: 100%;
             width: 290px;
             height: 290px;
-            background-image: url(../../day01/images/인스타\ 프사.jfif);
+            background-image: url(../profile-page/img/img3.jpg);
             cursor: pointer;
             display: flex;
             justify-content: right;
@@ -128,7 +128,7 @@
             background-size: 100%;
             width: 290px;
             height: 290px;
-            background-image: url(../../day01/images/인스타\ 프사.jfif);
+            background-image: url(../profile-page/img/img3.jpg);
             cursor: pointer;
             display: flex;
             justify-content: right;
@@ -152,6 +152,7 @@
             display: flex;
             justify-content: flex-end;
         }
+        
         .closeBtn {
             
             margin-left: 0;
@@ -248,10 +249,12 @@
 
         .id-small{
             margin-left: 10px;
+            font-size: 16px;
         }
 
         .input-text{
             font-weight: 100;
+            font-size: 12px;
             margin-left: 10px;
             text-wrap:wrap;
         }
