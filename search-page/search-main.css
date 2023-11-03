@@ -22,28 +22,46 @@
     height:auto;
     position:relative;
 }
-.img1{ /* 배치를 위한 임시 박스 */
-    background: lightblue;
+.img1{
+    background-image: url('./img/마카롱.jpg');
+    background-repeat : no-repeat;
+    background-size : cover;
+    background-position: center;
 }
 
 .img2{
-    background: lightcoral;
+    background-image: url('./img/머핀.jpg');
+    background-repeat : no-repeat;
+    background-size : cover;
+    background-position: center;
 }
 
 .img3{
-    background: lightgoldenrodyellow;
+    background-image: url('./img/슈크림.jpg');
+    background-repeat : no-repeat;
+    background-size : cover;
+    background-position: center;
 }
 
 .img4{
-    background: lightgreen;
+    background-image: url('./img/푸딩.jpg');
+    background-repeat : no-repeat;
+    background-size : cover;
+    background-position: center;
 }
 
 .img5{
-    background: lightsalmon;
+    background-image: url('./img/쿠키.jpg');
+    background-repeat : no-repeat;
+    background-size : cover;
+    background-position: center;
 }
 
 .img6{
-    background: #a087fa;
+    background-image: url('./img/와플.jpg');
+    background-repeat : no-repeat;
+    background-size : cover;
+    background-position: center;
 }
 .box{
     display:flex;
@@ -148,6 +166,7 @@ form{
     display: disabled;
     font-size: 25px;
     user-select: none;
+    text-shadow: 0 0 2px black;
 }
 .vidi{
     color:white;
@@ -158,6 +177,7 @@ form{
     display: disabled;
     font-size: 26px;
     user-select: none;
+    text-shadow: 0 0 2px black;
 }
 .vidi2{
     color:white;
@@ -168,6 +188,7 @@ form{
     display: disabled;
     font-size: 26px;
     user-select: none;
+    text-shadow: 0 0 2px black;
 }
 .text{
     position: absolute;
