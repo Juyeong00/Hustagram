@@ -1,0 +1,105 @@
+
+
+.reels-boxs{
+    display: flex;
+    width: 900px;
+    flex-wrap: wrap;
+}
+
+.reels-text{
+    margin-left: 10px;
+    margin-bottom: 10px;
+    
+}
+
+.fa-solid{
+    margin-top: 3px;
+    
+}
+
+
+.reels1, .reels2, .reels3, .reels4, .reels5, .reels6{
+    margin: 2px;
+    background-size: 100%;
+    width: 220px;
+    height: 345.56px;
+    background-image: url(../profile-page/img/KakaoTalk_20231101_160106321.png);
+    cursor: pointer;
+    display: flex;
+    color: white;
+}
+
+.text-top{
+    width: 100%;
+    display: flex;
+    margin-top: 310px;
+    margin-left: 10px;
+}
+
+
+.text-hover{
+    width: 222px;
+    height: 345.56px;
+    position: absolute;
+    font-size: 20px;
+    color:white;
+    z-index:1;
+    cursor: pointer;
+    display:none;
+    justify-content: center;
+    margin-top: 150px;
+}
+
+.reels1:hover > .text-top{
+    display : none;
+}
+
+.reels2:hover > .text-top{
+    display : none;
+}
+
+.reels3:hover > .text-top{
+    display : none;
+}
+
+.reels4:hover > .text-top{
+    display : none;
+}
+
+.reels5:hover > .text-top{
+    display : none;
+}
+
+.reels6:hover > .text-top{
+    display : none;
+}
+
+.reels1:hover > .text-hover{
+    display: flex;
+    
+}
+
+.reels2:hover > .text-hover{
+    display: flex;
+}
+
+.reels3:hover > .text-hover{
+    display: flex;
+}
+
+.reels4:hover > .text-hover{
+    display: flex;
+}
+
+.reels5:hover > .text-hover{
+    display: flex;
+}
+
+.reels6:hover > .text-hover{
+    display: flex;
+}
+
+
+.text-hover:hover + .reels1{
+    filter:brightness(0.7);
+}

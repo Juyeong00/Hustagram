@@ -1,0 +1,291 @@
+        
+        .content-boxs{
+            display: flex;
+            width: 900px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .material-symbols-outlined {
+            font-variation-settings:
+            'FILL' 100,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 24
+        }
+
+        .mulpic {
+            transform:scaleX(-1);
+            color:white;
+            left:85%;
+            top:7%;
+            font-size: 25px;
+        }
+
+        .contentboxstyle{
+            margin: 5px;
+            font-size: 20px;
+        }
+
+        .content1{
+            margin: 2px;
+            background-size: 100%;
+            width: 290px;
+            height: 290px;
+            background-image: url(../../day01/images/인스타\ 프사.jfif);
+            cursor: pointer;
+            display: flex;
+            justify-content: right;
+            color: white;
+        }
+
+        .content2{
+            margin: 2px;
+            background-size: 100%;
+            width: 290px;
+            height: 290px;
+            background-image: url(../../day01/images/인스타\ 프사.jfif);
+            cursor: pointer;
+            display: flex;
+            justify-content: right;
+            color: white;
+        }
+
+        .content3{
+            margin: 2px;
+            background-size: 100%;
+            width: 290px;
+            height: 290px;
+            background-image: url(../../day01/images/인스타\ 프사.jfif);
+            cursor: pointer;
+            display: flex;
+            justify-content: right;
+            color: white;
+        }
+
+        .content4{
+            margin: 2px;
+            background-size: 100%;
+            width: 290px;
+            height: 290px;
+            background-image: url(../../day01/images/인스타\ 프사.jfif);
+            cursor: pointer;
+            display: flex;
+            justify-content: right;
+            color: white;
+        }
+
+        .content5{
+            margin: 2px;
+            background-size: 100%;
+            width: 290px;
+            height: 290px;
+            background-image: url(../../day01/images/인스타\ 프사.jfif);
+            cursor: pointer;
+            display: flex;
+            justify-content: right;
+            color: white;
+        }
+
+        .content6{
+            margin: 2px;
+            background-size: 100%;
+            width: 290px;
+            height: 290px;
+            background-image: url(../../day01/images/인스타\ 프사.jfif);
+            cursor: pointer;
+            display: flex;
+            justify-content: right;
+            color: white;
+        }
+
+        .content7{
+            margin: 2px;
+            background-size: 100%;
+            width: 290px;
+            height: 290px;
+            background-image: url(../../day01/images/인스타\ 프사.jfif);
+            cursor: pointer;
+            display: flex;
+            justify-content: right;
+            color: white;
+        }
+
+        .content8{
+            margin: 2px;
+            background-size: 100%;
+            width: 290px;
+            height: 290px;
+            background-image: url(../../day01/images/인스타\ 프사.jfif);
+            cursor: pointer;
+            display: flex;
+            justify-content: right;
+            color: white;
+        }
+
+        .content9{
+            margin: 2px;
+            background-size: 100%;
+            width: 290px;
+            height: 290px;
+            background-image: url(../../day01/images/인스타\ 프사.jfif);
+            cursor: pointer;
+            display: flex;
+            justify-content: right;
+            color: white;
+        }
+
+        .contentBoxClick{
+            position: fixed; /* Stay in place */
+            z-index: 1; /* Sit on top */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+            display: none;
+        }
+
+
+        .closeBtnbox{
+            display: flex;
+            justify-content: flex-end;
+        }
+        .closeBtn {
+            
+            margin-left: 0;
+            padding:8px;
+            font-weight: bold;
+            color: white;
+            font-size:25px;
+            cursor: pointer;
+        }
+
+        .contentboxBody{
+            border: 1px solid #777;
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .content1boxsmall, .content2boxsmall{
+            width: 1200px;
+            height: 800px;
+            display: flex;
+            border-radius: 5px;
+            background-color: white;
+            margin: 0 auto;
+        }
+
+        .picture1{
+            width: 60%;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius:5px;
+            background-image: url(../profile-page/img/KakaoTalk_20231101_160106321_02.png);
+        }
+
+
+        .board{
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .head{
+            display: flex;
+            text-align: left;
+        }
+
+        .line{
+            border-bottom: 1px solid rgb(243, 240, 240);
+            width: 100%;
+        }
+        .profile-id-small{
+            display: flex;
+            margin-left: 30px;
+            margin-top: 20px;
+        }
+
+        .input-profile-picture{
+            background-size: 100%;
+            background-image: url(../profile-page/img/KakaoTalk_20231101_160106321_06.png);
+            width: 40px;
+            height: 40px;
+            border-radius: 100%;
+            border: 1px solid lightslategray;
+            box-sizing: border-box;
+        }
+
+        .input-profile-picture-middle{
+            background-size: 100%;
+            background-image: url(../profile-page/img/KakaoTalk_20231101_160106321_06.png);
+            width: 40px;
+            height: 40px;
+            border-radius: 100%;
+            border: 1px solid lightslategray;
+            box-sizing: border-box;
+            margin-top: 20px;
+            margin-right: 10px;
+        }
+
+        .setting{
+            display: flex;
+            font-size: 25px;
+            padding: 12px;
+            margin-left: 115px;
+        }
+
+        .middle{
+            display: flex;
+            margin-left: 30px;
+            margin-top: 10px;
+        }
+
+        .middle-input{
+            text-align: left;
+        }
+
+        .id-small{
+            margin-left: 10px;
+        }
+
+        .input-text{
+            font-weight: 100;
+            margin-left: 10px;
+            text-wrap:wrap;
+        }
+
+
+
+        
+        
+
+        .bottom{
+            display: flex;
+            flex-direction: column;
+            
+        }
+
+        .bottom1{
+            display: flex;
+            margin: 3px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            justify-content: center;
+            
+        }
+
+        .bottom2{
+            display: flex;
+            justify-content: center;
+            
+
+        }
+
+        .bottompont{
+            font-size: 13px;
+            color: rgb(88, 87, 87);
+            margin: 5px;
+            
+        }

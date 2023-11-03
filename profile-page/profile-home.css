@@ -1,0 +1,279 @@
+        /* 사이드 바 뺀 프로필화면 */
+
+        *{
+            box-sizing: border-box;
+        }
+
+        .container{
+            box-sizing: border-box;
+            display: flex;
+            margin: 0 auto;
+            text-align: center;
+            
+        }
+
+        
+        
+        .profilebar{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 0 auto;
+            margin-top: 50px;
+            margin-left: 25%;
+            height: auto;
+        }
+
+        .profile{
+            display: flex;
+            justify-content: center;
+        }
+        .profile-head{
+            display: flex;
+            flex-direction: column;
+            margin-left: 50px;
+        }
+
+        .profile-name{
+            display: flex;
+        }
+
+        .profile-btn{
+            display: flex;
+        }
+        .profile-picture{
+            box-sizing: border-box;       
+            display: flex;
+        }
+        
+        .picture-inline{
+            border-radius: 100%;
+            border-style: double;
+            border-color: lightgray;
+            background-image: url(../profile-page/img/KakaoTalk_20231101_160106321.png);
+            width: 200px;
+            height: 200px;
+            background-size: 100%;
+        }
+
+        
+        .profile-id{
+            font-size: 27px;
+        }
+        
+        .profile-id, .profile-btn{
+            margin: 5px;
+            
+        }
+        
+        .profile-setting{
+            font-size: 25px;
+            margin: 5px;
+        }
+
+        .profile-editing-btn, .profile-story-btn, .profile-advertising-btn{
+            margin: 5px;
+            font-weight: bolder;
+            border: 0px;
+            border-radius: 5px;
+        }
+
+        .profile-num{
+            font-size: 16px;
+            display: flex;
+        }
+
+        .bulletin, .follower, .following{
+            display: flex;
+            margin:10px;
+        }
+
+        span{
+            font-weight: bolder;
+            margin-left: 10px;
+        }
+
+        .nickname{
+            margin-top: 10px;
+        }
+
+        .nicnam_link{
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+        }
+
+        .threadstyle{
+            font-weight: 100;
+            font-size: 16px;
+            margin-left: 10px;
+        }
+
+        .threadid{
+            margin-left: 2px;
+        }
+
+        .go-to-thread{
+            margin: 10px;
+            border: 0px;
+            border-radius: 20px;
+            background-color: rgb(235, 230, 230);
+            width: 130px;
+            height: 25px;
+        }
+
+        .go-to-url{
+            margin-left : 15px;
+        }
+
+        .storys{
+            display: flex;
+            justify-content: center;
+            background-size: 100%;
+            margin-top: 30px;
+            margin-right: 100px;
+        }
+
+        .story1, .story2, .story3, .story4, .story5, .story6{
+            border-radius: 100%;
+            border:1px solid lightgray;
+            width: 87px;
+            height: 87px;
+            margin: 20px;
+            cursor: pointer;
+            background-size: 100%;
+        }
+
+        .story1{
+            background-image: url(../profile-page/img/KakaoTalk_20231101_160106321_02.png);
+        }
+
+        .story2{
+            background-image: url(../profile-page/img/KakaoTalk_20231101_160106321_04.png);
+        }
+
+        .story3{
+            background-image: url(../profile-page/img/KakaoTalk_20231101_160106321_05.png);
+        }
+
+        .story4{
+            background-image: url(../profile-page/img/KakaoTalk_20231101_160106321_03.png);
+        }
+
+        .story5{
+            background-image: url(../profile-page/img/KakaoTalk_20231101_160106321_07.png);
+        }
+
+        .story6{
+            background-image: url(../../day01/images/인스타\ 스토리\ 플ㄹㅓ스\ 표시.png);
+            background-size: 100%
+        }
+
+        .story1name, .story2name, .story3name, .story4name, .story5name, .story6name{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .str1name, .str2name, .str3name, .str4name, .str5name, .str6name{
+            text-align: center;
+        }
+        
+
+        .menu-line{
+            position: relative;
+            border-top: 2px solid lightgrey;
+            margin-top: 50px;
+            width: 900px;
+                    }
+
+        .menu-changelineblack{
+            border-top: 2px solid black;
+        }
+
+        .menu-changeline1{
+            position: absolute;
+            width: 100px;
+            top: 0;
+            margin-left: 200px;
+            
+        }
+
+        .menu-changeline2{
+            position: absolute;
+            width: 100px;
+            top: 0;
+            margin-left: 340px;
+        }
+
+        .menu-changeline3{
+            position: absolute;
+            width: 100px;
+            top: 0;
+            margin-left: 480px;
+        }
+
+        .menu-changeline4{
+            position: absolute;
+            width: 100px;
+            top: 0;
+            margin-left: 620px;
+        }
+
+        .menu{
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            color: rgb(97, 94, 100);
+        }
+
+        .menu-name{
+            font-size: 12px;
+            font-weight: 100;
+            cursor: pointer;
+        }
+
+
+
+        .menu-nameChange{
+            color: black;
+            font-weight: bolder
+        }
+
+        .menubox{
+            display: flex;
+            justify-content: center;
+        }
+
+        .menu-content, .menu-reels, .menu-user-tag, .menu-bookmark{
+            width: 100px;
+            margin: 20px;
+            text-align: center;
+        }
+
+        .bottom{
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .bottom1{
+            display: flex;
+            margin: 3px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            justify-content: center;
+            
+        }
+        
+        .bottom2{
+            display: flex;
+            justify-content: center;
+            
+        
+        }
+        
+        .bottompont{
+            font-size: 13px;
+            color: rgb(88, 87, 87);
+            margin: 5px;
+        }
+        
