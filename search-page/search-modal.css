@@ -1,0 +1,267 @@
+.modal_wrap {
+    display: flex;
+    width: 1100px;
+    height: 700px;
+    position: absolute;
+    border-radius: 2px;
+    top: 85px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color:white;
+    z-index: 2;
+    display: none;
+}
+
+.modal_background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #000000bb;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: none;
+}
+
+.modal_wrap.show-modal {
+    display: flex;
+}
+
+.modal_background.show-modal {
+    display: flex;
+}
+.cancle{
+    position: absolute;
+    left:97%;
+    top:15px;
+    z-index:2;
+}
+.xclose{
+    color:white;
+    z-index:2;
+}
+.modal-image {
+    width: 65%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+}
+
+.modal-chat {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-who {
+    width: 100%;
+    height: 12%;
+    display: flex;
+    border-bottom:1px solid #e9e9e9;
+}
+
+.chat-what {
+    width: 100%;
+    height: 75%;
+    display:flex;
+    flex-direction: column;
+    overflow:scroll;
+    -ms-overflow-style: none;
+    border-bottom:1px solid #e9e9e9;
+}
+.chat-what::-webkit-scrollbar{
+    display:none;
+}
+.chat-emo {
+    width: 100%;
+    height: 17%;
+    border-bottom:1px solid #e9e9e9;
+}
+
+.chat-dat {
+    width: 100%;
+    height: 8%;
+
+}
+
+.modal-image2 {
+    width: 100%;
+    background-image: url('./img/마카롱.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.user-img{
+    height: 48px;
+    width: 48px;
+    /* border: 1px solid black; */
+    border-radius: 50px;
+    display:flex;
+    position:relative;
+    top:15px;
+    left:20px;
+    background-image: url('./img/푸딩.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+.user-info{
+    display:flex;
+    position:relative;
+    left:20px;
+}
+.user-name{
+    position:relative;
+    top:27px;
+    left:15px;
+    font-weight:bold;
+    user-select:none;
+    cursor:pointer;
+    user-select: none;
+}
+.dot{
+    position:relative;
+    top:11px;
+    left:23px;
+    font-size:35px;
+    font-weight:20px;
+}
+.follow{
+    height:auto;
+    position:relative;
+    top:27px;
+    left:30px;
+    color:#06abec;
+    font-weight:bold;
+    user-select:none;
+    cursor:pointer;
+}
+
+.dots{
+    position:relative;
+    top:27px;
+    left:190px;
+    user-select:none;
+    cursor:pointer;
+}
+.user1{
+    width:100%;
+    height:auto;
+    display:flex;
+    margin-bottom:20px;
+}
+.user-img11{
+    height: 48px;
+    width: 48px;
+    border-radius: 50px;
+    background-image: url('./img/푸딩.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    margin-left:20px;
+    margin-top:10px;
+}
+.info1{
+    width:100%;
+    margin-top:9px;
+}
+.u-img{
+    width:25%;
+    height:auto;
+}
+.name1{
+    font-weight: bold;
+    cursor: pointer;
+    user-select: none;
+}
+.timetime{
+    font-size:14px;
+    color:#6d6d6d;
+}
+.time{
+    margin-top:8px;
+}
+.small-dap{
+    display: flex;
+}
+.under-text{
+    margin-top:8px;
+}
+.under-text2{
+    font-size:14px;
+    color:#6d6d6d;
+    font-weight: bold;
+    cursor:pointer;
+}
+.dap{
+    display:flex;
+    margin-top: 25px;
+    cursor: pointer;
+}
+hr{
+    width:22px;
+}
+.dapdap{
+    font-size:14px;
+    color:#6d6d6d;
+    font-weight: bold;
+}
+.chat-icon{
+    margin-top:10px;
+    margin-bottom:10px;
+    display: flex;
+    justify-content:space-between;
+}
+.i2{
+    font-size:30px;
+    cursor:pointer;
+}
+.chat-icon2{
+    width:30%;
+    display: flex;
+    justify-content: space-between;
+    margin-left:20px;
+    margin-top:5px;
+}
+.chat-icon3{
+    margin-right:8px;
+    margin-top:5px;
+}
+.good{
+    margin-left: 20px;
+    margin-top:10px;
+}
+.comment{
+    display:flex;
+}
+.face{
+    margin-top:8px;
+    margin-left:15px;
+}
+.com{
+    margin-top:5px;
+    margin-left:15px;
+    border:none;
+    width:360px;
+    height:80%;
+    background-color:white;
+    
+}
+input:focus{
+    outline:none;
+}
+.small-heart{
+    display:flex;
+    margin-left:308px;
+    margin-top:-38px;
+}
+.small-heart2{
+    font-size: 13px;
+    cursor:pointer;
+}
+.small-heart-1{
+    display:flex;
+    position:relative;
+    left:308px;
+    top:-90px;
+}

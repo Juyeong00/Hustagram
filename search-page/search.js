@@ -1,3 +1,31 @@
+//아래는 모달창 띄우는 코드입니다.
+
+const modal_wrap = document.querySelector('.modal_wrap');
+const modal_background = document.querySelector('.modal_background');
+
+document.querySelector('.img1').addEventListener('click', () => {
+    open()
+});
+
+document.querySelector('.xclose').addEventListener('click', () => {
+    close()
+});
+
+window.addEventListener('click', (e) => {
+    e.target === modal_background ? close() : false
+})
+function close() {
+    modal_wrap.classList.remove('show-modal');
+    modal_background.classList.remove('show-modal');
+    document.body.style.overflowY = 'scroll';
+}
+function open() {
+    modal_wrap.classList.add('show-modal')
+    modal_background.classList.add('show-modal')
+    document.body.style.overflowY = 'hidden';
+}
+
+
 //아래는 무한스크롤 코드입니다.
 
 let count = 3;
