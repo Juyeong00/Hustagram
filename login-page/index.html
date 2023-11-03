@@ -55,12 +55,16 @@
             margin-left: 45px;
             background: rgb(76, 181, 249);
             outline: auto;
-            outline-color: rgb(76, 181, 249);
             font-style: inherit;
             font-size: small;
             font-weight: bolder;
             color: white;
             border-radius: 7px;
+            
+        }
+
+        .login_btnDisabled {
+            background-color: #0095F6;  
         }
 
         .all_line {
@@ -200,9 +204,9 @@
         <div class="log_box">
             <img class="main_logo" src="./img/instagram-logo.png">
             <form action="" name="login" method="post">
-                <input class="id" type="text" id="input_id" placeholder="전화번호,사용자 이름 또는 이메일" value name="username">
-                <input class="pw" type="password" id="input_pw" placeholder="비밀번호" value name="password">
-                <input class="login_btn" type="submit" name="login" value="로그인"></input>
+                <input class="id" type="text" id="input_id" placeholder="전화번호,사용자 이름 또는 이메일" name="username">
+                <input class="pw" type="password" id="input_pw" placeholder="비밀번호" name="password">
+                <button class="login_btn" type="button" onclick="location.href='../home-page/projcet/home.html'" disabled>로그인</button>
             </form>
             <div class="all_line">
                 <div class="line1"></div><div class="line_txt">또는</div><div class="line2"></div>
@@ -294,8 +298,62 @@
         setTimeout(slideShow, 2000);   
     
     }
+
+    const button = document.getElementsByClassName("login_btn")[0];
+    const inputId = document.getElementsByClassName("id")[0];
+    const inputPw = document.getElementsByClassName("pw")[0];
+
+    inputId.addEventListener("keyup", validate);
+    inputPw.addEventListener("keyup", validate);
+
+    function validate() {
+        if (!(inputId.value && inputPw.value)) {
+        button.disabled = true;
+        } else {
+        button.disabled = false;
+        button.style.cursor = "pointer";
+        }
+
+    if (!(inputId.value && inputPw.value)) {
+        button.classList.remove("login_btnDisabled");
+        } else {
+        button.classList.add("login_btnDisabled");
+        }
+    }
+
+    const idInput = document.getElementById('id');
+    const pwInput = document.getElementById('pw');
+    const loginBtn = document.getElementById('login_btn');
+
+
+    const isActiveLogin = () => {
+        let idValue = idInput.value;
+        let pwValue = pwInput.value;
+
+    if(
+        (idValue && pwValue) && 
+        (pwValue.length >= 5) && 
+        (idValue.includes('@') || idValue.length >= 5)
+        ) {
+        loginBtn.disabled = false;
+        loginBtn.style.opacity = 1;
+        loginBtn.style.cursor = 'pointer';
+        }
+        else {
+            loginBtn.disabled = true;
+            loginBtn.style.opacity = .3;
+            }
+        }
+
+        const init = () => {
+            idInput.addEventListener('input', isActiveLogin);
+            pwInput.addEventListener('input', isActiveLogin);
+            idInput.addEventListener('keyup', isActiveLogin);
+            pwInput.addEventListener('keyup', isActiveLogin);
+        }
+
+        init();
+
     </script>
-        
-    
 </body>
 </html>
