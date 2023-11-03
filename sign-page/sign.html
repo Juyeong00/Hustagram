@@ -91,6 +91,7 @@
             border: 1px solid lightgray;
             margin-bottom: 10px;
             outline-color: lightgray;
+            border-radius: 6px;
         }
 
         .alarm {
@@ -99,20 +100,20 @@
             margin-left: 20px;
         }
 
-        .signup {
+        .sign_btn {
             width: 260px;
             height: 35px;
+            color: white;
             border: 1px solid #4CB5F9;
             background-color: #4CB5F9;
             margin-left: 43px;
             margin-top: 20px;
             border-radius: 8px;
+            font-weight: bold;
         }
 
-        h4 {
-            color: white;  
-            margin-left: 110px;
-            margin-top:8px
+        .sign_btnDisabled {
+            background-color: #0095F6;
         }
 
         .newoption {
@@ -219,20 +220,20 @@
     <div class="all_line">
         <div class="line1"></div><div class="line_txt">또는</div><div class="line2"></div>
     </div>
-    <form action="" name="login" method="post">
-        <input class="id" type="text" placeholder="휴대폰 번호 또는 이메일 주소" value name="email or phoneNumber">
-        <input class="name" type="text" placeholder="성명" value name="username">
-        <input class="name" type="text" placeholder="사용자 이름" value name="username">
-        <input class="pw" type="text" placeholder="비밀번호" value name="password">
+    <div class="input_box">
+        <input class="id" type="text" placeholder="휴대폰 번호 또는 이메일 주소" name="email or phoneNumber">
+        <input class="name" type="text" placeholder="성명" name="name">
+        <input class="username" type="text" placeholder="사용자 이름" name="username">
+        <input class="pw" type="password" placeholder="비밀번호" name="password">
         <span class="alarm">저희 서비스를 이용하는 사람이 회원님의 연락처 정보를 lnstagram에 업로드했을 수도 있습니다.
         <a class="newoption" href="https://www.facebook.com/help/instagram" style="text-decoration: none">더 알아보기</a></span>
-    </form>
+    </div>
     <div class="signup">
-        <h4>가입</h4>
+        <button class="sign_btn" type="submit" onclick="javascript:btn('sign_btn')" disabled>가입</button>
     </div>
     <div class="sign_box">
         <div class="sign_text">
-        <span class="sign_1">계정이 있으신가요? </span><a class="sign_text2" href="https://www.instagram.com/accounts/login/" style="text-decoration: none;"><b>로그인</b></a>
+        <span class="sign_1">계정이 있으신가요? </span><a class="sign_text2" href="../login-page/index.html" style="text-decoration: none;"><b>로그인</b></a>
     </div>
     <div class="download">
         <div class="down_text">앱을 다운로드하세요.</div>
@@ -251,7 +252,7 @@
         <a href="https://help.instagram.com/581066165581870/" style="text-decoration: none">약관  </a>&emsp;
         <a href="https://www.instagram.com/explore/locations/?hl=ko" style="text-decoration: none">위치</a>&emsp;
         <a href="https://www.instagram.com/web/lite/?hl=ko" style="text-decoration: none">lnstagram Lite</a>&emsp;
-        <a href="https://www.threads.net/login" style="text-decoration: none">Threads</a>&emsp;
+        <a href="../Threads-page/Threads.html" style="text-decoration: none">Threads</a>&emsp;
         <a href="https://www.facebook.com/help/instagram/261704639352628?hl=ko" style="text-decoration: none">연락처 업로드 & 비사용자</a>&emsp;
         <a href="https://about.meta.com/technologies/meta-verified/" style="text-decoration: none">Meta Verified</a>
     </footer>
@@ -281,5 +282,80 @@
         </select><p4>© 2023 Instagram from Meta</p4>
         </div>
     </div>
+
+    <script>
+        const button = document.getElementsByClassName("sign_btn")[0];
+        const inputId = document.getElementsByClassName("id")[0];
+        const inputName = document.getElementsByClassName("name")[0];
+        const inputUserName = document.getElementsByClassName("username")[0];
+        const inputPw = document.getElementsByClassName("pw")[0];
+
+    inputId.addEventListener("keyup", validate);
+    inputPw.addEventListener("keyup", validate);
+    inputname.addEventListener("keyup", validate);
+    inputusername.addEventListener("keyup", validate);
+
+    function validate() {
+        if (!(inputId.value && inputPw.value && inputName.value && inputUserName.value)) {
+        button.disabled = true;
+        } else {
+        button.disabled = false;
+        button.style.cursor = "pointer";
+        }
+
+    if (!(inputId.value && inputPw.value && inputName.value && inputUserName.value)) {
+        button.classList.remove("sign_btnDisabled");
+        } else {
+        button.classList.add("sign_btnDisabled");
+        }
+    }
+
+
+    const idInput = document.getElementById('id');
+    const nameInput = document.getElementById('name');
+    const usernameInput = document.getElementById('username');
+    const pwInput = document.getElementById('pw');
+    const loginBtn = document.getElementById('sign_btn');
+
+
+    const isActiveSign = () => {
+        let idValue = idInput.value;
+        let nameValue = nameInput.value;
+        let usernameValue = usernameInput.value;
+        let pwValue = pwInput.value;
+
+    if(
+        (idValue && nameValue && usernameValue && pwValue) && 
+        (nameValue.length >= 5) && (usernameValue.length >= 5) && (pwValue.length >= 5)
+        (idValue.includes('@') || idValue.length >= 5)
+        ) {
+        sign_btn.disabled = false;
+        sign_btn.style.opacity = 1;
+        sign_btn.style.cursor = 'pointer';
+        }
+        else {
+            sign_btn.disabled = true;
+            sign_btn.style.opacity = .3;
+            }
+        }
+
+        const init = () => {
+            idInput.addEventListener('input', isActiveSign);
+            pwInput.addEventListener('input', isActiveSign);
+            nameInput.addEventListener('input', isActiveSign);
+            usernameInput.addEventListener('input', isActiveSign);
+            idInput.addEventListener('keyup', isActiveSign);
+            pwInput.addEventListener('keyup', isActiveSign);
+            nameInput.addEventListener('keyup', isActiveSign);
+            usernameInput.addEventListener('keyup', isActiveSign);
+        }
+        
+        init();
+
+        function btn(){
+        alert('회원가입이 완료되었습니다.');
+        window.location ='../login-page/index.html';
+        }
+    </script>
 </body>
 </html>

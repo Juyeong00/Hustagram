@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Threads</title>
     <link href="./img/threads_logo1.svg" rel="shortcut icon" type="image/x-icon">
+    
     <style>
         body {
             background-image: url(./img/background-img.png);
@@ -68,17 +69,23 @@
             outline-color: lightgray;
         }
 
-        .log_btn {
+        .login_btn {
             width: 400px;
             height: 60px;
             border: 1px solid black;
-            background-color: black;
+            background-color: rgb(39, 39, 39);
             color: white;
             border-radius: 12px;
             display: flex;
             justify-content: center;
             align-items: center;
             margin-bottom: 20px;
+            font-size: large;
+            font-weight: bold;
+        }
+
+        .login_btnDisabled {
+            background-color: black;  
         }
 
         .not_pw {
@@ -164,24 +171,28 @@
         .qr_text {
             font-size: small;
             color: gray;
-            margin-left: 1020px
-            
-            
+            margin-top: -50px;
+            margin-left: 1020px;
         }
 
         .qr_code {
-            margin-left: 1010px;
-            margin-top: 10px;
-            transition-property: all;
-            transition-duration: 70s;
+            width: 100px;
+            height: 100px;
+            margin-left: 1040px;
+            margin-top: 30px;
+            transition-duration: 1s;
+            transform:scale(1.0);
+            
             
         }
 
         .qr_code:hover {
-            width: 200px;
-            height: 200px;
-            transition-duration: 70s;
+            width: 125px;
+            height: 125px;
+            transform:scale(1.5);
         }
+
+        
     </style>
 </head>
 <body>
@@ -189,12 +200,13 @@
         <div class="log_box">
             <h4>Instagram 계정으로 로그인하세요</h4>
             <label class="id_box">
-                <input class="id" type="text" placeholder="&emsp;사용자 이름, 전화번호 또는 이메일 주소" name="input_id">
+                <input class="id" type="text" placeholder="&emsp;사용자 이름, 전화번호 또는 이메일 주소" name="input_id" maxlength="10">
             </label>
             <label class="pw_box">
-                <input class="pw" type="text" placeholder="&emsp;비밀번호" name="input_pw">
+                <input class="pw" type="password" placeholder="&emsp;비밀번호" name="input_pw">
+                
             </label>
-            <div class="log_btn">로그인</div>
+            <button class="login_btn" type="button" onclick="location.href=''" disabled>로그인</button>
             <div class="not_pw">
                 <a class="password_not" href="" style="text-decoration: none">비밀번호를 잊으셨나요?</a>
             </div>
@@ -217,5 +229,61 @@
         <img class="qr_code" src="./img/qr_code.png">
     </div>
     
+    <script>
+        const button = document.getElementsByClassName("login_btn")[0];
+    const inputId = document.getElementsByClassName("id")[0];
+    const inputPw = document.getElementsByClassName("pw")[0];
+
+    inputId.addEventListener("keyup", validate);
+    inputPw.addEventListener("keyup", validate);
+
+    function validate() {
+        if (!(inputId.value && inputPw.value)) {
+        button.disabled = true;
+        } else {
+        button.disabled = false;
+        button.style.cursor = "pointer";
+        }
+
+    if (!(inputId.value && inputPw.value)) {
+        button.classList.remove("login_btnDisabled");
+        } else {
+        button.classList.add("login_btnDisabled");
+        }
+    }
+
+    const idInput = document.getElementById('id');
+    const pwInput = document.getElementById('pw');
+    const loginBtn = document.getElementById('login_btn');
+
+
+    const isActiveLogin = () => {
+        let idValue = idInput.value;
+        let pwValue = pwInput.value;
+
+    if(
+        (idValue && pwValue) && 
+        (pwValue.length >= 5) && 
+        (idValue.includes('@') || idValue.length >= 5)
+        ) {
+        loginBtn.disabled = false;
+        loginBtn.style.opacity = 1;
+        loginBtn.style.cursor = 'pointer';
+        }
+        else {
+            loginBtn.disabled = true;
+            loginBtn.style.opacity = .3;
+            }
+        }
+
+        const init = () => {
+            idInput.addEventListener('input', isActiveLogin);
+            pwInput.addEventListener('input', isActiveLogin);
+            idInput.addEventListener('keyup', isActiveLogin);
+            pwInput.addEventListener('keyup', isActiveLogin);
+        }
+
+        init();
+    </script>
 </body>
 </html>

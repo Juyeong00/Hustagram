@@ -1,12 +1,40 @@
+//아래는 모달창 띄우는 코드입니다.
+
+const modal_wrap = document.querySelector('.modal_wrap');
+const modal_background = document.querySelector('.modal_background');
+
+document.querySelector('.img1').addEventListener('click', () => {
+    open()
+});
+
+document.querySelector('.xclose').addEventListener('click', () => {
+    close()
+});
+
+window.addEventListener('click', (e) => {
+    e.target === modal_background ? close() : false
+})
+function close() {
+    modal_wrap.classList.remove('show-modal');
+    modal_background.classList.remove('show-modal');
+    document.body.style.overflowY = 'scroll';
+}
+function open() {
+    modal_wrap.classList.add('show-modal')
+    modal_background.classList.add('show-modal')
+    document.body.style.overflowY = 'hidden';
+}
+
+
 //아래는 무한스크롤 코드입니다.
 
 let count = 3;
 
 window.addEventListener("scroll", (e) => {
-    const isScrollEnd = window.innerHeight + window.scrollY + 500 > document.body.offsetHeight;
+    const isScrollEnd = window.innerHeight + window.scrollY + 200 > document.body.offsetHeight;
 
     if (isScrollEnd && count < 5) {
-        for (let i = 0; i < 3; i++) {
+        for (let i = 0; i < 2; i++) {
 
             const $img1 = document.createElement("div");
             const $img2 = document.createElement("div");
@@ -404,4 +432,12 @@ window.addEventListener("scroll", (e) => {
 
         }
     }
+    wait(0.5);
 });
+
+function wait(sec) {
+    let start = Date.now(), now = start;
+    while (now - start < sec * 1000) {
+        now = Date.now();
+    }
+}

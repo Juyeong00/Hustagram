@@ -19,8 +19,8 @@ html, body{
     height: 100%;
     border-right: 1px solid lightgray;
     padding: 8px 12px 20px 12px;
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: column; */
 }   
 
 .message-select{
@@ -149,7 +149,7 @@ a{
 .dm{
     width: 100%;
     height: 72px;
-    padding: 8px 24px 8px 24px;
+    padding: 8px 2px 8px 24px;
     display: flex;
     cursor: pointer;
 }
@@ -168,14 +168,30 @@ a{
     justify-content: center;
 }
 
+#message-box{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
 
 .message-view{
     width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     overflow-y: scroll;
+}
+
+.message-view1{
+    display: none;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    position: fixed;
+    z-index: 1;
+    background-color: #1b74e4;
 }
 
 .user-img{
@@ -311,7 +327,7 @@ a{
 }
 
 #pop-up-body {
-    width: 550px;
+    width: 600px;
     height: 65%;
     background-color: white;
     border-radius: 10px;
@@ -334,22 +350,33 @@ a{
 
 #pop-up-head {
     width: 100%;
-    height: 55px;
+    height: 10%;
     display: flex;
     justify-content: center;
+
+}
+
+#pop-up-midle{
+    width: 100%;
+    height: 69.5%;
+}
+
+#pop-up-foot{
+    width: 100%;
+    height: 13%;
 }
 
 #blank-space{
     width: 10%;
 }
 
-h1{
+.h1-1{
     width: 80%;
     text-align: center;
 }
 
 #recipient{
-    height: 38px;
+    height: 7.5%;
     padding: 0px 16px 0px 16px;
     display: flex;
     border: 1px solid lightgrey;
@@ -359,6 +386,7 @@ h1{
 .recipient{
     display: flex;
     align-items: center;
+    font-size: 16px;
     font-weight: bolder;
 }
 
@@ -366,7 +394,7 @@ h1{
     padding: 4px 12px 4px 20px;
     width: 80%;
     border: none;
-    font-size: 14px;
+    font-size: 15px;
 }
 
 #pop-up-midle{
@@ -431,8 +459,7 @@ button:active {
     #id,
     .head2,
     .user-message,
-    .tail,
-    .bottom{
+    .tail{
         display: none;
     }
 
@@ -445,7 +472,7 @@ button:active {
 
 }
 
-@media only screen and (max-width: 760px){
+@media only screen and (max-width: 740px){
 
     .message{
         height: 95%;
@@ -456,12 +483,14 @@ button:active {
         flex-direction: column-reverse;
     }
 
+
     .side-bar{
         width: 100%;
-        height: 8%;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
+        height: 50px;
+        /* flex-direction: row; */
+        /* justify-content: center;
+        align-content: center;
+        align-items: center; */
         border-top: 1px solid lightgray;
         padding: 0px;
         overflow-x: hidden;
@@ -470,20 +499,52 @@ button:active {
 
     .menu{
         width: 100%;
+        height: 50px;
         display: flex;
         justify-content: space-evenly;
         align-items: center;
         
     }
 
+    .noti,
+    .serch,
     .header{
         display: none;
     }
 
+    .bottom{
+        display: none;
+    }
+
+    #pop-up-body{
+        border-radius: 0;
+        width: 100%;
+    }
+
+    .icon{
+        margin: 0;
+    }
     
 }
 
 
-/* 페이지 세로 축소 시 화면 변환 */
 
+
+/* 페이지 세로 축소 시 화면 변환 */
+@media only screen and (max-height: 700px){
+
+    .threads{
+        display: none;
+    }
+
+}
+
+@media only screen and (max-height: 600px){
+
+    .icon{
+        margin-top: 2px;
+        margin-bottom: 2px;
+    }
+
+}
 
