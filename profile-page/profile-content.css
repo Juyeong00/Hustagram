@@ -31,7 +31,7 @@
     background-size: 100%;
     width: 290px;
     height: 290px;
-    background-image: url(../profile-page/img/img3.jpg);
+    background-image: url(../profile-page/img/KakaoTalk_20231101_140016761\ \(1\).jpg);
     cursor: pointer;
     display: flex;
     justify-content: right;
@@ -43,7 +43,7 @@
     background-size: 100%;
     width: 290px;
     height: 290px;
-    background-image: url(../profile-page/img/img3.jpg);
+    background-image: url(../profile-page/img/KakaoTalk_20231103_105527099\ \(1\).jpg);
     cursor: pointer;
     display: flex;
     justify-content: right;
@@ -55,7 +55,7 @@
     background-size: 100%;
     width: 290px;
     height: 290px;
-    background-image: url(../profile-page/img/img3.jpg);
+    background-image: url(../profile-page/img/KakaoTalk_20231103_105545273\ \(1\).jpg);
     cursor: pointer;
     display: flex;
     justify-content: right;
@@ -134,7 +134,31 @@
     color: white;
 }
 
-.contentBoxClick{
+.contentBox1Click{
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    display: none;
+}
+
+.contentBox2Click{
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    display: none;
+}
+
+.contentBox3Click{
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
     left: 0;
@@ -153,7 +177,6 @@
 }
 
 .closeBtn {
-    
     margin-left: 0;
     padding:8px;
     font-weight: bold;
@@ -162,14 +185,31 @@
     cursor: pointer;
 }
 
-.contentboxBody{
+.contentbox1Body{
     border: 1px solid #777;
     background-color: #fff;
     display: flex;
     flex-direction: column;
+    display: none;
 }
 
-.content1boxsmall, .content2boxsmall{
+.contentbox2Body{
+    border: 1px solid #777;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    display: none;
+}
+
+.contentbox3Body{
+    border: 1px solid #777;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    display: none;
+}
+
+.content1boxsmall, .content2boxsmall, .content3boxsmall{
     width: 1200px;
     height: 800px;
     display: flex;
@@ -182,7 +222,24 @@
     width: 60%;
     border-top-left-radius: 5px;
     border-bottom-left-radius:5px;
-    background-image: url(../profile-page/img/KakaoTalk_20231101_160106321_02.png);
+    background-image: url(../profile-page/img/KakaoTalk_20231101_140016761\ \(1\).jpg);
+    background-size: 100%;
+}
+
+.picture2{
+    width: 60%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius:5px;
+    background-image: url(../profile-page/img/KakaoTalk_20231103_105527099\ \(1\).jpg);
+    background-size: 100%;
+}
+
+.picture3{
+    width: 60%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius:5px;
+    background-image: url(../profile-page/img/KakaoTalk_20231103_105545273\ \(1\).jpg);
+    background-size: 100%;
 }
 
 
@@ -319,13 +376,14 @@
 
 .user1{
     display: flex;
+    width: 90%;
 }
 
 .user1-heart{
     display: flex;
     flex-direction: column;
+    width: 10%;
     margin-top: 25px;
-    margin-left: 20px;
     cursor: pointer;
 }
 
@@ -343,6 +401,7 @@
     display: flex;
     margin: 10px;
 }
+
 
 .heart{
     font-size: 30px;
