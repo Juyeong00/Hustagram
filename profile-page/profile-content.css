@@ -176,7 +176,7 @@
     justify-content: flex-end;
 }
 
-.closeBtn {
+.closeBtn1 {
     margin-left: 0;
     padding:8px;
     font-weight: bold;
@@ -184,6 +184,26 @@
     font-size:25px;
     cursor: pointer;
 }
+
+.closeBtn2 {
+    margin-left: 0;
+    padding:8px;
+    font-weight: bold;
+    color: white;
+    font-size:25px;
+    cursor: pointer;
+}
+
+
+.closeBtn3 {
+    margin-left: 0;
+    padding:8px;
+    font-weight: bold;
+    color: white;
+    font-size:25px;
+    cursor: pointer;
+}
+
 
 .contentbox1Body{
     border: 1px solid #777;
@@ -286,6 +306,68 @@
     margin-top: 20px;
     margin-right: 10px;
 }
+
+.input-profile-picture-yeo_jji{
+    background-size: 100%;
+    background-image: url(../profile-page/img/KakaoTalk_20231101_160106321_04.png);
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border: 1px solid lightslategray;
+    box-sizing: border-box;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+.input-profile-picture-min_ji{
+    background-size: 100%;
+    background-image: url(../profile-page/img/KakaoTalk_20231101_160106321_03.png);
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border: 1px solid lightslategray;
+    box-sizing: border-box;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+.input-profile-picture-jin_ho{
+    background-size: 100%;
+    background-image: url(../profile-page/img/KakaoTalk_20231101_160106321_02.png);
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border: 1px solid lightslategray;
+    box-sizing: border-box;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+.input-profile-picture-ta2jjang{
+    background-size: 100%;
+    background-image: url(../profile-page/img/KakaoTalk_20231101_160106321_07.png);
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border: 1px solid lightslategray;
+    box-sizing: border-box;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+.input-profile-picture-J_uyeong{
+    background-size: 100%;
+    background-image: url(../profile-page/img/KakaoTalk_20231101_160106321_05.png);
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border: 1px solid lightslategray;
+    box-sizing: border-box;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+
 
 .input-profile-picture-last{
     background-size: 100%;
