@@ -1,0 +1,173 @@
+@media only screen and (max-width: 1029px) {
+
+    .container {
+        overflow-x: hidden;
+    }
+
+    .iconbox {
+        width: 70px;
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        padding-top: 50px;
+    }
+
+    .profilebar{
+        width: 940px;
+        height: 1789.31px;
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        padding-top: 50px;
+    }
+
+    .menu-box1 {
+        height: 80%;
+    }
+
+    .instagram-fontbox,
+    h1,
+    .font-size-box {
+        display: none;
+    }
+
+    .insta-logo {
+        width: 100%;
+        margin-top: -10px;
+        margin-bottom: 30px;
+        margin-left: 3px;
+        font-size: 26px;
+        display: flex;
+        align-items: center;
+    }
+
+    .home-icon,
+    .search-icon,
+    .compass-icon,
+    .video-icon,
+    .message-icon,
+    .heart-icon,
+    .making-icon,
+    .instagram-profile,
+    .threads-icon,
+    .setting-icon {
+        font-size: 23px;
+        margin-top: 5px;
+        margin-left: 2px;
+    }
+
+
+    .inst-logo:hover,
+    .home-icon:hover,
+    .search-icon:hover,
+    .compass-icon:hover,
+    .video-icon:hover,
+    .message-icon:hover,
+    .heart-icon:hover,
+    .making-icon:hover,
+    .instagram-profile:hover,
+    .threads-icon:hover,
+    .setting-icon:hover {
+        width: 100%;
+    }
+
+    .main {
+        width: 90%;
+        margin-left: 89px;
+        margin-right: auto;
+    }
+
+    .footer1 {
+        margin-left: 85px;
+        text-align: center;
+    }
+
+}
+
+
+@media only screen and (max-width: 740px) {
+
+    .container {
+        flex-direction: column-reverse;
+        overflow-x: hidden;
+    }
+
+    .main {
+        width: 100%;
+        height: auto;
+        margin: 0;
+        display: flex;
+    }
+
+    .iconbox {
+        position: fixed;
+        flex-direction: row;
+        width: 100%;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 93.5%;
+        height: 50px;
+        background-color: white;
+        margin-bottom: 500px;
+        border-top: 1px solid lightgray;
+        border-right: none;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        z-index: 3;
+    }
+
+    .video-icon,
+    .making-icon {
+        width: auto;
+    }
+
+    .video-icon:hover,
+    .making-icon:hover {
+        width: auto;
+    }
+
+    .menu-box1 {
+        width: 100%;
+        height: 50px;
+        margin-top: -50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+
+    }
+
+    .insta-logo,
+    .search-icon,
+    .heart-icon,
+    .menu-box2 {
+        display: none;
+    }
+
+    .search {
+        display: flex;
+        margin-top: 30px;
+    }
+
+    .footer1 {
+        margin: 0;
+        margin-bottom: 30px;
+        width: 100%;
+        height: auto;
+    }
+
+    .loading-img {
+        margin-bottom: 0;
+    }
+
+    .inst_footer {
+        margin-top: 40px;
+    }
+
+    .mulpic,
+    .vidi,
+    .vidi2 {
+        font-size: 1.3rem;
+    }
+
+}
