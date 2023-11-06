@@ -6,6 +6,7 @@
     <title>Instagram</title>
     <link href="./img/insta_icon7.png" rel="shortcut icon" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="../side.css" rel="stylesheet">
     <style>
 
         html, body{
@@ -41,52 +42,8 @@
             margin-bottom: 30px;
         }
 
-        .iconbox{
-            
-            box-sizing: border-box;
-            border-right: 1px solid lightgray;
-            display: flex;
-            flex-direction: column; 
-            justify-content: space-around;  
-            width: 20%;
-            height:100%;
-        }
 
 
-        .menu-box2{
-            height:40px;
-        }
-
-        .insta-logo{
-            display: none;
-            font-size: 0.1px;
-            
-        }
-
-        .home-icon, .search-icon, .compass-icon, .video-icon, .message-icon, .heart-icon, .making-icon {
-            
-            margin-left: 10.1%;
-            margin-top: 5%;
-            height: 40px;
-            width: 200px;
-            border: 1px solid white;
-            border-radius: 10%;
-            font-size: 22px;
-            display: flex;
-            align-items:center;
-            
-        }
-
-        .instagram-profile {
-            margin-left: 10%;
-            margin-top: 5%;
-            height: 40px;
-            border: 1px solid white;
-            border-radius: 10%;
-            font-size: 22px;
-            display: flex;
-            align-items:center;
-        }
 
         i:hover {
             transform:scale(1.1, 1.1); 
@@ -200,6 +157,7 @@
             display: flex;
             flex-direction: column;
             justify-content: space-around;
+            margin-left: 23%;
         }
 
         .instagram-fontbox{
@@ -213,11 +171,13 @@
 
         .story-box{
             margin-top: 50px;
+            
             width: 100%;
             height: 20%;
             display: flex;
             justify-content: space-evenly;
             align-items: center;
+            margin-left: -8%
         }
 
         .storys{
@@ -232,6 +192,7 @@
             width: 56px;
             border: 0.5px double black;
             border-radius: 40px 40px 40px 40px / 40px 40px 40px 40px;
+            
         }
 
 
@@ -953,7 +914,7 @@
                 a{
                     color: black;
                     text-decoration: none;
-                }
+                } 
 
 
     </style>
@@ -963,53 +924,52 @@
     
     <div class="container">
         <div class="iconbox">
-            <div class="insta-logo"><i class="fa-brands fa-instagram" style="color: #000000;"></i></div>
-            <div class="instagram-fontbox"><div class="img-move"><img src="./img/insta.png"></div></div>
-            <div class="menu-box1">
-                <div class="home-icon"><i class="fa-solid fa-house"></i>
-                    <h1>홈</h1>
+            <a href="../home-page/projcet/home.html">
+                <div class="ico insta-logo"><i class="ico2 fa-brands fa-instagram"></i></div>
+                <div class="instagram-fontbox">
+                    <div class="img-move"><img src="./img/insta.png"></div>
                 </div>
-                <div class="search-icon"><i class="fa-solid fa-magnifying-glass"></i>
+            </a>
+            <div class="menu-box1">
+                <a href="../home-page/projcet/home.html">
+                    <div class="ico home-icon"><i class="ico2 fa-solid fa-house"></i>
+                        <p class="font-size-box">홈</p>
+                    </div>
+                </a>
+                <div class="ico search-icon"><i class="ico2 fa-solid fa-magnifying-glass"></i>
                     <p class="font-size-box">검색</p>
                 </div>
-
-                <a href="../../search-page/search.html">
-                <div class="compass-icon"><i class="fa-regular fa-compass"></i>
-                    <p class="font-size-box">탐색 탭</p>
-                </div>
+                <a href="../search-page/search.html">
+                    <div class="ico compass-icon"><i class="ico2 fa-regular fa-compass"></i>
+                        <h1 class="font-size-box">탐색 탭</h1>
+                    </div>
                 </a>
-
-                <div class="video-icon"><i class="fa-solid fa-clapperboard"></i>
+                <div class="ico video-icon"><i class="ico2 fa-solid fa-clapperboard"></i>
                     <p class="font-size-box">릴스</p>
                 </div>
-
-                <a href="../../message-page/message.html">
-                <div class="message-icon"><i class="fa-brands fa-facebook-messenger" style="color: #000000;"></i>
-                    <p class="font-size-box">메시지</p>
-                </div>
+                <a href="../message-page/message.html">
+                    <div class="ico message-icon"><i class="ico2 fa-brands fa-facebook-messenger"></i>
+                        <p class="font-size-box">메시지</p>
+                    </div>
                 </a>
-
-                <div class="heart-icon"><i class="fa-regular fa-heart" style="color: #070707;"></i>
+                <div class="ico heart-icon"><i class="ico2 fa-regular fa-heart"></i>
                     <p class="font-size-box">알림</p>
                 </div>
-                <div class="making-icon"><i class="fa-regular fa-square-plus"></i>
+                <div class="ico making-icon"><i class="ico2 fa-regular fa-square-plus"></i>
                     <p class="font-size-box">만들기</p>
                 </div>
-
-                <a href="../../profile-page/profile.html">
-                <div class="instagram-profile"><i class="fa-regular fa-circle-user" style="color: #090909;"></i>
-                    <p class="font-size-box">프로필</p>
-                </div></a>
-                <br><br><br><br><br><br><br><br><br><br>
+                <a href="../profile-page/profile.html">
+                    <div class="ico instagram-profile"><i class="ico2 fa-regular fa-circle-user"></i>
+                        <p class="font-size-box">프로필</p>
+                    </div>
             </div>
             <div class="menu-box2">
-                <a href="../../Threads-page/Threads.html" target="_blank">
-                <div class="threads-icon"><i class="fa-brands fa-threads" style="color: #000000;"></i>
-                    <p class="font-size-box">Threads</p>
-                </div>
+                <a href="../Threads-page/Threads.html">
+                    <div class="ico threads-icon"><i class="ico2 fa-brands fa-threads" style="color: #000000;"></i>
+                        <p class="font-size-box">Threads</p>
+                    </div>
                 </a>
-
-                <div class="setting-icon"><i class="fa-solid fa-bars" style="color: #090909;"></i>
+                <div class="ico setting-icon"><i class="ico2 fa-solid fa-bars"></i>
                     <p class="font-size-box">더 보기</p>
                 </div>
             </div>
