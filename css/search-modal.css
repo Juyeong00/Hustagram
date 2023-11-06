@@ -87,7 +87,7 @@
 
 .modal-image2 {
     width: 100%;
-    background-image: url('./img/마카롱.jpg');
+    background-image: url('../image/마카롱.jpg');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -102,7 +102,7 @@
     position:relative;
     top:15px;
     left:20px;
-    background-image: url('./img/푸딩.jpg');
+    background-image: url('../image/푸딩.jpg');
     background-size:cover;
     background-repeat: no-repeat;
 }
@@ -155,7 +155,7 @@
     height: 48px;
     width: 48px;
     border-radius: 50px;
-    background-image: url('./img/푸딩.jpg');
+    background-image: url('../image/푸딩.jpg');
     background-size:cover;
     background-repeat: no-repeat;
     margin-left:20px;
