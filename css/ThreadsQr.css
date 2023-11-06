@@ -1,0 +1,61 @@
+body {
+    background-image:url(../image/background-img.jpg);
+    background-repeat: no-repeat;
+    background-size: 2000px 1000px;
+    position: relative;
+    
+}
+
+.container {
+    margin: 0 auto;
+    
+}
+
+.qr_box {
+    width: 200px;
+    height: 230px;
+    border: 1px solid lightgray;
+    background-color: white;
+    margin-left: 42.5%;
+    margin-top: 250px;
+    border-radius: 8px;
+    position: absolute;
+    
+}
+
+.down_qr {
+    width: 150px;
+    margin-left: 12.5%;
+    margin-top: 12.5%;
+}
+
+.icon_box {
+    display: flex;
+    justify-content: space-around;
+    flex: 1;
+}
+
+.apple {
+    width: 25px;
+}
+
+.android {
+    width: 30px;
+    margin-top: 2px;
+}
+
+.x {
+    font-size: 50px;
+    color: gray;
+}
+
+.text_box {
+    width: 300px;
+    margin-top: 20px;
+    margin-left: -45px;
+    text-align: center;
+}
+
+.text {
+    color: gray;
+}
