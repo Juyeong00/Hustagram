@@ -18,42 +18,42 @@
     position:relative;
 }
 .img1{
-    background-image: url('./img/마카롱.jpg');
+    background-image: url('../image/마카롱.jpg');
     background-repeat : no-repeat;
     background-size : cover;
     background-position: center;
 }
 
 .img2{
-    background-image: url('./img/머핀.jpg');
+    background-image: url('../image/머핀.jpg');
     background-repeat : no-repeat;
     background-size : cover;
     background-position: center;
 }
 
 .img3{
-    background-image: url('./img/슈크림.jpg');
+    background-image: url('../image/슈크림.jpg');
     background-repeat : no-repeat;
     background-size : cover;
     background-position: center;
 }
 
 .img4{
-    background-image: url('./img/푸딩.jpg');
+    background-image: url('../image/푸딩.jpg');
     background-repeat : no-repeat;
     background-size : cover;
     background-position: center;
 }
 
 .img5{
-    background-image: url('./img/쿠키.jpg');
+    background-image: url('../image/쿠키.jpg');
     background-repeat : no-repeat;
     background-size : cover;
     background-position: center;
 }
 
 .img6{
-    background-image: url('./img/와플.jpg');
+    background-image: url('../image/와플.jpg');
     background-repeat : no-repeat;
     background-size : cover;
     background-position: center;

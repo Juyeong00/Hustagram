@@ -103,7 +103,7 @@
         margin-bottom: 500px;
         border-top: 1px solid lightgray;
         border-right: none;
-        /* overflow-x: hidden; */
+        overflow-x: hidden;
         overflow-y: hidden;
         z-index: 3;
     }
