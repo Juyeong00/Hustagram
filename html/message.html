@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram · Direct</title>
+    <link href="../login-page/img/insta_icon7.png" rel="shortcut icon" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./message.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+    <div class="container">
+        
+        <!-- 사이드바 -->
+        <div class="side-bar">
+            <div class="header"> <!-- 사이드바 최상단 -->
+                <div class="icon instar">
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+            </div>
+
+            <!-- 사이드바 중앙 메뉴 -->
+            <div class="menu">
+                <a href="../home-page/projcet/home.html">
+                <div class="icon home">
+                    <i class="fa-solid fa-house"></i>
+                </div>
+                </a>
+                <div class="icon serch">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+
+                <a href="../search-page/search.html">
+                <div class="icon exp">
+                    <i class="fa-regular fa-compass"></i>
+                </div>
+            </a>
+                <div class="icon reels">
+                    <i class="fa-solid fa-clapperboard"></i>
+                </div>
+
+                <a href="../message-page/message.html">
+                <div class="icon direct">
+                    <i class="fa-brands fa-facebook-messenger"></i>
+                </div>
+                </a>
+
+                <div class="icon noti">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="icon pose">
+                    <i class="fa-regular fa-square-plus"></i>
+                </div>
+                <a href="../profile-page/profile.html">
+                <div class="icon prof">
+                    <i class="fa-regular fa-circle-user"></i>
+                </div>
+                </a>
+            </div>
+
+            <!-- 사이드바 최하단 메뉴 -->
+            <div class="bottom">
+                <a href="../Threads-page/Threads.html">
+                <div class="icon threads">
+                        <i class="fa-brands fa-threads"></i>
+                </div>
+                </a>
+                
+
+                <div class="icon more">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+        </div>
+
+        <!-- 메시지 선택 창 -->
+        <div class="message">
+            <div class="message-select">
+                <div class="head">
+                    <div id="id">
+                        <span>park_hi_kim2</span>
+                        <div class="drop">
+                            <img width="15" height="15" src="https://img.icons8.com/ios/50/expand-arrow--v1.png" alt="expand-arrow--v1"/>
+                        </div>
+                    </div>
+
+                    <div id="message-icon1">
+                        <i class="fa-regular fa-pen-to-square fa-xl"></i>
+                    </div>
+                </div>
+
+                <div class="head2">
+                    <div id="message">메시지</div>
+                    <div id="request">요청</div>
+                </div>
+
+                <!-- 받은 메시지 리스트 구역 -->
+                <div class="message-list">
+
+                    <div class="dm" id="dm1">
+                        <div class="user-profile">
+                            <div class="user-img user1"></div>
+                        </div>
+
+                        <div class="user-message">
+                            <div class="user-name">Don Lee 마동석
+                            </div>
+                            <div class="blank"></div> <!-- 여백 -->
+                            <div class="user-text">아무튼 잘 한다고</div>
+                        </div>
+                        <div class="tail">
+                            <div class="light"></div>
+                        </div>
+                    </div>
+
+                    <div class="dm" id="dm2">
+                        <div class="user-profile">
+                            <div class="user-img user2"></div>
+                        </div>
+
+                        <div class="user-message">
+                            <div class="user-name" style="font-weight: 100;">꾸버</div>
+                            <div class="blank"></div> <!-- 여백 -->
+                            <div class="user-text" style="font-weight: 100; color: gray;">2시간 전에 활동</div>
+                        </div>
+                        <div class="tail">
+                            <div class="light-none"></div>
+                        </div>
+                    </div>
+
+            </div>
+
+        </div>
+
+
+        
+            <!-- 받은 메시지 클릭시 대화내역 출력 될 부분 -->
+            <div id="message-box">
+
+                <div class="message-view">
+                    <div>
+                        <div id="message-icon2" class="animate__animated animate__bounceIn">
+                            <img width="50" height="50" src="https://img.icons8.com/ios/50/facebook-messenger--v1.png" alt="facebook-messenger--v1"/>
+                        </div>
+                    </div>
+
+                    <div class="text1"><span>내 메시지</span></div>
+                    <div class="text2"><span>친구나 그룹에 비공개 사진과 메시지를 보내보세요</span></div>
+                    <div id="transmit"><input type="button" value="메시지 보내기" class="button transmit-button"></div>
+                </div>
+
+                
+                
+                <div class="message-view1">
+                    <div id="user1-chat">
+                        <div class="chat-head">
+                            <div>
+                            <div class="user-img-chat user1"></div>
+                            </div>  
+                            <div class="user-name-chat"><span>Don Lee 마동석</span><i class="fa-solid fa-circle-check acc"></i></div>
+                            
+                            <div class="chat-icon">
+                                <div class="icon">
+                                    <i class="fa-solid fa-phone"></i>
+                                </div>
+
+                                <div class="icon">
+                                    <i class="fa-solid fa-video"></i>
+                                </div>
+
+                                <div class="icon">
+                                    <i class="fa-regular fa-circle-question"></i>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div id="chating">
+                            <div class="blank2"></div>
+                            <div class="profile">
+                                <div class="user-img-box">
+                                <div class="user-img-chating user1"></div>
+                                </div>
+                                <div class="user-name-chating"><span>Don Lee 마동석</span><i class="fa-solid fa-circle-check acc"></i></div>
+                                
+                                <div class="user-id-chating"><span>donlee · Instagram</span></div>
+                                <div class="profile-button-box"><button type="button" class="profile-button" onclick="location.href='https://www.instagram.com/donlee/'">프로필 보기</button></div>
+                            </div>
+
+
+                            <div class="chat">
+                                <div class="user-chat-box"><span class="user-chat">park_hi_kim2</span></div>
+                                <div class="user-chat-box"><span class="user-chat">박하이김2</span></div>
+                                <div class="user-chat-box"><span class="user-chat">이사람들 웹 개발 잘 한다</span></div>
+                                <div class="me-chat-box"><span class="me-chat">그거 저희에요</span></div>
+                                <div class="user-chat-box"><span class="user-chat">아무튼 잘 한다고</span></div>
+
+                            </div>
+                        </div>
+
+                        <div id="chat-foot">
+                            <div id="chating-input">
+                                <div class="chating-icon emo">
+                                    <i class="fa-regular fa-face-smile"></i>
+                                </div>
+                                <input type="text" id="input-chat" class="input" onkeyup="savechat()" placeholder="메시지 입력...">
+
+                                <div id="chat-att">
+                                    <div class="chating-icon">
+                                        <i class="fa-solid fa-microphone"></i>
+                                    </div>
+
+                                    <label for="file">
+                                        <div class="chating-icon">
+                                            <i class="fa-regular fa-image"></i>
+                                        </div>
+                                    </label>
+                                    <input type="file" name="file" id="file" accept=".png, .jpg">
+
+                                    <div class="chating-icon">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="message-view2">
+
+                    <div id="user2-chat">
+                        <div class="chat-head">
+                            <div>
+                            <div class="user-img-chat user2"></div>
+                            </div>  
+                            <div class="user-name-chat"><span>꾸버</span></div>
+                            
+                            <div class="chat-icon">
+                                <div class="icon">
+                                    <i class="fa-solid fa-phone"></i>
+                                </div>
+
+                                <div class="icon">
+                                    <i class="fa-solid fa-video"></i>
+                                </div>
+
+                                <div class="icon">
+                                    <i class="fa-regular fa-circle-question"></i>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div id="chating">
+                            <div class="blank2"></div>
+                            <div class="profile">
+                                <div class="user-img-box">
+                                <div class="user-img-chating user2"></div>
+                                </div>
+                                <div class="user-name-chating"><span>꾸버</span></div>
+                                
+                                <div class="user-id-chating"><span>qoover_official · Instagram</span></div>
+                                <div class="profile-button-box"><button type="button" class="profile-button" onclick="location.href='https://www.instagram.com/qoover_official/'">프로필 보기</button></div>
+                            </div>
+
+
+                            <div class="chat">
+                                <div class="user-chat-img-box"><img src="./img/꾸버3.jpg" class="qoover-img"></div>
+                                <div class="user-chat-img-box"><img src="./img/꾸버2.jpg" class="qoover-img"></div>
+                                <div class="user-chat-box"><span class="user-chat">너가 너무 좋아...</span></div>
+                                <div class="me-chat-box"><span class="me-chat">부담 스러워</span></div>
+                                <div class="user-chat-img-box"><img src="./img/꾸버4.jpg" class="qoover-img"></div>
+                                <div class="user-chat-box"><span class="user-chat">다시 말해봐</span></div>
+                                <div class="me-chat-box"><span class="me-chat">나도 너가 너무 좋아..</span></div>
+
+
+                            </div>
+                        </div>
+
+                        <div id="chat-foot">
+                            <div id="chating-input">
+                                <div class="chating-icon emo">
+                                    <i class="fa-regular fa-face-smile"></i>
+                                </div>
+                                <input type="text" id="input-chat" class="input" onkeyup="savechat()" placeholder="메시지 입력...">
+
+                                <div id="chat-att">
+                                    <div class="chating-icon">
+                                        <i class="fa-solid fa-microphone"></i>
+                                    </div>
+
+                                    <label for="file">
+                                        <div class="chating-icon">
+                                            <i class="fa-regular fa-image"></i>
+                                        </div>
+                                    </label>
+                                    <input type="file" name="file" id="file" accept=".png, .jpg">
+
+                                    <div class="chating-icon">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    
+                </div>
+
+
+            </div>
+
+            
+
+
+    </div>
+
+        <!-- 메시지 보내기 클릭시 팝업창 -->
+        <div id="pop-up">
+            <div class="box">
+                <div id="pop-up-body">
+
+                    <div id="pop-up-head">
+                        <div id="blank-space"></div> <!-- 여백용 -->
+                        <h1 class="h1-1"><span style="font-size: 16px;">새로운 메시지</span></h1>
+                        <div id="close"><i class="fa-solid fa-xmark"></i></div>
+                    </div>
+
+                    <div id = "recipient">
+                        <div class = "recipient">
+                        <span>받는 사람 :</span>
+                        </div>
+                        <input type="text" placeholder="검색..." class="search">
+                    </div>
+
+                    <div id="pop-up-midle">
+                        <div class="not-find">
+                            <div class="not-find-text">
+                                <span>계정을 찾을 수 없습니다.</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="pop-up-foot">
+                        <div id="chat"><input type="button" value="채팅" class="chat-button"></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!--  -->
+
+
+</div>
+        <script src="./message.js"></script>
+</body>
+</html>

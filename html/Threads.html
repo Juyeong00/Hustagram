@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Threads</title>
+    <link href="./img/threads_logo1.svg" rel="shortcut icon" type="image/x-icon">
+    
+    <style>
+        body {
+            background-image: url(./img/background-img.png);
+            background-size:auto;
+            background-repeat: no-repeat;
+            background-position: center top;
+            overflow: scroll;
+            
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            position: relative;
+            
+        }
+
+        .log_box {
+            width: 400px;
+            height: 370px;
+            margin-top: 280px;
+            border: 1px solid white;
+            position: relative;
+            
+        }
+
+        h4 {
+            text-align: center;
+        }
+
+        .id_box {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+
+        .id {
+            width: 400px;
+            height: 60px;
+            border-radius: 7px;
+            border: 1px solid white;
+            font-size: medium;
+            background-color: #F5F5F5;
+            outline-color: lightgray;
+            
+        }
+
+        .pw_box {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+
+        .pw {
+            width: 400px;
+            height: 60px;
+            border-radius: 7px;
+            border: 1px solid white;
+            font-size: medium;
+            background-color: #F5F5F5;
+            outline-color: lightgray;
+        }
+
+        .login_btn {
+            width: 400px;
+            height: 60px;
+            border: 1px solid black;
+            background-color: rgb(39, 39, 39);
+            color: white;
+            border-radius: 12px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+            font-size: large;
+            font-weight: bold;
+        }
+
+        .login_btnDisabled {
+            background-color: black;  
+        }
+
+        .not_pw {
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+        }
+
+        .password_not {
+            color: gray;
+        }
+
+        .all_line {
+            margin-left: 180px;
+            margin-top: 20px;
+            margin-bottom: 30px;
+        }
+
+        .line1 {
+            width: 150px;
+            height: 1px;
+            background-color: lightgray;
+            top: 0.75em;
+            margin-left: -180px;
+            position: relative;
+        }
+
+        .line2 {
+            width: 150px;
+            height: 1px;
+            background-color: lightgray;
+            top: -0.55em;
+            margin-left: 65px;
+            position: relative;
+        }
+
+        .line_txt {
+            font-size: medium;
+            font-weight: 900;
+            color: gray;
+            margin-left: 4px;
+            position: relative;
+        }
+
+        .insta_box {
+            width: 400px;
+            height: 80px;
+            border: 1px solid lightgray;
+            display: flex;
+            border-radius: 8px;
+        }
+
+        .main_logo {
+            width: 40px;
+            align-items: start;
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+
+        p {
+            margin-top: -35px;
+            margin-left: 130px;
+            color: black;
+            font-weight: bold;
+        }
+
+        .link_left {
+            margin-left: 360px;
+            color: gray;
+        }
+
+        .footer {
+            font-size: small;
+            text-align: center;
+            margin-top: 80px;
+            color: gray;
+        }
+
+        a {
+            color: gray;
+        }
+
+        .qr_text {
+            font-size: small;
+            color: gray;
+            margin-top: -50px;
+            margin-left: 1020px;
+        }
+
+        .qr_code {
+            width: 100px;
+            height: 100px;
+            margin-left: 1040px;
+            margin-top: 30px;
+            transition-duration: 1s;
+            transform:scale(1.0);
+            
+            
+        }
+
+        .qr_code:hover {
+            width: 125px;
+            height: 125px;
+            transform:scale(1.5);
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="log_box">
+            <h4>Instagram 계정으로 로그인하세요</h4>
+            <label class="id_box">
+                <input class="id" type="text" placeholder="&emsp;사용자 이름, 전화번호 또는 이메일 주소" name="input_id" maxlength="10">
+            </label>
+            <label class="pw_box">
+                <input class="pw" type="password" placeholder="&emsp;비밀번호" name="input_pw">
+                
+            </label>
+            <button class="login_btn" type="button" onclick="location.href='./ThreadsQr.html'" disabled>로그인</button>
+            <div class="not_pw">
+                <a class="password_not" href="../password-page/password.html" style="text-decoration: none">비밀번호를 잊으셨나요?</a>
+            </div>
+            <div class="all_line">
+                <div class="line1"></div><div class="line_txt">또는</div><div class="line2"></div>
+            </div>
+        <div class="insta_box">
+            <a class="insta_link" href="../login-page/index.html" style="text-decoration: none"><img class="main_logo" src="./img/insta_logo.png"><p>Instagram으로 계속</p><p class="link_left">〉</p></a>
+        </div>
+        <div class="footer">© 2023&emsp;
+            <a href="https://help.instagram.com/769983657850450" style="text-decoration: none">Threads 약관</a>&emsp;
+            <a href="https://help.instagram.com/515230437301944" style="text-decoration: none">개인정보처리방침</a>&emsp;
+            <a href="https://help.instagram.com/1896641480634370" style="text-decoration: none">쿠키 정책</a>&emsp;
+        </div>
+        
+    </div>
+    </div>
+    <div class="qr_box">
+    <aside class="qr_text">스캔하여 앱 다운로드하기</aside>
+        <img class="qr_code" src="./img/qr_code.png">
+    </div>
+    
+    <script>
+        const button = document.getElementsByClassName("login_btn")[0];
+    const inputId = document.getElementsByClassName("id")[0];
+    const inputPw = document.getElementsByClassName("pw")[0];
+
+    inputId.addEventListener("keyup", validate);
+    inputPw.addEventListener("keyup", validate);
+
+    function validate() {
+        if (!(inputId.value && inputPw.value)) {
+        button.disabled = true;
+        } else {
+        button.disabled = false;
+        button.style.cursor = "pointer";
+        }
+
+    if (!(inputId.value && inputPw.value)) {
+        button.classList.remove("login_btnDisabled");
+        } else {
+        button.classList.add("login_btnDisabled");
+        }
+    }
+
+    const idInput = document.getElementById('id');
+    const pwInput = document.getElementById('pw');
+    const loginBtn = document.getElementById('login_btn');
+
+
+    const isActiveLogin = () => {
+        let idValue = idInput.value;
+        let pwValue = pwInput.value;
+
+    if(
+        (idValue && pwValue) && 
+        (pwValue.length >= 5) && 
+        (idValue.includes('@') || idValue.length >= 5)
+        ) {
+        loginBtn.disabled = false;
+        loginBtn.style.opacity = 1;
+        loginBtn.style.cursor = 'pointer';
+        }
+        else {
+            loginBtn.disabled = true;
+            loginBtn.style.opacity = .3;
+            }
+        }
+
+        const init = () => {
+            idInput.addEventListener('input', isActiveLogin);
+            pwInput.addEventListener('input', isActiveLogin);
+            idInput.addEventListener('keyup', isActiveLogin);
+            pwInput.addEventListener('keyup', isActiveLogin);
+        }
+
+        init();
+    </script>
+</body>
+</html>
