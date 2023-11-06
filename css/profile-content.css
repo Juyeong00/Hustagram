@@ -31,7 +31,7 @@
     background-size: 100%;
     width: 290px;
     height: 290px;
-    background-image: url(../profile-page/img/KakaoTalk_20231101_140016761\ \(1\).jpg);
+    background-image: url(../image/KakaoTalk_20231101_140016761\ \(1\).jpg);
     cursor: pointer;
     display: flex;
     justify-content: right;
@@ -43,7 +43,7 @@
     background-size: 100%;
     width: 290px;
     height: 290px;
-    background-image: url(../profile-page/img/KakaoTalk_20231103_105527099\ \(1\).jpg);
+    background-image: url(../image/KakaoTalk_20231103_105527099\ \(1\).jpg);
     cursor: pointer;
     display: flex;
     justify-content: right;
@@ -55,84 +55,15 @@
     background-size: 100%;
     width: 290px;
     height: 290px;
-    background-image: url(../profile-page/img/KakaoTalk_20231103_105545273\ \(1\).jpg);
+    background-image: url(../image/KakaoTalk_20231103_105545273\ \(1\).jpg);
     cursor: pointer;
     display: flex;
     justify-content: right;
     color: white;
 }
 
-.content4{
-    margin: 2px;
-    background-size: 100%;
-    width: 290px;
-    height: 290px;
-    background-image: url(../profile-page/img/img3.jpg);
-    cursor: pointer;
-    display: flex;
-    justify-content: right;
-    color: white;
-}
 
-.content5{
-    margin: 2px;
-    background-size: 100%;
-    width: 290px;
-    height: 290px;
-    background-image: url(../profile-page/img/img3.jpg);
-    cursor: pointer;
-    display: flex;
-    justify-content: right;
-    color: white;
-}
 
-.content6{
-    margin: 2px;
-    background-size: 100%;
-    width: 290px;
-    height: 290px;
-    background-image: url(../profile-page/img/img3.jpg);
-    cursor: pointer;
-    display: flex;
-    justify-content: right;
-    color: white;
-}
-
-.content7{
-    margin: 2px;
-    background-size: 100%;
-    width: 290px;
-    height: 290px;
-    background-image: url(../profile-page/img/img3.jpg);
-    cursor: pointer;
-    display: flex;
-    justify-content: right;
-    color: white;
-}
-
-.content8{
-    margin: 2px;
-    background-size: 100%;
-    width: 290px;
-    height: 290px;
-    background-image: url(../profile-page/img/img3.jpg);
-    cursor: pointer;
-    display: flex;
-    justify-content: right;
-    color: white;
-}
-
-.content9{
-    margin: 2px;
-    background-size: 100%;
-    width: 290px;
-    height: 290px;
-    background-image: url(../profile-page/img/img3.jpg);
-    cursor: pointer;
-    display: flex;
-    justify-content: right;
-    color: white;
-}
 
 .contentBox1Click{
     position: fixed; /* Stay in place */
@@ -242,7 +173,7 @@
     width: 60%;
     border-top-left-radius: 5px;
     border-bottom-left-radius:5px;
-    background-image: url(../profile-page/img/KakaoTalk_20231101_140016761\ \(1\).jpg);
+    background-image: url(../image/KakaoTalk_20231101_140016761\ \(1\).jpg);
     background-size: 100%;
 }
 
@@ -250,7 +181,7 @@
     width: 60%;
     border-top-left-radius: 5px;
     border-bottom-left-radius:5px;
-    background-image: url(../profile-page/img/KakaoTalk_20231103_105527099\ \(1\).jpg);
+    background-image: url(../image/KakaoTalk_20231103_105527099\ \(1\).jpg);
     background-size: 100%;
 }
 
@@ -258,7 +189,7 @@
     width: 60%;
     border-top-left-radius: 5px;
     border-bottom-left-radius:5px;
-    background-image: url(../profile-page/img/KakaoTalk_20231103_105545273\ \(1\).jpg);
+    background-image: url(../image/KakaoTalk_20231103_105545273\ \(1\).jpg);
     background-size: 100%;
 }
 
@@ -287,7 +218,7 @@
 
 .input-profile-picture{
     background-size: 100%;
-    background-image: url(../profile-page/img/KakaoTalk_20231101_160106321.png);
+    background-image: url(../image/KakaoTalk_20231101_160106321.png);
     width: 40px;
     height: 40px;
     border-radius: 100%;
@@ -297,7 +228,7 @@
 
 .input-profile-picture-middle{
     background-size: 100%;
-    background-image: url(../profile-page/img/KakaoTalk_20231101_160106321.png);
+    background-image: url(../image/KakaoTalk_20231101_160106321.png);
     width: 40px;
     height: 40px;
     border-radius: 100%;
@@ -309,7 +240,7 @@
 
 .input-profile-picture-yeo_jji{
     background-size: 100%;
-    background-image: url(../profile-page/img/KakaoTalk_20231101_160106321_04.png);
+    background-image: url(../image/KakaoTalk_20231101_160106321_04.png);
     width: 40px;
     height: 40px;
     border-radius: 100%;
@@ -321,7 +252,7 @@
 
 .input-profile-picture-min_ji{
     background-size: 100%;
-    background-image: url(../profile-page/img/KakaoTalk_20231101_160106321_03.png);
+    background-image: url(../image/KakaoTalk_20231101_160106321_03.png);
     width: 40px;
     height: 40px;
     border-radius: 100%;
@@ -333,7 +264,7 @@
 
 .input-profile-picture-jin_ho{
     background-size: 100%;
-    background-image: url(../profile-page/img/KakaoTalk_20231101_160106321_02.png);
+    background-image: url(../image/KakaoTalk_20231101_160106321_02.png);
     width: 40px;
     height: 40px;
     border-radius: 100%;
@@ -345,7 +276,7 @@
 
 .input-profile-picture-ta2jjang{
     background-size: 100%;
-    background-image: url(../profile-page/img/KakaoTalk_20231101_160106321_07.png);
+    background-image: url(../image/KakaoTalk_20231101_160106321_07.png);
     width: 40px;
     height: 40px;
     border-radius: 100%;
@@ -357,7 +288,7 @@
 
 .input-profile-picture-J_uyeong{
     background-size: 100%;
-    background-image: url(../profile-page/img/KakaoTalk_20231101_160106321_05.png);
+    background-image: url(../image/KakaoTalk_20231101_160106321_05.png);
     width: 40px;
     height: 40px;
     border-radius: 100%;
@@ -371,7 +302,7 @@
 
 .input-profile-picture-last{
     background-size: 100%;
-    background-image: url(../profile-page/img/KakaoTalk_20231101_160106321.png);
+    background-image: url(../image/KakaoTalk_20231101_160106321.png);
     width: 30px;
     height: 30px;
     border-radius: 100%;

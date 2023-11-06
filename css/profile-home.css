@@ -50,7 +50,7 @@
             border-radius: 100%;
             border-style: double;
             border-color: lightgray;
-            background-image: url(../profile-page/img/KakaoTalk_20231101_160106321.png);
+            background-image: url(../image/KakaoTalk_20231101_160106321.png);
             width: 200px;
             height: 200px;
             background-size: 100%;
@@ -145,27 +145,27 @@
         }
 
         .story1{
-            background-image: url(../profile-page/img/KakaoTalk_20231101_160106321_02.png);
+            background-image: url(../image/KakaoTalk_20231101_160106321_02.png);
         }
 
         .story2{
-            background-image: url(../profile-page/img/KakaoTalk_20231101_160106321_04.png);
+            background-image: url(../image/KakaoTalk_20231101_160106321_12.png);
         }
 
         .story3{
-            background-image: url(../profile-page/img/KakaoTalk_20231101_160106321_05.png);
+            background-image: url(../image/KakaoTalk_20231101_160106321_11.png);
         }
 
         .story4{
-            background-image: url(../profile-page/img/KakaoTalk_20231101_160106321_03.png);
+            background-image: url(../image/KakaoTalk_20231101_160106321_05.png);
         }
 
         .story5{
-            background-image: url(../profile-page/img/KakaoTalk_20231101_160106321_07.png);
+            background-image: url(../image/KakaoTalk_20231101_160106321_07.png);
         }
 
         .story6{
-            background-image: url(../../day01/images/인스타\ 스토리\ 플ㄹㅓ스\ 표시.png);
+            background-image: url(../image/인스타\ 스토리\ 플ㄹㅓ스\ 표시.png);
             background-size: 100%
         }
 
