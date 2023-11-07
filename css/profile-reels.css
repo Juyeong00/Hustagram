@@ -23,10 +23,39 @@
     background-size: 100%;
     width: 220px;
     height: 345.56px;
-    background-image: url(../image/KakaoTalk_20231101_160106321.png);
     cursor: pointer;
     display: flex;
     color: white;
+}
+
+.reels1{
+    background-image: url(../image/KakaoTalk_20231101_160106321_08.png);
+    background-size : 100% 100%;
+}
+
+.reels2{
+    background-image: url(../image/KakaoTalk_20231101_160106321_09.png);
+    background-size : 100% 100%;
+}
+
+.reels3{
+    background-image: url(../image/KakaoTalk_20231101_160106321_11.png);
+    background-size : 100% 100%;
+}
+
+.reels4{
+    background-image: url(../image/KakaoTalk_20231101_160106321_05.png);
+    background-size : 100% 100%;
+}
+
+.reels5{
+    background-image: url(../image/KakaoTalk_20231101_160106321_03.png);
+    background-size : 100% 100%;
+}
+
+.reels6{
+    background-image: url(../image/KakaoTalk_20231101_160106321_12.png);
+    background-size : 100% 100%;
 }
 
 .text-top{
