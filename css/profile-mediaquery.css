@@ -13,12 +13,10 @@
     }
 
     .profilebar{
-        width: 940px;
-        height: 1789.31px;
+        margin: 50px auto;
+        margin-left: 150px;
         display: flex;
         align-items: center;
-        padding: 10px;
-        padding-top: 50px;
     }
 
     .menu-box1 {
@@ -81,6 +79,8 @@
         margin-left: 85px;
         text-align: center;
     }
+
+
 
 }
 
@@ -169,5 +169,11 @@
     .vidi2 {
         font-size: 1.3rem;
     }
+
+    .profile{
+        width: calc(100% - 40px);
+
+    }
+    
 
 }

@@ -174,7 +174,8 @@
     border-top-left-radius: 5px;
     border-bottom-left-radius:5px;
     background-image: url(../image/KakaoTalk_20231101_140016761\ \(1\).jpg);
-    background-size: 100%;
+    background-size: 100% 100%;
+    
 }
 
 .picture2{
@@ -182,7 +183,7 @@
     border-top-left-radius: 5px;
     border-bottom-left-radius:5px;
     background-image: url(../image/KakaoTalk_20231103_105527099\ \(1\).jpg);
-    background-size: 100%;
+    background-size: 100% 100%;
 }
 
 .picture3{
@@ -190,7 +191,7 @@
     border-top-left-radius: 5px;
     border-bottom-left-radius:5px;
     background-image: url(../image/KakaoTalk_20231103_105545273\ \(1\).jpg);
-    background-size: 100%;
+    background-size: 100% 100%;
 }
 
 
@@ -357,7 +358,7 @@
 
 .input-text{
     font-weight: 100;
-    font-size: 18px;
+    font-size: 16px;
     margin-left: 10px;
 }
 
