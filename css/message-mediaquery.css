@@ -1,0 +1,131 @@
+/* 페이지 가로 축소 시 화면 변환 */
+@media only screen and (max-width: 850px){
+
+    .message-select{
+        width: 120px;
+    }
+
+    #id,
+    .head2,
+    .user-message,
+    .tail{
+        display: none;
+    }
+
+
+    #message-icon1{
+        width: 150px;
+        text-align:center;
+    }
+
+
+}
+
+
+
+@media only screen and (max-width: 740px){
+
+    .message{
+        height: 95%;
+        display: flex;
+    }
+
+    #pop-up-body{
+        border-radius: 0;
+        width: 100%;
+    }
+
+    .serch{
+        margin-top: 0;
+    }
+
+
+}
+
+
+@media only screen and (max-width: 740px) {
+
+    .message{
+        margin-left: 0px;
+    }
+
+    .container {
+        flex-direction: column-reverse;
+        overflow-x: hidden;
+    }
+
+    .main {
+        width: 100%;
+        height: auto;
+        margin: 0;
+        display: flex;
+    }
+
+    .iconbox {
+        position: fixed;
+        flex-direction: row;
+        width: 100%;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 93.5%;
+        height: 50px;
+        background-color: white;
+        margin-bottom: 500px;
+        border-top: 1px solid lightgray;
+        border-right: none;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        z-index: 3;
+    }
+
+    .video-icon,
+    .making-icon {
+        width: auto;
+    }
+
+    .video-icon:hover,
+    .making-icon:hover {
+        width: auto;
+    }
+
+    .menu-box1 {
+        width: 100%;
+        height: 50px;
+        margin-top: -50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+
+    }
+
+    .insta-logo,
+    .search-icon,
+    .heart-icon,
+    .menu-box2 {
+        display: none;
+    }
+
+
+    .footer1 {
+        margin: 0;
+        margin-bottom: 30px;
+        width: 100%;
+        height: auto;
+    }
+
+    .loading-img {
+        margin-bottom: 0;
+    }
+
+    .inst_footer {
+        margin-top: 40px;
+    }
+
+    .mulpic,
+    .vidi,
+    .vidi2 {
+        font-size: 1.3rem;
+    }
+
+}
