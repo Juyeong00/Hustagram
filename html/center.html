@@ -13,21 +13,440 @@
     
     <div class="container">
         <div id="top-bar">
-            <div class="center-btn">
+            <div class="center-btn cursor">
                 <div class="icon face">
                     <i class="fa-brands fa-facebook"></i>
                 </div>
                 <div><span class="bold sizeL center-text1">고객 센터</span></div>
             </div>
             <div class="right-menu">
-                <i class="fa-solid fa-magnifying-glass color-gray"></i>
-                <input type="text">
-                <button class="bold sizeL">한국어</button>
+                <div class="search-box">
+                    <div class="search">
+                        <i class="fa-solid fa-magnifying-glass" style="color: gray;"></i>
+                        <input type="text" placeholder="도움말 항목 검색..." class="sizeM search-area">
+                    </div>
+                </div>
+                <div class="back-color-gray icon-circle cursor">
+                    <i class="fa-solid fa-box-archive icon"></i>
+                </div>
+                <button class="bold sizeL cursor language-btn color-gray">한국어</button>
             </div>
         </div>
 
+
+        
+        <div class="main">
+
+            <!-- 사이드바 -->
+            <div class="side-bar">
+                <div class="use-menu">
+                    <div class="side-menu cursor use">
+                        <div>
+                            <div class="icon back-color-gray icon-circle">
+                                <i class="fa-solid fa-compass"></i>
+                            </div>
+                        </div>
+                        <div class="menu-text">
+                            <span class="sizeL bold">Facebook 사용</span>
+                            <div class="drop drop-select">
+                            <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="use-menu-low">
+                    <div class="side-menu-low cursor">
+                        <div>
+                            <div class="icon back-color-gray icon-circle">
+                                <i class="fa-solid fa-user-pen"></i>
+                            </div>
+                        </div>
+                        <div class="menu-text">
+                            <span class="sizeL">계정 만들기</span>
+                        </div>
+                    </div>
+
+                    <div class="side-menu-low cursor">
+                        <div>
+                            <div class="icon back-color-gray icon-circle">
+                                <i class="fa-solid fa-user-check"></i>
+                            </div>
+                        </div>
+                        <div class="menu-text">
+                            <span class="sizeL">프로필</span>
+                        </div>
+                        <div class="drop">
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                    </div>
+
+
+                    <div class="side-menu-low cursor">
+                        <div>
+                            <div class="icon back-color-gray icon-circle">
+                                <i class="fa-solid fa-user-plus"></i>
+                            </div>
+                        </div>
+                        <div class="menu-text cursor">
+                            <span class="sizeL">친구 맺기</span>
+                        </div>
+                        <div class="drop">
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                    </div>
+
+
+                    <div class="side-menu-low cursor">
+                        <div>
+                            <div class="icon back-color-gray icon-circle">
+                                <i class="fa-solid fa-heart-circle-plus"></i>
+                            </div>
+                        </div>
+                        <div class="menu-text">
+                            <span class="sizeL">Facebook 데이팅</span>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                    </div>
+
+                    <div class="side-menu-low cursor">
+                        <div>
+                            <div class="icon back-color-gray icon-circle">
+                                <i class="fa-solid fa-house"></i>
+                            </div>
+                        </div>
+                        <div class="menu-text">
+                            <span class="sizeL">홈페이지</span>
+                        </div>
+                        <div class="drop">
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                    </div>
+
+                    <div class="message-center">
+                        <div class="side-menu-low cursor message-menu">
+                            <div>
+                                <div class="icon back-color-gray icon-circle">
+                                    <i class="fa-solid fa-message"></i>
+                                </div>
+                            </div>
+                            <div class="menu-text">
+                                <span class="sizeL">메시지</span>
+                            </div>
+                            <div id="d2" class="drop drop-select">
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                        </div>
+                            <!-- 메시지 하위 메뉴 -->
+                        <div class="message-low">
+                            <div class="side-menu-low-low cursor">
+                                <div class="menu-text">
+                                    <span class="sizeM">메시지 보내기</span>
+                                </div>
+                            </div>
+
+                            <div class="side-menu-low-low cursor">
+                                <div class="menu-text">
+                                    <span class="sizeM">메시지 보기 및 관리</span>
+                                </div>
+                            </div>
+
+                            <div class="side-menu-low-low cursor">
+                                <div class="menu-text">
+                                    <span class="sizeM">메시지 신고</span>
+                                </div>
+                            </div>
+
+                            <div class="side-menu-low-low cursor select">
+                                <div class="menu-text">
+                                    <span class="sizeM">영상 통화</span>
+                                </div>
+                            </div>
+
+                            <div class="side-menu-low-low cursor">
+                                <div class="menu-text">
+                                    <span class="sizeM">문제 해결</span>
+                                </div>
+                            </div>
+
+                        </div>
+                        
+                    </div>
+
+                    <div class="side-menu-low cursor">
+                        <div>
+                            <div class="icon back-color-gray icon-circle">
+                                <i class="fa-solid fa-clapperboard"></i>
+                            </div>
+                        </div>
+                        <div class="menu-text cursor">
+                            <span class="sizeL">릴스</span>
+                        </div>
+                        <div class="drop">
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                    </div>
+
+                    <div class="side-menu-low cursor">
+                        <div>
+                            <div class="icon back-color-gray icon-circle">
+                                <i class="fa-solid fa-book-open"></i>
+                            </div>
+                        </div>
+                        <div class="menu-text">
+                            <span class="sizeL">스토리</span>
+                        </div>
+                        <div class="drop">
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    
+
+                    <div class="side-menu-low cursor">
+                        <div>
+                            <div class="icon back-color-gray icon-circle">
+                                <i class="fa-solid fa-camera"></i>
+                            </div>
+                        </div>
+                        <div class="menu-text">
+                            <span class="sizeL">사진</span>
+                        </div>
+                        <div class="drop">
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                    </div>
+
+                    <div class="side-menu-low cursor">
+                        <div>
+                            <div class="icon back-color-gray icon-circle">
+                                <i class="fa-solid fa-record-vinyl"></i>
+                            </div>
+                        </div>
+                        <div class="menu-text">
+                            <span class="sizeL">동영상</span>
+                        </div>
+                        <div class="drop">
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                    </div>
+
+
+                    <div class="side-menu-low cursor">
+                        <div>
+                            <div class="icon back-color-gray icon-circle">
+                                <i class="fa-solid fa-record-vinyl"></i>
+                            </div>
+                        </div>
+                        <div class="menu-text">
+                            <span class="sizeL">게임</span>
+                        </div>
+                        <div class="drop">
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                    </div>
+
+
+                    <div class="side-menu-low cursor">
+                        <div>
+                            <div class="icon back-color-gray icon-circle">
+                                <i class="fa-solid fa-flag"></i>
+                            </div>
+                        </div>
+                        <div class="menu-text">
+                            <span class="sizeL">페이지</span>
+                        </div>
+                        <div class="drop">
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                    </div>
+
+                    <div class="side-menu-low cursor">
+                        <div>
+                            <div class="icon back-color-gray icon-circle">
+                                <i class="fa-solid fa-people-group"></i>
+                            </div>
+                        </div>
+                        <div class="menu-text">
+                            <span class="sizeL">그룹</span>
+                        </div>
+                        <div class="drop">
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                    </div>
+
+                    <div class="side-menu-low cursor">
+                        <div>
+                            <div class="icon back-color-gray icon-circle">
+                                <i class="fa-regular fa-calendar-days"></i>
+                            </div>
+                        </div>
+                        <div class="menu-text">
+                            <span class="sizeL">이벤트</span>
+                        </div>
+                        <div class="drop">
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                    </div>
+
+                    <div class="side-menu-low cursor">
+                        <div>
+                            <div class="icon back-color-gray icon-circle">
+                                <i class="fa-regular fa-calendar-days"></i>
+                            </div>
+                        </div>
+                        <div class="menu-text">
+                            <span class="sizeL">이벤트</span>
+                        </div>
+                        <div class="drop">
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                    </div>
+
+                    <div class="side-menu-low cursor">
+                        <div>
+                            <div class="icon back-color-gray icon-circle">
+                                <i class="fa-solid fa-circle-dollar-to-slot"></i>
+                            </div>
+                        </div>
+                        <div class="menu-text">
+                            <span class="sizeL">기부 캠페인 및 기부</span>
+                        </div>
+                        <div class="drop">
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                    </div>
+
+                    <div class="side-menu-low cursor">
+                        <div>
+                            <div class="icon back-color-gray icon-circle">
+                                <i class="fa-solid fa-credit-card"></i>
+                            </div>
+                        </div>
+                        <div class="menu-text">
+                            <span class="sizeL">Meta Pay</span>
+                        </div>
+                        <div class="drop">
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                    </div>
+
+
+                    <div class="side-menu-low cursor">
+                        <div>
+                            <div class="icon back-color-gray icon-circle">
+                                <i class="fa-solid fa-store"></i>
+                            </div>
+                        </div>
+                        <div class="menu-text cursor">
+                            <span class="sizeL">MarketPlace</span>
+                        </div>
+                        <div class="drop">
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                    </div>
+
+                    <div class="side-menu-low cursor">
+                        <div>
+                            <div class="icon back-color-gray icon-circle">
+                                <i class="fa-solid fa-square"></i>
+                            </div>
+                        </div>
+                        <div class="menu-text cursor">
+                            <span class="sizeL">앱</span>
+                        </div>
+                        <div class="drop">
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                    </div>
+
+                    <div class="side-menu-low cursor">
+                        <div>
+                            <div class="icon back-color-gray icon-circle">
+                                <i class="fa-solid fa-mobile-screen-button"></i>
+                            </div>
+                        </div>
+                        <div class="menu-text">
+                            <span class="sizeL">Facebook 모바일 앱</span>
+                        </div>
+                        <div class="drop">
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                    </div>
+
+                    <div class="side-menu-low cursor">
+                        <div>
+                            <div class="icon back-color-gray icon-circle">
+                                <i class="fa-solid fa-universal-access"></i>
+                            </div>
+                        </div>
+                        <div class="menu-text cursor">
+                            <span class="sizeL">접근성</span>
+                        </div>
+                        <div class="drop">
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                    </div>
+
+                </div>
+                </div>
+
+
+                <div class="side-menu cursor use">
+                    <div>
+                        <div class="icon back-color-gray icon-circle">
+                            <i class="fa-solid fa-address-card"></i>
+                        </div>
+                    </div>
+                    <div class="menu-text">
+                        <span class="sizeL bold">계정 관리</span>
+                        <div class="drop">
+                        <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="side-menu cursor use">
+                    <div>
+                        <div class="icon back-color-gray icon-circle">
+                            <i class="fa-solid fa-lock"></i>
+                        </div>
+                    </div>
+                    <div class="menu-text">
+                        <span class="sizeL bold">공개 범위, 안전 및 보안</span>
+                        <div class="drop">
+                        <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="side-menu cursor use">
+                    <div>
+                        <div class="icon back-color-gray icon-circle">
+                            <i class="fa-solid fa-circle-info"></i>
+                        </div>
+                    </div>
+                    <div class="menu-text">
+                        <span class="sizeL bold">정책 및 신고</span>
+                        <div class="drop">
+                        <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+        </div>
+
+        <div id="help">
+            <div class="help">
+                <div>엥</div>
+            </div>
+        </div>
     </div>
 
-
+    <script src="../js/center.js"></script>
 </body>
 </html>
