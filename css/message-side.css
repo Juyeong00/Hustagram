@@ -1,0 +1,138 @@
+.iconbox {
+    position: fixed;
+    box-sizing: border-box;
+    border-right: 1px solid lightgray;
+    display: flex;
+    flex-direction: column;
+    width: 70px;
+    height: 100%;
+    align-items: center;
+    padding: 10px;
+    padding-top: 50px;
+}
+
+
+.menu-box1{
+    display:flex;
+    flex-direction:column;
+    height: 80%;
+}
+
+.home-icon,
+.search-icon,
+.compass-icon,
+.video-icon,
+.message-icon,
+.heart-icon,
+.making-icon,
+.instagram-profile,
+.threads-icon,
+.setting-icon {
+    margin-left: 10.1%;
+    margin-top: 5%;
+    height: 40px;
+    width: 200px;
+    border: 1px solid white;
+    border-radius: 10%;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+}
+.font-size-box {
+    display: none;
+}
+
+h1 {
+    font-size: 15px;
+}
+
+
+.instagram-fontbox {
+    display: none;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.ico {
+    border-radius: 10px;
+    width: 90%;
+    height: 48px;
+    font-size: 25px;
+    display: flex;
+    padding: 12px;
+    margin-top: 8px;
+    margin-bottom: 4px;
+    margin-left:15px;
+    cursor: pointer;
+    transition-duration: 0.1s;
+}
+.ico:hover{
+    background-color: rgb(238, 238, 238);
+    left: 5px;
+}
+
+.ico:hover > .ico2{
+    transform:scale(1.02);
+}
+
+.ico2{
+    transition-duration: 0.1s;
+}
+
+.insta-logo {
+    width: 100%;
+    margin-top: -10px;
+    margin-bottom: 30px;
+    margin-left: 3px;
+    font-size: 26px;
+    display: flex;
+    align-items: center;
+}
+
+.home-icon,
+.search-icon,
+.compass-icon,
+.video-icon,
+.message-icon,
+.heart-icon,
+.making-icon,
+.instagram-profile,
+.threads-icon,
+.setting-icon {
+    font-size: 23px;
+    margin-top: 5px;
+    margin-left: 2px;
+}
+
+
+.inst-logo:hover,
+.home-icon:hover,
+.search-icon:hover,
+.compass-icon:hover,
+.video-icon:hover,
+.message-icon:hover,
+.heart-icon:hover,
+.making-icon:hover,
+.instagram-profile:hover,
+.threads-icon:hover,
+.setting-icon:hover {
+    width: 100%;
+}
+
+.main {
+    width: 90%;
+    margin-left: 89px;
+    margin-right: auto;
+}
+
+.footer1 {
+    margin-left: 85px;
+    text-align: center;
+}
+
+
+
+

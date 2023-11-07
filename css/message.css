@@ -8,20 +8,14 @@ html, body{
     height: 100%;
 }
 
-.container{
+.container2{
     width: 100%;
     height: 100%;
-    display: flex;
     overflow-y: hidden;
     overflow-x: hidden;
+    display: flex;
 }
 
-.side-bar{
-    width: 72px;
-    height: 100%;
-    border-right: 1px solid lightgray;
-    padding: 8px 12px 20px 12px;
-}   
 
 .message-select{
     width: 397px;
@@ -94,7 +88,7 @@ html, body{
     border-radius: 10px;
     width: 48px;
     height: 48px;
-    font-size: 24px;
+    font-size: 23px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -108,7 +102,7 @@ html, body{
 /* 마우스오버시 사이드바 메뉴 아이콘 색상 및 사이즈 변경 */
 .icon:hover{
     background-color: rgb(238, 238, 238);
-    font-size: 25px;
+    transform:scale(1.02);
 }
 
 
@@ -117,7 +111,7 @@ html, body{
 }
 
 .instar:hover{
-    font-size: 31px;
+    transform:scale(1.02);
 }
 
 
@@ -590,6 +584,7 @@ a{
 .h1-1{
     width: 80%;
     text-align: center;
+    padding: 18px;
 }
 
 #recipient{
@@ -662,6 +657,7 @@ button:active {
 .message{
     width: 100%;
     display: flex;
+    margin-left: 70px;
 }
 
 
@@ -671,102 +667,6 @@ button:active {
 
 
 
-/* 페이지 가로 축소 시 화면 변환 */
-@media only screen and (max-width: 850px){
-
-    .message-select{
-        width: 120px;
-    }
-
-    #id,
-    .head2,
-    .user-message,
-    .tail{
-        display: none;
-    }
 
 
-    #message-icon1{
-        width: 150px;
-        text-align:center;
-    }
-
-
-}
-
-
-
-@media only screen and (max-width: 740px){
-
-    .message{
-        height: 95%;
-        display: flex;
-    }
-
-    .container{
-        flex-direction: column-reverse;
-    }
-
-
-    .side-bar{
-        width: 100%;
-        height: 50px;
-        border-top: 1px solid lightgray;
-        padding: 0px;
-        overflow-x: hidden;
-        overflow-y: hidden;
-        z-index: 2;
-    }
-
-
-    .menu{
-        width: 100%;
-        height: 50px;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        
-    }
-
-    .noti,
-    .serch,
-    .header{
-        display: none;
-    }
-
-    .bottom{
-        display: none;
-    }
-
-    #pop-up-body{
-        border-radius: 0;
-        width: 100%;
-    }
-
-    .icon{
-        margin: 0;
-    }
-
-}
-
-
-
-
-/* 페이지 세로 축소 시 화면 변환 */
-@media only screen and (max-height: 700px){
-
-    .threads{
-        display: none;
-    }
-
-}
-
-@media only screen and (max-height: 600px){
-
-    .icon{
-        margin-top: 2px;
-        margin-bottom: 2px;
-    }
-
-}
 

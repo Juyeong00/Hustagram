@@ -5,77 +5,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Instagram · Direct</title>
     <link href="../image/insta_icon7.png" rel="shortcut icon" type="image/x-icon">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../css/message.css">
+    <link href="../css/message-side.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/message-mediaquery.css">
+    
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
 </head>
 <body>
-    <div class="container">
-        
-        <!-- 사이드바 -->
-        <div class="side-bar">
-            <div class="header"> <!-- 사이드바 최상단 -->
-                <div class="icon instar">
-                    <i class="fa-brands fa-instagram"></i>
-                </div>
-            </div>
 
-            <!-- 사이드바 중앙 메뉴 -->
-            <div class="menu">
-                <a href="./home.html">
-                <div class="icon home">
-                    <i class="fa-solid fa-house"></i>
-                </div>
+
+    <div class="container2">
+
+
+        <div class="container">
+            <div class="iconbox">
+                <a href="../html/home.html">
+                    <div class="ico insta-logo"><i class="ico2 fa-brands fa-instagram"></i></div>
+                    <div class="instagram-fontbox">
+                        <div class="img-move"><img src="../image/insta.png"></div>
+                    </div>
                 </a>
-                <div class="icon serch">
-                    <i class="fa-solid fa-magnifying-glass"></i>
+                <div class="menu-box1">
+                    <a href="../html/home.html">
+                        <div class="ico home-icon"><i class="ico2 fa-solid fa-house"></i>
+                            <p class="font-size-box">홈</p>
+                        </div>
+                    </a>
+                    <div class="ico search-icon"><i class="ico2 fa-solid fa-magnifying-glass"></i>
+                        <p class="font-size-box">검색</p>
+                    </div>
+                    <a href="../html/search.html">
+                        <div class="ico compass-icon"><i class="ico2 fa-regular fa-compass"></i>
+                            <p class="font-size-box">탐색 탭</p>
+                        </div>
+                    </a>
+                    <div class="ico video-icon"><i class="ico2 fa-solid fa-clapperboard"></i>
+                        <p class="font-size-box">릴스</p>
+                    </div>
+                    
+                    <a href="../html/message.html">
+                        <div class="ico message-icon"><i class="ico2 fa-brands fa-facebook-messenger"></i>
+                            <p class="font-size-box">메시지</p>
+                        </div>
+                    </a>
+                    <div class="ico heart-icon"><i class="ico2 fa-regular fa-heart"></i>
+                        <p class="font-size-box">알림</p>
+                    </div>
+                    <div class="ico making-icon"><i class="ico2 fa-regular fa-square-plus"></i>
+                        <p class="font-size-box">만들기</p>
+                    </div>
+                    <a href="../html/profile.html">
+                        <div class="ico instagram-profile"><i class="ico2 fa-regular fa-circle-user"></i>
+                            <h1 class="font-size-box">프로필</h1>
+                        </div>
                 </div>
-
-                <a href="./search.html">
-                <div class="icon exp">
-                    <i class="fa-regular fa-compass"></i>
-                </div>
-            </a>
-                <div class="icon reels">
-                    <i class="fa-solid fa-clapperboard"></i>
-                </div>
-
-                <a href="./message.html">
-                <div class="icon direct">
-                    <i class="fa-brands fa-facebook-messenger"></i>
-                </div>
-                </a>
-
-                <div class="icon noti">
-                    <i class="fa-regular fa-heart"></i>
-                </div>
-                <div class="icon pose">
-                    <i class="fa-regular fa-square-plus"></i>
-                </div>
-                <a href="./profile.html">
-                <div class="icon prof">
-                    <i class="fa-regular fa-circle-user"></i>
-                </div>
-                </a>
-            </div>
-
-            <!-- 사이드바 최하단 메뉴 -->
-            <div class="bottom">
-                <a href="./Threads.html">
-                <div class="icon threads">
-                        <i class="fa-brands fa-threads"></i>
-                </div>
-                </a>
-                
-
-                <div class="icon more">
-                    <i class="fa-solid fa-bars"></i>
+                <div class="menu-box2">
+                    <a href="../html/Threads.html" target="_blank">
+                        <div class="ico threads-icon"><i class="ico2 fa-brands fa-threads" style="color: #000000;"></i>
+                            <p class="font-size-box">Threads</p>
+                        </div>
+                    </a>
+                    <div class="ico setting-icon"><i class="ico2 fa-solid fa-bars"></i>
+                        <p class="font-size-box">더 보기</p>
+                    </div>
                 </div>
             </div>
         </div>
+
+
 
         <!-- 메시지 선택 창 -->
         <div class="message">
@@ -318,7 +319,7 @@
             
 
 
-    </div>
+        </div>
 
         <!-- 메시지 보내기 클릭시 팝업창 -->
         <div id="pop-up">
@@ -353,9 +354,8 @@
                 </div>
             </div>
         </div>
-        <!--  -->
-
-
+        <!--  -->   
+    </div>
 </div>
         <script src="../js/message.js"></script>
 </body>
