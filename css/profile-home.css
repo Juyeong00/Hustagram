@@ -9,8 +9,7 @@
         .container{
             box-sizing: border-box;
             display: flex;
-            margin: 0 auto;
-            text-align: center;
+            
             
         }
 
@@ -19,27 +18,23 @@
         .profilebar{
             display: flex;
             flex-direction: column;
-            justify-content: center;
-            margin: 0 auto;
-            width: 80%;
-            margin-top: 50px;
+            max-width: 979px;
             height: auto;
-            margin:0 auto;
+            margin-left: 24%;
             margin-top: 50px;
-            margin-left:24%;
-            margin-right:90px;
             height:auto;
             position:relative;
         }
 
         .profile{
             display: flex;
-            justify-content: center;
+            justify-content: flex-start;
+            margin-bottom: 44px;
         }
         .profile-head{
             display: flex;
             flex-direction: column;
-            margin-left: 50px;
+            
         }
 
         .profile-name{
@@ -52,6 +47,9 @@
         .profile-picture{
             box-sizing: border-box;       
             display: flex;
+            width: 300px;
+            justify-content: center;
+            margin-right: 40px;
         }
         
         .picture-inline{
@@ -136,10 +134,8 @@
 
         .storys{
             display: flex;
-            justify-content: center;
+            justify-content: flex-start;
             background-size: 100%;
-            margin-top: 30px;
-            margin-right: 100px;
         }
 
         .story1, .story2, .story3, .story4, .story5, .story6{
@@ -184,15 +180,21 @@
 
         .str1name, .str2name, .str3name, .str4name, .str5name, .str6name{
             text-align: center;
+            font-size: 14px;
+            font-weight: bolder;
         }
         
 
         .menu-line{
+            display: flex;
+            justify-content: center;
             position: relative;
             border-top: 2px solid lightgrey;
-            margin-top: 50px;
+            
             width: 900px;
-                    }
+            margin: 0 auto;
+            margin-top: 50px;
+        }
 
         .menu-changelineblack{
             border-top: 2px solid black;
@@ -202,29 +204,31 @@
             position: absolute;
             width: 100px;
             top: 0;
-            margin-left: 200px;
-            
+            margin-left: -400px;
         }
 
         .menu-changeline2{
+            display: flex;
             position: absolute;
             width: 100px;
             top: 0;
-            margin-left: 340px;
+            margin-left: -130px;
         }
 
         .menu-changeline3{
+            display: flex;
             position: absolute;
             width: 100px;
             top: 0;
-            margin-left: 480px;
+            margin-left: 150px;
         }
 
         .menu-changeline4{
+            display: flex;
             position: absolute;
             width: 100px;
             top: 0;
-            margin-left: 620px;
+            margin-left: 430px;
         }
 
         .menu{
