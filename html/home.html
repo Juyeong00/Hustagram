@@ -190,7 +190,7 @@
             align-items: center;
             height: 56px;
             width: 56px;
-            border: 0.5px double black;
+            border: 1px solid lightgray;
             border-radius: 40px 40px 40px 40px / 40px 40px 40px 40px;
             
         }
@@ -208,7 +208,7 @@
         .stroys-boder1{
             height: 50px;
             width: 50px;
-            border: 1px double black;
+            border: 1px solid lightgray;
             background-image: url('../image/story1.png') ;
             background-size: 100%;
             border-radius: 40px 40px 40px 40px / 40px 40px 40px 40px;
@@ -217,7 +217,7 @@
         .stroys-boder2{
             height: 50px;
             width: 50px;
-            border: 1px double black;
+            border: 1px solid lightgray;
             background-image: url('../image/story2.png') ;
             background-size: 100%;
             border-radius: 40px 40px 40px 40px / 40px 40px 40px 40px;
@@ -226,7 +226,7 @@
         .stroys-boder3{
             height: 50px;
             width: 50px;
-            border: 1px double black;
+            border: 1px solid lightgray;
             background-image: url('../image/story3.png') ;
             background-size: 100%;
             border-radius: 40px 40px 40px 40px / 40px 40px 40px 40px;
@@ -235,7 +235,7 @@
         .stroys-boder4{
             height: 50px;
             width: 50px;
-            border: 1px double black;
+            border: 1px solid lightgray;
             background-image: url('../image/story4.png') ;
             background-size: 100%;
             border-radius: 40px 40px 40px 40px / 40px 40px 40px 40px;
@@ -244,7 +244,7 @@
         .stroys-boder5{
             height: 50px;
             width: 50px;
-            border: 1px double black;
+            border: 1px solid lightgray;
             background-image: url('../image/story5.png') ;
             background-size: 100%;
             border-radius: 40px 40px 40px 40px / 40px 40px 40px 40px;
@@ -253,7 +253,7 @@
         .stroys-boder6{
             height: 50px;
             width: 50px;
-            border: 1px double black;
+            border: 1px solid lightgray;
             background-image: url('../image/story6.png') ;
             background-size: 100%;
             border-radius: 40px 40px 40px 40px / 40px 40px 40px 40px;
@@ -547,6 +547,20 @@
             height: 100%;
             width: 30%;
             margin-right: 10px;
+            margin-bottom: 20px;
+            border: 1px solid lightgray;
+            border-radius: 4%;
+        }
+
+        .friend-proposal2{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            height: 100%;
+            width: 32%;
+            margin-right: 10px;
+            margin-bottom: 20px;
             border: 1px solid lightgray;
             border-radius: 4%;
         }
@@ -825,6 +839,129 @@
             font-size: 14px;
         }
 
+        /* 모달 창 ----------------------------------------------*/
+
+        .friend-popup{
+            margin: auto 0 ;
+            padding: 0;
+            box-sizing: border-box;
+            width: 50%;
+            display: none;
+            
+            
+        }
+        
+        .friend-popup-profile-box{
+            display: flex;
+            flex-direction: row;
+            margin-left:40px;
+        }
+
+        .friend-popup-profile{
+            height: 45px;
+            width: 45px;
+            border: 1px solid lightgray;
+            background-image: url('./img/posting.png'); 
+            background-size: 100%;
+            margin-right: 10px;
+            margin-top: 8px;
+            border-radius: 50px;
+            align-items: center;
+        }
+
+        .friend-popup-en-name{
+            margin-top: 10px;
+            font-size:15px ;
+            font-weight: bold;
+        }
+
+        .friend-popup-ko-name{
+            font-size:15px ;
+        }
+
+        .friend-popup-midle{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .friend-popup-posting{
+            margin: 10px;
+        }
+        
+        .friend-popup-posting-num, .friend-popup-posting-num2, .friend-popup-posting-num3{
+            display: flex;
+            justify-content: center;
+            font-weight: bold;
+            
+        }
+
+        .friend-popup-bottom{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        
+        }
+
+        .rock-circle{
+            display: flex;
+            justify-content: center;
+            background: -webkit-linear-gradient(left top, yellow, deeppink); /* 초기 모던 브라우저 */
+  		    background: -moz-linear-gradient(right bottom, red, deeppink); /* 초기 모던 브라우저 */
+  		    background: -o-linear-gradient(right bottom, deeppink, orange); /* 초기 모던 브라우저 */
+            background: linear-gradient(to right bottom, deeppink, yellow);
+            align-items: center;
+            margin-top: 30px;
+            height: 46px;
+            width: 46px;
+            
+            border-radius: 50px;
+        }
+
+        .rock-boder{
+            height: 42px;
+            width: 42px;
+            
+            background-color: white;
+            background-size: 100%;
+            border-radius: 50px;
+        }
+
+        .secret{
+            font-weight: bold;
+        }
+
+        .view-followo{
+            font-size: 13px;
+            color: gray;
+            margin-bottom: 30px;
+        }
+
+        .friend-popup-line{
+            margin-top: 10px;
+            border-bottom: 1px solid lightgray;
+        }
+
+        .friend-popup-bottom-follow-text{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(0,144,253);
+            width: 100%;
+            border-radius: 18px;
+            margin-top: 3%;
+        }
+
+        .follow-font{
+            font-size: 20px;
+            margin: 15px;
+            color: white;
+            
+        }
+
+        /* ---------------------------------------------------- */
+
         
         
 
@@ -1029,7 +1166,8 @@
         </div>
         <div class="center-recommend">
             <div class="my-forme"><h4>회원님을 위한 추천</h4></div>
-            <div class="all-view">모두 보기</div>
+            <a href="../html/home2-all-view.html">
+            <div class="all-view">모두 보기</div></a>
         </div>
         <div class="friend-proposal">
                 <div class="friend-proposal1">
@@ -1137,17 +1275,53 @@
             </div>
         </div>
     </div>
+
+<!-- 모달 창 -------------------------------------------------------------- -->
+
+    <div class="friend-popup">
+        <div class="friend-popup-profile-box">
+            <div class="friend-popup-profile"></div>
+            <div class="friend-popup-name-box">
+                <div class="friend-popup-en-name">ttta2</div>
+                <div class="friend-popup-ko-name">김태현</div>
+            </div>
+        </div>
+
+        <div class="friend-popup-midle">
+            
+            <div class="friend-popup-posting"><div class="friend-popup-posting-num">1</div><div class="friend-popup-posting-font">게시물</div></div>
+            <div class="friend-popup-follower"><div class="friend-popup-posting-num2">180</div><div class="friend-popup-posting-font">팔로워</div></div>
+            <div class="friend-popup-following"><div class="friend-popup-posting-num3">225</div><div class="friend-popup-posting-font">팔로잉</div></div>
+            
+        </div>
+        <div class="friend-popup-line"></div>
+        <div class="friend-popup-bottom">
+            <div class="rock-circle"><div class="rock-boder"></div></div>
+            <div class="secret">비공개 계정입니다</div>
+            <div class="view-followo">사진과 동영상을 보려면 이 계정을 팔로우하세요</div>
+        </div>
+        <div class="friend-popup-line"></div>
+        <div class="friend-popup-bottom-follow">
+            <div><i class="fa-solid fa-user-plus"></i></div>
+            <div class="friend-popup-bottom-follow-text"><div class="follow-font">팔로우</div></div>
+        </div>
+    </div>
+
+<!-- ---------------------------------------------------------------------- -->
+
     
     <script>
-        let sum = 0;
-        let iLikeit = document.getElementById('like-push');
+        
+        let circleProfile = document.querySelector('circle-profile');
+        let friendPopUp = document.querySelector('friend-popup');
         
 
-        iLikeit.addEventListener('click',()=>{
-            document.getElementById('num').textContent=sum;
-            sum++;
+        circleProfile.addEventListener('mouseover',()=>{ 
+            friendPopUp.style.display = 'block'
+            circleProfile.classList.add('circle-profile1');
         })
+
         </script>
-           
+
 </body>
 </html>
