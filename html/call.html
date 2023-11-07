@@ -4,18 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Instagram 통화</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../css/call.css">
+    <link href="../image/insta_icon7.png" rel="shortcut icon" type="image/x-icon">
+
 </head>
 <body>
 
     <div class="container">
 
         <div class="call-box">
-            <div class="access">
-                <span class="color-white sizeM text">다른 사람들이 나를 보고 음성을 들을 수 있도록 Instagram의 카메라 <br>및 마이크 사용 허용</span>
-                <span class="color-gray sizeS text">언제든지 카메라와 마이크를 끌 수 있습니다.</span>
-                <div class="color-blue sizeM text bold">카메라 및 마이크 사용</div>
-                <div class="color-blue sizeM text bold">마이크만 사용</div>
+            <div>
+                <div class="access">
+                    <span class="color-white sizeM text">다른 사람들이 나를 보고 음성을 들을 수 있도록 Instagram의 카메라 <br>및 마이크 사용 허용</span>
+                    <span class="color-gray sizeS text">언제든지 카메라와 마이크를 끌 수 있습니다.</span>
+                    <div class="color-blue sizeM text bold link call">카메라 및 마이크 사용</div>
+                    <div class="color-blue sizeM text bold link call">마이크만 사용</div>
+                </div>
+
+                <div class="access-fail">
+                    <i class="fa-solid fa-triangle-exclamation color-white sizeL text"></i>
+                    <div class="color-white sizeM text">문제가 발생했습니다.</div>
+                    <div class="color-gray sizeS text">Chrome 또는 컴퓨터를 다시 시작해보세요.<br>
+                        문제 해결 방법을 더 보려면 <span class="color-blue link">고객 센터를 방문하세요.</span></div>
+                
+                    <div class="color-gray sizeS text">문제가 계속되는 경우 저희에게 알려주세요. <br>
+                        <span class="color-blue link">문제 신고</span></div>
+    
+                </div>
             </div>
 
             <div class="call-start">
@@ -24,11 +40,21 @@
                 </div>
                 <span class="color-white sizeL text">마동석</span>
                 <div><span class="color-white sizeM text">통화하시겠어요?</span></div>
-                <button>통화 시작</button>
+                <button class="call-start-btn">통화 시작</button>
+                <div class="loding"></div>
+            </div>
+        </div>
+
+        <div class="mic-video-fail">
+            <div class="mic-video-fail-text">
+                <i class="fa-solid fa-microphone-slash color-gray text" style="font-size: 30px;"></i>
+                <div class="text color-white sizeL">카메라나 마이크에 연결할 수 없음</div>
+                <div class="text color-white sizeM">카메라나 마이크가 연결되어 있지 않거나 지원되지 않습니다. 문제 해결 방법<br> 및 지원되는 브라우저에 관한 정보를 보려면 <span class="color-blue link">고객 센터를 방문하세요.</span></div>
             </div>
         </div>
         
     </div>
     
+    <script src="../js/call.js"></script>
 </body>
 </html>

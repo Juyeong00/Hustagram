@@ -15,6 +15,8 @@ html, body{
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 .call-box{
@@ -40,6 +42,20 @@ html, body{
     margin-right: 16px;
 }
 
+.access-fail{
+    width: 640px;
+    height: 420px;
+    background-color: #1F1F1F;
+    border-radius: 10px;
+    padding: 90px 52px 90px 52px;
+    display: none;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+    margin-right: 16px;
+}
+
 .call-start{
     width: 350px;
     height: 420px;
@@ -53,9 +69,16 @@ html, body{
 }
 
 
+.user-profile{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+    width: 350px;
+}
+
 .user1{
-    width: 100px;
-    height: 100px;
+    width: 72px;
+    height: 72px;
     background-image: url(../image/마동석.png);
     background-size : 100%;
     border-radius: 50px;
@@ -92,3 +115,54 @@ html, body{
     font-weight: bold;
 }
 
+.call-start-btn{
+    margin-top: 30px;
+    width: 90px;
+    height: 30px;
+    border-radius: 50px;
+    background-color: #429AFF;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.call-start-btn:active{
+    transform: scale(0.9);
+    background-color: #5ea9ff;
+}
+
+.link{
+    cursor: pointer;
+}
+
+.link:hover{
+    text-decoration: underline;
+}
+
+.mic-video-fail{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    display: none;
+}
+
+.mic-video-fail-text{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.loding{
+    width: 72px;
+    height: 72px;
+}
