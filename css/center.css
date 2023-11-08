@@ -12,6 +12,7 @@ a{
 body,html{
     height: 100%;
     overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 .container{
@@ -143,12 +144,17 @@ body,html{
     display: flex;
     align-items: center;
     padding: 10px ;
+    border-radius: 30px;
 }
 
 .side-menu:hover{
     background-color: #F0F2F5;
-    border-radius: 30px;
 }
+
+.side-menu:active{
+    background-color: #c9ccd1;
+}
+
 
 .menu-text{
     width: 100%;
@@ -163,6 +169,7 @@ body,html{
     align-items: center;
     padding: 10px;
     margin-left: 20px;
+    border-radius: 30px;
 }
 
 .side-menu-low-low{
@@ -170,14 +177,10 @@ body,html{
     display: flex;
     align-items: center;
     padding: 10px;
-
+    border-radius: 30px;
     margin-left: 30px;
 }
 
-
-.none{
-    display: none;
-}
 
 .message-center{
     display: flex;
@@ -186,7 +189,10 @@ body,html{
 
 .side-menu-low-low:hover{
     background-color: #F0F2F5;
-    border-radius: 30px;
+}
+
+.side-menu-low-low:active{
+    background-color: #c9ccd1;
 }
 
 .select{
@@ -197,7 +203,10 @@ body,html{
 
 .side-menu-low:hover{
     background-color: #F0F2F5;
-    border-radius: 30px;
+}
+
+.side-menu-low:active{
+    background-color: #c9ccd1;
 }
 
 .drop-select{
@@ -262,6 +271,13 @@ input:focus {outline: none;} /* outline 테두리 없애기 */
     padding: 5px;
     margin: 10px;
     cursor: pointer;
+}
+
+
+
+.copy:active{
+    transform: scale(0.95);
+    background-color: #c9ccd1;
 }
 
 .advice-selct{
@@ -365,7 +381,7 @@ li{
 
 .foot-text-box{
     width: 750px;
-    height: 120px;
+    height: 50%;
     padding: 50px 0px 50px 0px;
     display: flex;
     flex-wrap: wrap;
@@ -382,4 +398,236 @@ li{
     height: 20px;
     background-image: url(../image/Meta.png);
     background-size : 100%;
+}
+
+.language-btn:active{
+    transform: scale(0.96);
+    background-color: #c9ccd1;
+}
+
+.language-modal{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    background-color: rgba(198, 198, 198, 0.794);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.language-modal-box{
+    box-shadow: 5px 5px 20px gray;
+    width: 550px;
+    height: 230px;
+    background-color: white;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.choice{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid lightgray;
+    padding-left: 200px;
+}
+
+.close{
+    width: 70px;
+    display: flex;
+    color: gray;
+    justify-content: center;
+}
+
+.close:active{
+    transform: scale(0.9);
+}
+
+.language-seach{
+    width: 500px;
+    padding: 20px;
+    font-size: 16px;
+    margin: 20px;
+    border-radius: 10px;
+    border: 1px solid lightgray;
+}
+
+.language-seach:hover{
+    border: 1px solid gray;
+}
+
+.language-seach:focus {outline-style: solid; outline-color: #1876F2; outline-offset: 2px; outline-width: 2px;}
+
+.btn{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    padding: 0px 16px 0px 16px;
+}
+
+.cancel{
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    margin-right: 5px;
+    background-color: #E4E6EB;
+}
+
+.change-save{
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #E4E6EB;
+    cursor: not-allowed;
+}
+
+
+.appraisal{
+    width: 300px;
+    height: 100px;
+    position: absolute;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px gray;
+    left: 70%;
+    top: 87%;
+    padding: 15px
+}
+
+
+.appraisal-top{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.appraisal-middle{
+    display: flex;
+
+}
+
+.yes-box{
+    width: 50%;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #E4E6EB;
+    border-radius: 10px;
+    margin-right: 5px;
+    user-select:none
+}
+
+.no-box{
+    width: 50%;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #E4E6EB;
+    border-radius: 10px;
+    user-select:none
+}
+
+.click:active{
+    transform: scale(0.95);
+}
+
+.click:hover{
+    background-color: #c9ccd1;
+}
+
+.appraisal-close{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 50px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.appraisal-close:active{
+    background-color: #E4E6EB;
+}
+
+
+.none{
+    display: none;
+}
+
+
+/* 미디어쿼리 */
+
+@media only screen and (max-width: 1200px){
+    .side-bar{
+        width: 300px;
+    }
+
+    .side-menu{
+        width: 270px;
+    }
+
+    .side-menu-low{
+        width: 250px;
+    }
+
+    .side-menu-low-low{
+        width: 230px;
+    }
+
+
+}
+
+@media only screen and (max-width: 1105px){
+    .main{
+        display: none;
+    }
+
+    .appraisal{
+        left: 60%;
+        top: 87%;
+    }
+    
+
+
+}
+
+@media only screen and (max-width: 800px){
+
+    .top-text{
+        height: 80px;
+    }
+    
+    .appraisal{
+        left: 55%;
+        top: 87%;
+    }
+
+    .foot-text-box{
+        width: 100%;
+    }
+
+    .foot-bottom{
+        width: 100%;
+    }
+
+    .appraisal{
+        display: none;
+    }
+
+    .search{
+        display: none;
+    }
 }
