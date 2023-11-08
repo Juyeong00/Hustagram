@@ -520,69 +520,54 @@ small_like25.addEventListener('click',function(){
 
 
 //모달창 이미지 슬라이더 코드
-let slides = document.querySelector(".slides"),
-    slide = document.querySelectorAll(".slides li"),
-    currentIdx = 0,
-    slideCount = slide.length,
-    slideWidth = 680,
-    prevBtn = document.querySelector(".prev"),
-    nextBtn = document.querySelector(".next");
+let slides = document.querySelector('.slides');
+let slideImg = document.querySelectorAll('.slides li');
+let currentIdx = 0;
+let slideCount = slideImg.length;
+const prev = document.querySelector('.prev');
+const next = document.querySelector('.next');
+slideWidth = 680;
 
 makeClone();
 
+initfunction();
 function makeClone() {
-    for (let i = 0; i < slideCount; i++) {
-        let cloneSlide = slide[i].cloneNode(true);
-        cloneSlide.classList.add("clone");
-        slides.appendChild(cloneSlide);
+    let cloneSlide_first = slideImg[0].cloneNode(true);
+    let cloneSlide_last = slides.lastElementChild.cloneNode(true);
+    slides.append(cloneSlide_first);
+    slides.insertBefore(cloneSlide_last, slides.firstElementChild);
+}
+function initfunction() {
+    slides.style.width = (slideWidth) * (slideCount + 2) + 'px';
+    slides.style.left = -(slideWidth) + 'px';
+}
+next.addEventListener('click', function () {
+
+    if (currentIdx <= slideCount - 1) {
+        slides.style.left = -(currentIdx + 2) * slideWidth + 'px';
+        slides.style.transition = `${0.5}s ease-out`;
     }
-    for (let i = slideCount - 1; i >= 0; i--) {
-        let cloneSlide = slide[i].cloneNode(true);
-        cloneSlide.classList.add("clone");
-        slides.prepend(cloneSlide);
-    }
-
-    updateWidth();
-    setinit();
-    setTimeout(function () {
-        slides.classList.add("animated");
-    }, 100);
-}
-
-function updateWidth() {
-    let currentSlides = document.querySelectorAll(".slides li");
-    let newSlideCount = currentSlides.length;
-
-    let newWidth =
-        slideWidth * newSlideCount + "px";
-    slides.style.width = newWidth;
-}
-
-function setinit() {
-    let TranslateValue = -slideWidth * slideCount;
-    slides.style.transform = "translateX(" + TranslateValue + "px)";
-}
-
-nextBtn.addEventListener("click", function () {
-    moveSlide(currentIdx + 1);
-});
-prevBtn.addEventListener("click", function () {
-    moveSlide(currentIdx - 1);
-});
-
-function moveSlide(num) {
-    slides.style.left = -num * slideWidth + "px";
-    currentIdx = num;
-
-    if (currentIdx == slideCount || currentIdx == -slideCount) {
+    if (currentIdx === slideCount - 1) {
         setTimeout(function () {
-            slides.classList.remove("animated");
-            slides.style.left = "0px";
-            currentIdx = 0;
+            slides.style.left = -slideWidth + 'px';
+            slides.style.transition = `${0}s ease-out`;
         }, 500);
-
-        setTimeout(function () {
-            slides.classList.add("animated");
-        }, 600);
+        currentIdx = -1;
     }
-}
+    currentIdx += 1;
+});
+prev.addEventListener('click', function () {
+    console.log(currentIdx);
+    if (currentIdx >= 0) {
+        slides.style.left = -currentIdx * (slideWidth) + 'px';
+        slides.style.transition = `${0.5}s ease-out`;
+    }
+    if (currentIdx === 0) {
+        setTimeout(function () {
+            slides.style.left = -slideCount * (slideWidth) + 'px';
+            slides.style.transition = `${0}s ease-out`;
+        }, 500);
+        currentIdx = slideCount;
+    }
+    currentIdx -= 1;
+});
