@@ -498,7 +498,45 @@ li{
     box-shadow: 5px 5px 20px gray;
     left: 70%;
     top: 87%;
-    padding: 15px
+    padding: 15px;
+}
+
+.appraisal-no{
+    width: 350px;
+    height: 250px;
+    position: absolute;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px gray;
+    left: 66.3%;
+    top: 70%;
+    padding: 15px;
+}
+
+.no-top{
+    display: flex;
+    justify-content: space-between;
+}
+
+.why-choice{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 30px;
+}
+
+.circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+}
+
+.why-choice:hover > .circle{
+    background-color: #c9ccd1;
 }
 
 
@@ -536,7 +574,49 @@ li{
     justify-content: center;
     background-color: #E4E6EB;
     border-radius: 10px;
-    user-select:none
+    user-select:none;
+}
+
+.appraisal-comment{
+    width: 900px;
+    height: 300px;
+    position: absolute;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px gray;
+    left: 23.5%;
+    top: 64.5%;
+    padding: 15px;
+}
+
+.comment{
+    width: 100%;
+    height: 150px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 1px solid lightgray;
+    margin-top: 10px;
+}
+
+.comment:hover{
+    border: 1px solid gray;
+}
+
+.comment:focus {outline-style: solid; outline-color: #1876F2; outline-offset: 2px; outline-width: 2px;}
+
+.submit{
+    margin-top: 15px;
+    width: 100%;
+    height: 40px;
+    border: none;
+    background-color: #E7F3FF;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.submit:active{
+    transform: scale(0.99);
+    background-color: #cbe0f4;
 }
 
 .click:active{
@@ -562,10 +642,34 @@ li{
     background-color: #E4E6EB;
 }
 
+.question{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.appraisal-comment-close{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 50px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.appraisal-comment-close:active{
+    background-color: #E4E6EB;
+}
+
+
+
 
 .none{
     display: none;
 }
+
 
 
 /* 미디어쿼리 */
@@ -587,6 +691,11 @@ li{
         width: 230px;
     }
 
+    .appraisal-comment{
+        width: 700px;
+        left: 3%;
+        top: 64.5%;
+    }
 
 }
 
@@ -597,6 +706,11 @@ li{
 
     .appraisal{
         left: 60%;
+        top: 87%;
+    }
+
+    .appraisal-no{
+        left: 53%;
         top: 87%;
     }
     
@@ -610,10 +724,6 @@ li{
         height: 80px;
     }
     
-    .appraisal{
-        left: 55%;
-        top: 87%;
-    }
 
     .foot-text-box{
         width: 100%;
@@ -627,7 +737,16 @@ li{
         display: none;
     }
 
+    
+    .appraisal-no{
+        display: none;
+    }
+
     .search{
+        display: none;
+    }
+
+    .appraisal-comment{
         display: none;
     }
 }

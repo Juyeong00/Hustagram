@@ -38,11 +38,18 @@ function toggle2() {
 
 message.addEventListener('click',toggle2);
 
+
+// 언어 팝업
 const languageModal = document.querySelector('.language-modal');
 const close = document.querySelector('.close');
+const close2 = document.querySelector('.btn');
 const languageBtn = document.querySelector('.language-btn');
 
 close.addEventListener('click',()=>{
+    languageModal.classList.add('none');
+});
+
+close2.addEventListener('click',()=>{
     languageModal.classList.add('none');
 });
 
@@ -50,13 +57,15 @@ languageBtn.addEventListener('click',()=>{
     languageModal.classList.remove('none');
 });
 
+
+
 window.onclick = function(pop){
     if(pop.target == languageModal){
         languageModal.classList.add('none');
     }
 }
 
-
+// 평가 팝업
 const appraisalClose = document.querySelector('.appraisal-close');
 const appraisal = document.querySelector('.appraisal');
 
@@ -64,6 +73,40 @@ const appraisal = document.querySelector('.appraisal');
 appraisalClose.addEventListener('click',()=>{
     appraisal.classList.add('none');
 });
+
+// 평가 버튼 클릭 시 
+const yes = document.querySelector('.yes-box');
+const no = document.querySelector('.no-box');
+const commentClose = document.querySelector('.appraisal-comment-close');
+const comment = document.querySelector('.appraisal-comment');
+const noBox = document.querySelector('.appraisal-no');
+const noClose = document.querySelector('.no-close');
+const why = document.querySelector('.why');
+
+yes.addEventListener('click',()=>{
+    appraisal.classList.add('none');
+    comment.classList.remove('none');
+})
+
+no.addEventListener('click',()=>{
+    appraisal.classList.add('none');
+    noBox.classList.remove('none');
+})
+
+commentClose.addEventListener('click',()=>{
+    comment.classList.add('none');
+})
+
+
+noClose.addEventListener('click',()=>{
+    noBox.classList.add('none');
+})
+
+why.addEventListener('click',()=>{
+    noBox.classList.add('none');
+    comment.classList.remove('none');
+})
+
 
 
 
