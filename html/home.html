@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Instagram</title>
-    <link href="./img/insta_icon7.png" rel="shortcut icon" type="image/x-icon">
+    <link href="../image/insta_icon7.png" rel="shortcut icon" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="../css/search-side.css" rel="stylesheet">
     <style>
@@ -732,12 +732,13 @@
         /* 모달 창 ----------------------------------------------*/
 
         .friend-popup {
-            margin: auto 0;
-            padding: 0;
-            box-sizing: border-box;
-            width: 50%;
+            width: 300px;
+            height:auto;
             display: none;
-
+            position: absolute;
+            left:75%;
+            top:13%;
+            background-color:white;
 
         }
 
@@ -1203,12 +1204,17 @@ a {
     
     <script>
         
-        let circleProfile = document.querySelector('circle-profile');
-        let friendPopUp = document.querySelector('friend-popup');
-        
+        let circleProfile = document.querySelector('.circle-profile');
+        let friendPopUp = document.querySelector('.friend-popup');
 
-        circleProfile.addEventListener('mouseover',()=>{ 
+
+        circleProfile.addEventListener('mouseover', () => {
             friendPopUp.style.display = 'block'
+            circleProfile.classList.add('circle-profile1');
+        })
+
+        circleProfile.addEventListener('mouseout', () => {
+            friendPopUp.style.display = 'none'
             circleProfile.classList.add('circle-profile1');
         })
 
