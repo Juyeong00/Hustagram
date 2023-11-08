@@ -57,6 +57,13 @@ window.onclick = function(pop){
 }
 
 
+const appraisalClose = document.querySelector('.appraisal-close');
+const appraisal = document.querySelector('.appraisal');
+
+
+appraisalClose.addEventListener('click',()=>{
+    appraisal.classList.add('none');
+});
 
 
 

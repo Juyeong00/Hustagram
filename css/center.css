@@ -12,6 +12,7 @@ a{
 body,html{
     height: 100%;
     overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 .container{
@@ -416,6 +417,7 @@ li{
 }
 
 .language-modal-box{
+    box-shadow: 5px 5px 20px gray;
     width: 550px;
     height: 230px;
     background-color: white;
@@ -486,11 +488,81 @@ li{
     cursor: not-allowed;
 }
 
-.none{
-    display: none;
+
+.appraisal{
+    width: 300px;
+    height: 100px;
+    position: absolute;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px gray;
+    left: 70%;
+    top: 87%;
+    padding: 15px
 }
 
 
+.appraisal-top{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.appraisal-middle{
+    display: flex;
+
+}
+
+.yes-box{
+    width: 50%;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #E4E6EB;
+    border-radius: 10px;
+    margin-right: 5px;
+    user-select:none
+}
+
+.no-box{
+    width: 50%;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #E4E6EB;
+    border-radius: 10px;
+    user-select:none
+}
+
+.click:active{
+    transform: scale(0.95);
+}
+
+.click:hover{
+    background-color: #c9ccd1;
+}
+
+.appraisal-close{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 50px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.appraisal-close:active{
+    background-color: #E4E6EB;
+}
 
 
-
+.none{
+    display: none;
+}
