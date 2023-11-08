@@ -13,8 +13,8 @@
     }
 
     .profilebar{
-        margin: 50px auto;
-        margin-left: 150px;
+        width: 959px;
+        margin-left: 70px;
         display: flex;
         align-items: center;
     }
@@ -170,9 +170,9 @@
         font-size: 1.3rem;
     }
 
-    .profile{
-        width: calc(100% - 40px);
-
+    .profilebar{
+        margin-left: 0;
+        
     }
     
 
