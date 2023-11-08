@@ -38,5 +38,25 @@ function toggle2() {
 
 message.addEventListener('click',toggle2);
 
+const languageModal = document.querySelector('.language-modal');
+const close = document.querySelector('.close');
+const languageBtn = document.querySelector('.language-btn');
+
+close.addEventListener('click',()=>{
+    languageModal.classList.add('none');
+});
+
+languageBtn.addEventListener('click',()=>{
+    languageModal.classList.remove('none');
+});
+
+window.onclick = function(pop){
+    if(pop.target == languageModal){
+        languageModal.classList.add('none');
+    }
+}
+
+
+
 
 
