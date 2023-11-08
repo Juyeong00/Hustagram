@@ -381,7 +381,7 @@ li{
 
 .foot-text-box{
     width: 750px;
-    height: 120px;
+    height: 50%;
     padding: 50px 0px 50px 0px;
     display: flex;
     flex-wrap: wrap;
@@ -565,4 +565,69 @@ li{
 
 .none{
     display: none;
+}
+
+
+/* 미디어쿼리 */
+
+@media only screen and (max-width: 1200px){
+    .side-bar{
+        width: 300px;
+    }
+
+    .side-menu{
+        width: 270px;
+    }
+
+    .side-menu-low{
+        width: 250px;
+    }
+
+    .side-menu-low-low{
+        width: 230px;
+    }
+
+
+}
+
+@media only screen and (max-width: 1105px){
+    .main{
+        display: none;
+    }
+
+    .appraisal{
+        left: 60%;
+        top: 87%;
+    }
+    
+
+
+}
+
+@media only screen and (max-width: 800px){
+
+    .top-text{
+        height: 80px;
+    }
+    
+    .appraisal{
+        left: 55%;
+        top: 87%;
+    }
+
+    .foot-text-box{
+        width: 100%;
+    }
+
+    .foot-bottom{
+        width: 100%;
+    }
+
+    .appraisal{
+        display: none;
+    }
+
+    .search{
+        display: none;
+    }
 }
