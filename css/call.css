@@ -88,6 +88,14 @@ html, body{
     border-radius: 50px;
 }
 
+.user2{
+    width: 72px;
+    height: 72px;
+    background-image: url(../image/꾸버.jpg);
+    background-size : 100%;
+    border-radius: 50px;
+}
+
 .text{
     margin-top: 5px;
     margin-bottom: 5px;
