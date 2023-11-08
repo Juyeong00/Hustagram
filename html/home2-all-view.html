@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="../css/search-side.css" rel="stylesheet">
+    
+    <style>
+        html, body{
+            height: 100%;
+        }
+        
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        
+        
+        .instagram{
+            display: flex;
+            
+        }
+        
+
+        .container{
+            display:flex;
+            flex-direction:row;
+            }
+            
+        
+            
+
+
+        .img-move{
+            margin-top: 40px;
+            margin-right:110px;
+            margin-bottom: 30px;
+        }
+
+
+
+
+        i:hover {
+            transform:scale(1.1, 1.1); 
+        }
+
+        .home-icon:hover {
+            background-color: rgb(233,236,239);
+            left: 6px;
+        }
+
+        .search-icon:hover {
+            background-color: rgb(233,236,239);
+            
+        }
+
+        .compass-icon:hover {
+            background-color: rgb(233,236,239);
+            
+        }
+
+        .video-icon:hover {
+            background-color: rgb(233,236,239);
+            
+        }
+
+        .message-icon:hover {
+            background-color: rgb(233,236,239);
+            
+        }
+
+        .heart-icon:hover {
+            background-color: rgb(233,236,239);
+            
+        }
+
+        .making-icon:hover {
+            background-color: rgb(233,236,239);
+            
+        }
+
+        .instagram-profile:hover {
+            background-color: rgb(233,236,239);
+            
+        }
+
+        .threads-icon:hover {
+            background-color: rgb(233,236,239);
+            
+        }
+
+        .setting-icon:hover {
+            background-color: rgb(233,236,239);
+            
+        }
+        
+        .font-size-box{
+            margin-left: 12.5%;     
+            font-size: 14px;
+        }
+        h1{
+            
+            margin-left: 10%;                    
+            font-size: 15px;
+            
+        }
+
+        .threads-icon{
+            margin-bottom: 1%;
+            margin-left: 10%;
+            font-size: 28px;
+            display: flex;
+            align-items:center;
+            
+            border: 1px solid white;
+            border-radius: 10%;
+        }
+
+        .setting-icon{
+            margin-bottom: 3%;
+            margin: 10%;
+            font-size: 28px;
+            display: flex;
+            align-items:center;
+            
+            border: 1px solid white;
+            border-radius: 10%;
+        }
+        
+        .instagram-fontbox{
+
+            display: flex;
+            margin: 0 auto;
+            margin-top:30px;
+            margin-left: 15px;
+        }
+                    
+
+        .friend-box{
+            
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;   
+            width: 28%;
+            margin-top: -20px;
+            
+        }
+
+        .main-box{
+            width: 52%;
+            height: 200%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            margin-left: 23%;
+        }
+
+        .instagram-fontbox{
+        
+            margin: 0 auto;
+            
+        }
+
+
+
+
+
+
+
+
+        .friend-recommend{
+            display: flex;
+            flex-direction: column;
+            margin-left: 470px;
+            margin-top: 80px;
+            width: 80%;
+        }
+
+        .recommend{
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .people-box{
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 10px;
+            
+        }
+
+        .people-proflie{
+
+            height: 45px;
+            width: 45px;
+            border: 1px solid lightgray;
+            background-image: url('../image/recommend1.png');
+            background-size: 100%;
+            margin-right: 10px;
+            margin-top: 8px;
+            border-radius: 50px;
+            align-items: center;
+
+        }
+
+        .name-box{
+            display: flex;
+            flex-direction:column;
+        }
+
+        .en-name{
+            font-size: 14px;
+            font-weight: 550;
+        }
+
+        .ko-name{
+            font-size: 14px;
+            color: gray;
+        }
+
+        .follow-ys{
+            font-size: 12px;
+            color: gray;
+        }
+
+        .follow-button{
+            background-color:rgb(0,149,246) ;
+            height:30px;
+            width: 80px;
+            display: flex;
+            align-items: center;
+            border-radius: 13%;
+            margin-left: 230px;
+            margin-top: 10px; 
+            
+        }
+
+        .follow-button:hover{
+            background-color: rgb(0,99,252);
+        }
+        
+        .follow-text{
+            color: white;
+            font-size: 15px;
+            font-weight: bold;
+            margin-left: 17px;
+        }
+
+        .informaition{
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 100px;
+        }
+
+        .informaition-1{
+            color: rgb(0,55,155);
+            font-weight: 600;
+            font-size: 13px;
+            margin-right: 280px;
+            margin-bottom: 10px;
+            
+        }
+
+        .informaition-2{
+            color: rgb(0,55,155);
+            font-weight: 600;
+            font-size: 13px;
+            margin-right: 280px;
+            margin-bottom: 30px;
+        }
+        
+
+        @media only screen and (max-width: 1029px){
+            .iconbox{
+                width: 8%;
+                display: flex;
+                align-items: center;
+                padding: 10px;
+                position: fixed;
+                justify-content: space-around;  
+                display: flex;
+                flex-direction: column;
+            }
+            
+
+            .instagram-fontbox, h1, .font-size-box{
+                display: none;
+            }
+
+            .insta-logo{
+                display: block;
+            }
+            
+
+            
+
+            .ico.insta-logo{
+                margin-right: 22px;
+                margin-bottom: 30px;
+            }
+            
+            
+            .menu-box1{
+                margin-right: 22px;
+            }
+
+            .menu-box2{
+                margin-right: 22px;
+                margin-bottom: 20px;
+            }
+
+            .main-box{
+                margin-left: 25%;
+            }
+
+            .ico:hover{
+                background-color: rgb(238, 238, 238);
+                left: 5px;
+                width: 48px;
+                height: 48px;
+            }
+            
+
+            .friend-recommend{
+                margin-left: 27%;
+            }
+
+            a{
+                    color: black;
+                    text-decoration: none;
+                }
+
+        }
+
+
+    </style>
+
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="iconbox">
+            <a href="../html/home.html">
+                <div class="ico insta-logo"><i class="ico2 fa-brands fa-instagram"></i></div>
+                <div class="instagram-fontbox">
+                    <div class="img-move"><img src="../image/insta.png"></div>
+                </div>
+            </a>
+            <div class="menu-box1">
+                <a href="../html/home.html">
+                    <div class="ico home-icon"><i class="ico2 fa-solid fa-house"></i>
+                        <p class="font-size-box">홈</p>
+                    </div>
+                </a>
+                <div class="ico search-icon"><i class="ico2 fa-solid fa-magnifying-glass"></i>
+                    <p class="font-size-box">검색</p>
+                </div>
+                <a href="../html/search.html">
+                    <div class="ico compass-icon"><i class="ico2 fa-regular fa-compass"></i>
+                        <h1 class="font-size-box">탐색 탭</h1>
+                    </div>
+                </a>
+                <div class="ico video-icon"><i class="ico2 fa-solid fa-clapperboard"></i>
+                    <p class="font-size-box">릴스</p>
+                </div>
+                <a href="../html/message.html">
+                    <div class="ico message-icon"><i class="ico2 fa-brands fa-facebook-messenger"></i>
+                        <p class="font-size-box">메시지</p>
+                    </div>
+                </a>
+                <div class="ico heart-icon"><i class="ico2 fa-regular fa-heart"></i>
+                    <p class="font-size-box">알림</p>
+                </div>
+                <div class="ico making-icon"><i class="ico2 fa-regular fa-square-plus"></i>
+                    <p class="font-size-box">만들기</p>
+                </div>
+                <a href="../html/profile.html">
+                    <div class="ico instagram-profile"><i class="ico2 fa-regular fa-circle-user"></i>
+                        <p class="font-size-box">프로필</p>
+                    </div>
+            </div>
+            <div class="menu-box2">
+                <a href="../Threads-page/Threads.html">
+                    <div class="ico threads-icon"><i class="ico2 fa-brands fa-threads" style="color: #000000;"></i>
+                        <p class="font-size-box">Threads</p>
+                    </div>
+                </a>
+                <div class="ico setting-icon"><i class="ico2 fa-solid fa-bars"></i>
+                    <p class="font-size-box">더 보기</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="friend-recommend">
+            <div class="recommend">추천</div>
+            <div class="people-box">
+                <div class="people-proflie"></div>
+                <div class="name-box">
+                    <div class="en-name">_tta2hyun</div>
+                    <div class="ko-name">김태짱</div>
+                    <div class="follow-ys">nuyheat님 외 46명이 팔로우합니다</div>
+                </div>      
+                <div class="follow-button"><div class="follow-text">팔로우</div></div>
+            </div>
+
+            <div class="people-box">
+                <div class="people-proflie" style="background-image: url('../image/recommend2\ .png');"></div>
+                <div class="name-box">
+                    <div class="en-name">_pakr_butterfly</div>
+                    <div class="ko-name">박나비</div>
+                    <div class="follow-ys">hhhhhg님 외 12명이 팔로우합니다</div>
+                </div>      
+                <div class="follow-button"><div class="follow-text">팔로우</div></div>
+            </div>
+
+            <div class="people-box">
+                <div class="people-proflie" style="background-image: url('../image/recommend3.png');"></div>
+                <div class="name-box">
+                    <div class="en-name">g_no</div>
+                    <div class="ko-name">박지노</div>
+                    <div class="follow-ys">gotothe님 외 10명이 팔로우합니다</div>
+                </div>      
+                <div class="follow-button"><div class="follow-text">팔로우</div></div>
+            </div>
+
+            <div class="people-box">
+                <div class="people-proflie" style="background-image: url('../image/recommend4.png');" ></div>
+                <div class="name-box">
+                    <div class="en-name">lee_puppy</div>
+                    <div class="ko-name">갱얼쥐</div>
+                    <div class="follow-ys">yeo_2jji님 외 12명이 팔로우합니다</div>
+                </div>      
+                <div class="follow-button"><div class="follow-text">팔로우</div></div>
+            </div>
+
+            <div class="people-box">
+                <div class="people-proflie" style="background-image: url('../image/recommend5.png');" ></div>
+                <div class="name-box">
+                    <div class="en-name">min_ji...</div>
+                    <div class="ko-name">김민지</div>
+                    <div class="follow-ys">yxxwwi님 외 24명이 팔로우합니다</div>
+                </div>      
+                <div class="follow-button"><div class="follow-text">팔로우</div></div>
+            </div>
+
+            <div class="people-box">
+                <div class="people-proflie" style="background-image: url('../image/recommend6.png');"></div>
+                <div class="name-box">
+                    <div class="en-name">_tta2hyun</div>
+                    <div class="ko-name">미현</div>
+                    <div class="follow-ys">mehyun님 외 1명이 팔로우합니다</div>
+                </div>      
+                <div class="follow-button"><div class="follow-text">팔로우</div></div>
+            </div>
+
+            <div class="people-box">
+                <div class="people-proflie" style="background-image: url('../image/recommend7.png');"></div>
+                <div class="name-box">
+                    <div class="en-name">_tta2hyun</div>
+                    <div class="ko-name">오동현</div>
+                    <div class="follow-ys">yeo_jji님 외 12명이 팔로우합니다</div>
+                </div>      
+                <div class="follow-button"><div class="follow-text">팔로우</div></div>
+            </div>
+
+            <div class="people-box">
+                <div class="people-proflie" style="background-image: url('../image/recommend8.png');"></div>
+                <div class="name-box">
+                    <div class="en-name">_tta2hyun</div>
+                    <div class="ko-name">서수지</div>
+                    <div class="follow-ys">yeo_jji님 외 12명이 팔로우합니다</div>
+                </div>      
+                <div class="follow-button"><div class="follow-text">팔로우</div></div>
+            </div>
+
+            <div class="people-box">
+                <div class="people-proflie" style="background-image: url('../image/recommend9.png');"></div>
+                <div class="name-box">
+                    <div class="en-name">_tta2hyun</div>
+                    <div class="ko-name">박공주</div>
+                    <div class="follow-ys">yeo_jji님 외 12명이 팔로우합니다</div>
+                </div>      
+                <div class="follow-button"><div class="follow-text">팔로우</div></div>
+            </div>
+
+            <div class="people-box">
+                <div class="people-proflie" style="background-image: url('../image/recommend10.png');"></div>
+                <div class="name-box">
+                    <div class="en-name">_tta2hyun</div>
+                    <div class="ko-name">하주영</div>
+                    <div class="follow-ys">yeo_jji님 외 12명이 팔로우합니다</div>
+                </div>      
+                <div class="follow-button"><div class="follow-text">팔로우</div></div>
+            </div>
+
+            <div class="people-box">
+                <div class="people-proflie" style="background-image: url('../image/recommend13.png');" ></div>
+                <div class="name-box">
+                    <div class="en-name">_tta2hyun</div>
+                    <div class="ko-name">김태현</div>
+                    <div class="follow-ys">yeo_jji님 외 12명이 팔로우합니다</div>
+                </div>      
+                <div class="follow-button"><div class="follow-text">팔로우</div></div>
+            </div>
+
+            <div class="people-box">
+                <div class="people-proflie" style="background-image: url('../image/recommend12.jpg');"></div>
+                <div class="name-box">
+                    <div class="en-name">_tta2hyun</div>
+                    <div class="ko-name">이여진</div>
+                    <div class="follow-ys">yeo_jji님 외 12명이 팔로우합니다</div>
+                </div>      
+                <div class="follow-button"><div class="follow-text">팔로우</div></div>
+            </div>
+
+            <div class="people-box">
+                <div class="people-proflie" style="background-image: url('../image/recommend11.jpg');"></div>
+                <div class="name-box">
+                    <div class="en-name">_tta2hyun</div>
+                    <div class="ko-name">곽두식</div>
+                    <div class="follow-ys">yeo_jji님 외 12명이 팔로우합니다</div>
+                </div>      
+                <div class="follow-button"><div class="follow-text">팔로우</div></div>
+            </div>
+
+            <div class="informaition">
+                <div class="informaition-1">소개 도움말 홍보 센터 API 채용 정보</div>
+                <div class="informaition-2">개인정보처리방침 약관 위치 언어 METAVERIFIED</div>
+            </div>
+            
+        </div>
+
+        
+        
+    </div>
+</body>
+</html>
