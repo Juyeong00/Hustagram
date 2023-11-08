@@ -427,12 +427,162 @@ window.addEventListener("scroll", (e) => {
 
         }
     }
-    wait(0.5);
+    wait(0.5); //임의로 지연시간 주기
 });
+
 
 function wait(sec) {
     let start = Date.now(), now = start;
     while (now - start < sec * 1000) {
         now = Date.now();
+    }
+}
+
+//모달창 하트 아이콘 클릭시 효과주는 코드
+let likeht = document.getElementsByClassName("likeht")[0];
+let likeht2 = document.getElementsByClassName("likeht2")[0];
+let htcount = document.getElementById('count');
+let count1 = 100;
+
+likeht.addEventListener('click',function(){
+    likeht.classList.toggle('active');
+    likeht2.classList.toggle('active');
+    htcount.textContent = ++count1;
+})
+
+likeht2.addEventListener('click',function(){
+    likeht2.classList.toggle('active');
+    likeht.classList.toggle('active');
+    htcount.textContent = --count1;
+})
+
+let small_like11 = document.getElementsByClassName("small-like")[0];
+let small_like12 = document.getElementsByClassName("small-like")[1];
+let small_like13 = document.getElementsByClassName("small-like")[2];
+let small_like14 = document.getElementsByClassName("small-like")[3];
+let small_like15 = document.getElementsByClassName("small-like")[4];
+let small_like21 = document.getElementsByClassName("small-like2")[0];
+let small_like22 = document.getElementsByClassName("small-like2")[1];
+let small_like23 = document.getElementsByClassName("small-like2")[2];
+let small_like24 = document.getElementsByClassName("small-like2")[3];
+let small_like25 = document.getElementsByClassName("small-like2")[4];
+
+
+small_like11.addEventListener('click',function(){
+    small_like11.classList.toggle('active');
+    small_like21.classList.toggle('active');
+})
+
+small_like21.addEventListener('click',function(){
+    small_like21.classList.toggle('active');
+    small_like11.classList.toggle('active');
+})
+
+small_like12.addEventListener('click',function(){
+    small_like12.classList.toggle('active');
+    small_like22.classList.toggle('active');
+})
+
+small_like22.addEventListener('click',function(){
+    small_like22.classList.toggle('active');
+    small_like12.classList.toggle('active');
+})
+
+small_like13.addEventListener('click',function(){
+    small_like13.classList.toggle('active');
+    small_like23.classList.toggle('active');
+})
+
+small_like23.addEventListener('click',function(){
+    small_like23.classList.toggle('active');
+    small_like13.classList.toggle('active');
+})
+
+small_like14.addEventListener('click',function(){
+    small_like14.classList.toggle('active');
+    small_like24.classList.toggle('active');
+})
+
+small_like24.addEventListener('click',function(){
+    small_like24.classList.toggle('active');
+    small_like14.classList.toggle('active');
+})
+
+small_like15.addEventListener('click',function(){
+    small_like15.classList.toggle('active');
+    small_like25.classList.toggle('active');
+})
+
+small_like25.addEventListener('click',function(){
+    small_like25.classList.toggle('active');
+    small_like15.classList.toggle('active');
+})
+
+
+//모달창 이미지 슬라이더 코드
+let slides = document.querySelector(".slides"),
+    slide = document.querySelectorAll(".slides li"),
+    currentIdx = 0,
+    slideCount = slide.length,
+    slideWidth = 680,
+    prevBtn = document.querySelector(".prev"),
+    nextBtn = document.querySelector(".next");
+
+makeClone();
+
+function makeClone() {
+    for (let i = 0; i < slideCount; i++) {
+        let cloneSlide = slide[i].cloneNode(true);
+        cloneSlide.classList.add("clone");
+        slides.appendChild(cloneSlide);
+    }
+    for (let i = slideCount - 1; i >= 0; i--) {
+        let cloneSlide = slide[i].cloneNode(true);
+        cloneSlide.classList.add("clone");
+        slides.prepend(cloneSlide);
+    }
+
+    updateWidth();
+    setinit();
+    setTimeout(function () {
+        slides.classList.add("animated");
+    }, 100);
+}
+
+function updateWidth() {
+    let currentSlides = document.querySelectorAll(".slides li");
+    let newSlideCount = currentSlides.length;
+
+    let newWidth =
+        slideWidth * newSlideCount + "px";
+    slides.style.width = newWidth;
+}
+
+function setinit() {
+    let TranslateValue = -slideWidth * slideCount;
+    slides.style.transform = "translateX(" + TranslateValue + "px)";
+}
+
+nextBtn.addEventListener("click", function () {
+    moveSlide(currentIdx + 1);
+});
+prevBtn.addEventListener("click", function () {
+    moveSlide(currentIdx - 1);
+});
+
+function moveSlide(num) {
+    slides.style.left = -num * slideWidth + "px";
+    currentIdx = num;
+
+    if (currentIdx == slideCount || currentIdx == -slideCount) {
+        setTimeout(function () {
+            slides.classList.remove("animated");
+            slides.style.left = "0px";
+            currentIdx = 0;
+        }, 500);
+
+        setTimeout(function () {
+            slides.classList.add("animated");
+        }, 600);
     }
 }

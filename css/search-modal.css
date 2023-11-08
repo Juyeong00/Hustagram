@@ -87,10 +87,12 @@
 
 .modal-image2 {
     width: 100%;
+    height: auto;
     background-image: url('../image/마카롱.jpg');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    z-index:5;
 }
 
 .user-img{
@@ -113,7 +115,7 @@
 }
 .user-name{
     position:relative;
-    top:27px;
+    margin-top:27px;
     left:15px;
     font-weight:bold;
     user-select:none;
@@ -264,4 +266,83 @@ input:focus{
     position:relative;
     left:308px;
     top:-90px;
+}
+
+.i2:hover,
+.name1:hover,
+.user-name:hover,
+.small-heart2:hover{
+    color:#b3b3b3;
+}
+
+.follow:hover{
+    color:black;
+}
+.likeht.active{
+    color:red;
+    display:none;
+}
+.likeht2{
+    display:none;
+}
+.likeht2.active{
+    color:red;
+    display:flex;
+}
+.small-like.active{
+    color:red;
+    display:none;
+}
+.small-like2{
+    display:none;
+}
+.small-like2.active{
+    color:red;
+    display:flex;
+}
+
+li {
+    list-style: none;
+}
+.slide_wrapper {
+    position: relative;
+    width: 680px;
+    height: 700px;
+    overflow: hidden;
+}
+
+.slides {
+    text-align: center;
+    width:3400px;
+    position:relative;
+}
+
+.modal-img {
+    float:left;
+    width: 680px;
+    height: auto;
+    margin-top:122px;
+}
+
+.slides.animated {
+    transition: 0.5s ease-out;
+}
+
+.controls {
+    position: absolute;
+    text-align: center;
+    margin-top: 330px;
+    margin-left:-290px;
+}
+
+.controls span {
+    color: white;
+    text-shadow: 10px;
+    font-size: 30px;
+    margin: 0 300px;
+    cursor: pointer;
+}
+
+.prev, .next{
+    text-shadow: 0 0 2px black;
 }
