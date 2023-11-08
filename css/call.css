@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+a{
+    text-decoration-line: none;
+}
+
 html, body{
     height: 100%;
 }
@@ -160,9 +164,4 @@ html, body{
     justify-content: center;
     align-items: center;
     text-align: center;
-}
-
-.loding{
-    width: 72px;
-    height: 72px;
 }
