@@ -4,11 +4,11 @@ const modal_wrap = document.querySelector('.modal_wrap');
 const modal_background = document.querySelector('.modal_background');
 
 document.querySelector('.img1').addEventListener('click', () => {
-    open()
+    open();
 });
 
 document.querySelector('.xclose').addEventListener('click', () => {
-    close()
+    close();
 });
 
 window.addEventListener('click', (e) => {
@@ -20,8 +20,8 @@ function close() {
     document.body.style.overflowY = 'scroll';
 }
 function open() {
-    modal_wrap.classList.add('show-modal')
-    modal_background.classList.add('show-modal')
+    modal_wrap.classList.add('show-modal');
+    modal_background.classList.add('show-modal');
     document.body.style.overflowY = 'hidden';
 }
 
@@ -520,13 +520,13 @@ small_like25.addEventListener('click',function(){
 
 
 //모달창 이미지 슬라이더 코드
-let slides = document.querySelector('.slides');
-let slideImg = document.querySelectorAll('.slides li');
-let currentIdx = 0;
-let slideCount = slideImg.length;
+const slides = document.querySelector('.slides');
+const slideImg = document.querySelectorAll('.slides li');
 const prev = document.querySelector('.prev');
 const next = document.querySelector('.next');
-slideWidth = 680;
+let currentIdx = 0;
+let slideWidth = 680;
+let slideCount = slideImg.length;
 
 makeClone();
 
@@ -538,11 +538,10 @@ function makeClone() {
     slides.insertBefore(cloneSlide_last, slides.firstElementChild);
 }
 function initfunction() {
-    slides.style.width = (slideWidth) * (slideCount + 2) + 'px';
-    slides.style.left = -(slideWidth) + 'px';
+    slides.style.width = slideWidth * (slideCount + 2) + 'px';
+    slides.style.left = -slideWidth + 'px';
 }
 next.addEventListener('click', function () {
-
     if (currentIdx <= slideCount - 1) {
         slides.style.left = -(currentIdx + 2) * slideWidth + 'px';
         slides.style.transition = `${0.5}s ease-out`;
@@ -557,17 +556,45 @@ next.addEventListener('click', function () {
     currentIdx += 1;
 });
 prev.addEventListener('click', function () {
-    console.log(currentIdx);
     if (currentIdx >= 0) {
-        slides.style.left = -currentIdx * (slideWidth) + 'px';
+        slides.style.left = -currentIdx * slideWidth + 'px';
         slides.style.transition = `${0.5}s ease-out`;
     }
     if (currentIdx === 0) {
         setTimeout(function () {
-            slides.style.left = -slideCount * (slideWidth) + 'px';
+            slides.style.left = -slideCount * slideWidth + 'px';
             slides.style.transition = `${0}s ease-out`;
         }, 500);
         currentIdx = slideCount;
     }
     currentIdx -= 1;
+});
+
+
+//모달 댓글 기능 코드
+let com = document.getElementsByClassName('com')[0];
+
+function postComment() {
+    const box = document.getElementsByClassName('info11')[0];
+    const username11 = document.createElement("span");
+    const $info11 = document.createElement('div');
+    const maintext = document.createElement('span');
+
+    username11.className = 'name1';
+    username11.innerText = "user893 ";
+    $info11.className = 'info11';
+    maintext.innerText = com.value;
+
+    $info11.appendChild(username11)
+    $info11.appendChild(maintext)
+    box.appendChild($info11);
+
+}
+com.addEventListener("keypress", function (e) {
+    if (com.value === "") {
+        e.defaultPrevented();
+    } else if (e.key === "Enter") {
+        postComment();
+        com.value = "";
+    }
 });
