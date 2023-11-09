@@ -61,7 +61,32 @@ dm.forEach(item => {
 });
 
 
+// 채팅창 하트 클릭시 하트 효과
+const like = document.querySelector('.heart1');
+const likeOn = document.querySelector('.heart2')
+const like2 = document.querySelector('.heart3');
+const likeOn2 = document.querySelector('.heart4')
 
+like.addEventListener('click',()=>{
+    like.classList.add('none');
+    likeOn.classList.remove('none');
+})
+
+likeOn.addEventListener('click',()=>{
+    like.classList.remove('none');
+    likeOn.classList.add('none');
+})
+
+
+like2.addEventListener('click',()=>{
+    like2.classList.add('none');
+    likeOn2.classList.remove('none');
+})
+
+likeOn2.addEventListener('click',()=>{
+    like2.classList.remove('none');
+    likeOn2.classList.add('none');
+})
 
 
 

@@ -665,8 +665,17 @@ button:active {
     font-weight: 100;
 }
 
+.none{
+    display: none;
+}
 
+.heart2{
+    color: red;
+}
 
+.heart4{
+    color: red;
+}
 
 
 
